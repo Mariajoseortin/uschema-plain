@@ -3,7 +3,7 @@
 U-Schema is a unified logical model that integrates the concepts and rules of both the relational model and the four most common NoSQL data models: columnar, document, graph, and key–value.
 
 <figure>
-    <img src="es.um.uschema/model/uNoSQLSchemaDiagram.png" align="center"/>
+    <img src="es.um.uschema/model/uschema.png" align="center"/>
 </figure>
 <br/>
 
