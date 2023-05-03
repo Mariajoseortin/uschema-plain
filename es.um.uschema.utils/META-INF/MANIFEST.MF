@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: USchema-utils
 Bundle-SymbolicName: es.um.uschema.utils
-Bundle-Version: 1.0.0
+Bundle-Version: 1.0.1
 Import-Package: org.eclipse.emf.ecore.xmi,
  org.eclipse.emf.ecore.xmi.impl
 Automatic-Module-Name: es.um.uschema.utils

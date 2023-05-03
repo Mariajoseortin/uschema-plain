@@ -2,7 +2,7 @@
 <feature
       id="es.um.uschema.feature"
       label="USchema metamodel"
-      version="1.0.0">
+      version="1.0.1">
 
    <description url="https://modelum.github.io/">
       Feature containing the U-Schema metamodel, U-Schema utils for manipulating models and the Design project, which allows the visualization of U-Schema models.
@@ -34,7 +34,7 @@
          id="es.um.uschema.utils"
          download-size="0"
          install-size="0"
-         version="1.0.0"
+         version="1.0.1"
          unpack="false"/>
 
 </feature>

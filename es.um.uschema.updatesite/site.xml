@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/es.um.uschema.feature_1.0.0.jar" id="es.um.uschema.feature" version="1.0.0">
+   <feature url="features/es.um.uschema.feature_1.0.1.jar" id="es.um.uschema.feature" version="1.0.1">
       <category name="U-Schema basics"/>
    </feature>
    <category-def name="U-Schema basics" label="U-Schema basics"/>

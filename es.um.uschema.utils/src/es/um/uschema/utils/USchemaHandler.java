@@ -22,6 +22,7 @@ import es.um.uschema.USchema.PSet;
 import es.um.uschema.USchema.PTuple;
 import es.um.uschema.USchema.PrimitiveType;
 import es.um.uschema.USchema.Reference;
+import es.um.uschema.USchema.SchemaType;
 import es.um.uschema.USchema.StructuralFeature;
 import es.um.uschema.USchema.StructuralVariation;
 import es.um.uschema.USchema.USchema;
@@ -203,5 +204,38 @@ public class USchemaHandler
       return dType;
 
     throw new IllegalArgumentException("Can't get inner data type of a PMap");
+  }
+
+  /**
+   * Method used to get the Union feature set from a Schema Type.
+   * To do so for each variation each attribute and aggregate are added if there was not a feature with the same name introduced.
+   * For each attribute also its references and keys are added.
+   * @param sType The Schema type whose Union feature set is extracted.
+   * @return A list of features representing the Union set of the schema type.
+   */
+  public List<Feature> getUnionFeaturesInSchemaType(SchemaType sType)
+  {
+    List<Feature> features = new ArrayList<Feature>();
+
+    for (StructuralVariation var : sType.getVariations())
+    {
+      for (Attribute attr : var.getFeatures().stream().filter(f -> f instanceof Attribute).map(f -> (Attribute)f).collect(Collectors.toList()))
+        if (!features.stream().anyMatch(f -> f.getName() != null && f.getName().equals(attr.getName())))
+        {
+          features.add(attr);
+
+          if (!attr.getReferences().isEmpty())
+            features.addAll(attr.getReferences());
+
+          if (attr.getKey() != null)
+            features.add(attr.getKey());
+        }
+
+      for (Aggregate aggr : var.getFeatures().stream().filter(f -> f instanceof Aggregate).map(f -> (Aggregate)f).collect(Collectors.toList()))
+        if (!features.stream().anyMatch(f -> f.getName() != null && f.getName().equals(aggr.getName())))
+          features.add(aggr);
+    }
+
+    return features;
   }
 }
