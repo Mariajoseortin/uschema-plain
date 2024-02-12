@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="es.um.uschema.feature"
-      label="USchema metamodel"
+      id="es.um.uschemap.feature"
+      label="USchemap metamodel"
       version="1.0.1">
 
    <description url="https://modelum.github.io/">
@@ -17,21 +17,21 @@
    </license>
 
    <plugin
-         id="es.um.uschema"
+         id="es.um.uschemap"
          download-size="0"
          install-size="0"
          version="1.0.0"
          unpack="false"/>
 
    <plugin
-         id="es.um.uschema.design"
+         id="es.um.uschemap.design"
          download-size="0"
          install-size="0"
          version="1.0.0"
          unpack="false"/>
 
    <plugin
-         id="es.um.uschema.utils"
+         id="es.um.uschemap.utils"
          download-size="0"
          install-size="0"
          version="1.0.1"

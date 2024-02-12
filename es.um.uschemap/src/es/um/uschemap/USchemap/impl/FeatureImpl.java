@@ -1,9 +1,9 @@
 /**
  */
-package es.um.uschema.USchema.impl;
+package es.um.uschemap.USchemap.impl;
 
-import es.um.uschema.USchema.Feature;
-import es.um.uschema.USchema.USchemaPackage;
+import es.um.uschemap.USchemap.Feature;
+import es.um.uschemap.USchemap.USchemapPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -20,7 +20,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.um.uschema.USchema.impl.FeatureImpl#getName <em>Name</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.FeatureImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -62,7 +62,7 @@ public abstract class FeatureImpl extends MinimalEObjectImpl.Container implement
    */
   @Override
   protected EClass eStaticClass() {
-    return USchemaPackage.Literals.FEATURE;
+    return USchemapPackage.Literals.FEATURE;
   }
 
   /**
@@ -85,7 +85,7 @@ public abstract class FeatureImpl extends MinimalEObjectImpl.Container implement
     String oldName = name;
     name = newName;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.FEATURE__NAME, oldName, name));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.FEATURE__NAME, oldName, name));
   }
 
   /**
@@ -96,7 +96,7 @@ public abstract class FeatureImpl extends MinimalEObjectImpl.Container implement
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
     switch (featureID) {
-      case USchemaPackage.FEATURE__NAME:
+      case USchemapPackage.FEATURE__NAME:
         return getName();
     }
     return super.eGet(featureID, resolve, coreType);
@@ -110,7 +110,7 @@ public abstract class FeatureImpl extends MinimalEObjectImpl.Container implement
   @Override
   public void eSet(int featureID, Object newValue) {
     switch (featureID) {
-      case USchemaPackage.FEATURE__NAME:
+      case USchemapPackage.FEATURE__NAME:
         setName((String)newValue);
         return;
     }
@@ -125,7 +125,7 @@ public abstract class FeatureImpl extends MinimalEObjectImpl.Container implement
   @Override
   public void eUnset(int featureID) {
     switch (featureID) {
-      case USchemaPackage.FEATURE__NAME:
+      case USchemapPackage.FEATURE__NAME:
         setName(NAME_EDEFAULT);
         return;
     }
@@ -140,7 +140,7 @@ public abstract class FeatureImpl extends MinimalEObjectImpl.Container implement
   @Override
   public boolean eIsSet(int featureID) {
     switch (featureID) {
-      case USchemaPackage.FEATURE__NAME:
+      case USchemapPackage.FEATURE__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
     }
     return super.eIsSet(featureID);

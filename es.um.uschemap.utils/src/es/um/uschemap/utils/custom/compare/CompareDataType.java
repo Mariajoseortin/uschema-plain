@@ -1,12 +1,12 @@
-package es.um.uschema.utils.custom.compare;
+package es.um.uschemap.utils.custom.compare;
 
-import es.um.uschema.USchema.DataType;
-import es.um.uschema.USchema.Null;
-import es.um.uschema.USchema.PList;
-import es.um.uschema.USchema.PMap;
-import es.um.uschema.USchema.PSet;
-import es.um.uschema.USchema.PTuple;
-import es.um.uschema.USchema.PrimitiveType;
+import es.um.uschemap.USchemap.DataType;
+import es.um.uschemap.USchemap.Null;
+import es.um.uschemap.USchemap.PList;
+import es.um.uschemap.USchemap.PMap;
+import es.um.uschemap.USchemap.PSet;
+import es.um.uschemap.USchemap.PTuple;
+import es.um.uschemap.USchemap.PrimitiveType;
 
 public class CompareDataType extends Comparator<DataType>
 {

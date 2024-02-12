@@ -1,11 +1,11 @@
-package es.um.uschema.utils.compare;
+package es.um.uschemap.utils.compare;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import es.um.uschema.USchema.Attribute;
-import es.um.uschema.USchema.Key;
+import es.um.uschemap.USchemap.Attribute;
+import es.um.uschemap.USchemap.Key;
 
 public class CompareKey extends Comparator<Key>
 {

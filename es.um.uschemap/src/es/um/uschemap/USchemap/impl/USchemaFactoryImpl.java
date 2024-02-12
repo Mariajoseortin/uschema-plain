@@ -1,8 +1,8 @@
 /**
  */
-package es.um.uschema.USchema.impl;
+package es.um.uschemap.USchemap.impl;
 
-import es.um.uschema.USchema.*;
+import es.um.uschemap.USchemap.*;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -18,24 +18,24 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class USchemaFactoryImpl extends EFactoryImpl implements USchemaFactory {
+public class USchemapFactoryImpl extends EFactoryImpl implements USchemapFactory {
   /**
    * Creates the default factory implementation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static USchemaFactory init() {
+  public static USchemapFactory init() {
     try {
-      USchemaFactory theUSchemaFactory = (USchemaFactory)EPackage.Registry.INSTANCE.getEFactory(USchemaPackage.eNS_URI);
-      if (theUSchemaFactory != null) {
-        return theUSchemaFactory;
+      USchemapFactory theUSchemapFactory = (USchemapFactory)EPackage.Registry.INSTANCE.getEFactory(USchemapPackage.eNS_URI);
+      if (theUSchemapFactory != null) {
+        return theUSchemapFactory;
       }
     }
     catch (Exception exception) {
       EcorePlugin.INSTANCE.log(exception);
     }
-    return new USchemaFactoryImpl();
+    return new USchemapFactoryImpl();
   }
 
   /**
@@ -44,7 +44,7 @@ public class USchemaFactoryImpl extends EFactoryImpl implements USchemaFactory {
    * <!-- end-user-doc -->
    * @generated
    */
-  public USchemaFactoryImpl() {
+  public USchemapFactoryImpl() {
     super();
   }
 
@@ -56,20 +56,20 @@ public class USchemaFactoryImpl extends EFactoryImpl implements USchemaFactory {
   @Override
   public EObject create(EClass eClass) {
     switch (eClass.getClassifierID()) {
-      case USchemaPackage.USCHEMA: return createUSchema();
-      case USchemaPackage.ENTITY_TYPE: return createEntityType();
-      case USchemaPackage.STRUCTURAL_VARIATION: return createStructuralVariation();
-      case USchemaPackage.ATTRIBUTE: return createAttribute();
-      case USchemaPackage.PLIST: return createPList();
-      case USchemaPackage.REFERENCE: return createReference();
-      case USchemaPackage.AGGREGATE: return createAggregate();
-      case USchemaPackage.PRIMITIVE_TYPE: return createPrimitiveType();
-      case USchemaPackage.NULL: return createNull();
-      case USchemaPackage.RELATIONSHIP_TYPE: return createRelationshipType();
-      case USchemaPackage.PMAP: return createPMap();
-      case USchemaPackage.PSET: return createPSet();
-      case USchemaPackage.PTUPLE: return createPTuple();
-      case USchemaPackage.KEY: return createKey();
+      case USchemapPackage.USCHEMA: return createUSchemap();
+      case USchemapPackage.ENTITY_TYPE: return createEntityType();
+      case USchemapPackage.STRUCTURAL_VARIATION: return createStructuralVariation();
+      case USchemapPackage.ATTRIBUTE: return createAttribute();
+      case USchemapPackage.PLIST: return createPList();
+      case USchemapPackage.REFERENCE: return createReference();
+      case USchemapPackage.AGGREGATE: return createAggregate();
+      case USchemapPackage.PRIMITIVE_TYPE: return createPrimitiveType();
+      case USchemapPackage.NULL: return createNull();
+      case USchemapPackage.RELATIONSHIP_TYPE: return createRelationshipType();
+      case USchemapPackage.PMAP: return createPMap();
+      case USchemapPackage.PSET: return createPSet();
+      case USchemapPackage.PTUPLE: return createPTuple();
+      case USchemapPackage.KEY: return createKey();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
     }
@@ -81,8 +81,8 @@ public class USchemaFactoryImpl extends EFactoryImpl implements USchemaFactory {
    * @generated
    */
   @Override
-  public USchema createUSchema() {
-    USchemaImpl uSchema = new USchemaImpl();
+  public USchemap createUSchemap() {
+    USchemapImpl uSchema = new USchemapImpl();
     return uSchema;
   }
 
@@ -235,8 +235,8 @@ public class USchemaFactoryImpl extends EFactoryImpl implements USchemaFactory {
    * @generated
    */
   @Override
-  public USchemaPackage getUSchemaPackage() {
-    return (USchemaPackage)getEPackage();
+  public USchemapPackage getUSchemapPackage() {
+    return (USchemapPackage)getEPackage();
   }
 
   /**
@@ -246,8 +246,8 @@ public class USchemaFactoryImpl extends EFactoryImpl implements USchemaFactory {
    * @generated
    */
   @Deprecated
-  public static USchemaPackage getPackage() {
-    return USchemaPackage.eINSTANCE;
+  public static USchemapPackage getPackage() {
+    return USchemapPackage.eINSTANCE;
   }
 
-} //USchemaFactoryImpl
+} //USchemapFactoryImpl

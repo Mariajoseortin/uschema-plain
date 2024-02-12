@@ -1,6 +1,6 @@
-package es.um.uschema.utils.compare;
+package es.um.uschemap.utils.compare;
 
-import es.um.uschema.USchema.PrimitiveType;
+import es.um.uschemap.USchemap.PrimitiveType;
 
 public class ComparePrimitiveType extends Comparator<PrimitiveType>
 {

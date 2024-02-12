@@ -1,37 +1,37 @@
-package es.um.uschema.utils;
+package es.um.uschemap.utils;
 
 import java.util.stream.Collectors;
 
-import es.um.uschema.USchema.Aggregate;
-import es.um.uschema.USchema.Attribute;
-import es.um.uschema.USchema.DataType;
-import es.um.uschema.USchema.EntityType;
-import es.um.uschema.USchema.Feature;
-import es.um.uschema.USchema.Key;
-import es.um.uschema.USchema.Null;
-import es.um.uschema.USchema.PList;
-import es.um.uschema.USchema.PMap;
-import es.um.uschema.USchema.PSet;
-import es.um.uschema.USchema.PTuple;
-import es.um.uschema.USchema.PrimitiveType;
-import es.um.uschema.USchema.Reference;
-import es.um.uschema.USchema.RelationshipType;
-import es.um.uschema.USchema.SchemaType;
-import es.um.uschema.USchema.StructuralVariation;
-import es.um.uschema.USchema.USchema;
+import es.um.uschemap.USchemap.Aggregate;
+import es.um.uschemap.USchemap.Attribute;
+import es.um.uschemap.USchemap.DataType;
+import es.um.uschemap.USchemap.EntityType;
+import es.um.uschemap.USchemap.Feature;
+import es.um.uschemap.USchemap.Key;
+import es.um.uschemap.USchemap.Null;
+import es.um.uschemap.USchemap.PList;
+import es.um.uschemap.USchemap.PMap;
+import es.um.uschemap.USchemap.PSet;
+import es.um.uschemap.USchemap.PTuple;
+import es.um.uschemap.USchemap.PrimitiveType;
+import es.um.uschemap.USchemap.Reference;
+import es.um.uschemap.USchemap.RelationshipType;
+import es.um.uschemap.USchemap.SchemaType;
+import es.um.uschemap.USchemap.StructuralVariation;
+import es.um.uschemap.USchemap.USchemap;
 
-public class USchemaSerializer
+public class USchemapSerializer
 {
   private static final String TAB = "  ";
   private static final String ENDL = System.lineSeparator();
 
-  public String serialize(USchema schema)
+  public String serialize(USchemap schema)
   {
     if (schema == null)
       return null;
 
     StringBuilder result = new StringBuilder();
-    result.append("USchema: " + schema.getName() + ENDL);
+    result.append("USchemap: " + schema.getName() + ENDL);
 
     for (RelationshipType rel : schema.getRelationships())
       result.append(serialize(rel) + ENDL);

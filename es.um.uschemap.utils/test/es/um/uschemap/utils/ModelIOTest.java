@@ -1,4 +1,4 @@
-package es.um.uschema.utils;
+package es.um.uschemap.utils;
 
 //import static org.junit.Assert.*;
 
@@ -7,37 +7,37 @@ import java.nio.file.Path;
 import org.junit.Before;
 import org.junit.Test;
 
-import es.um.uschema.USchema.EntityType;
-import es.um.uschema.USchema.StructuralVariation;
-import es.um.uschema.USchema.USchema;
+import es.um.uschemap.USchemap.EntityType;
+import es.um.uschemap.USchemap.StructuralVariation;
+import es.um.uschemap.USchemap.USchemap;
 
 public class ModelIOTest
 {
   private EcoreModelIO uSchemaIO;
-  private Path modelPath = Path.of("../es.um.uschema.models/stackoverflow/stackoverflow.xmi");
-  private USchemaSerializer serializer;
-  private USchemaFactory factory;
+  private Path modelPath = Path.of("../es.um.uschemap.models/stackoverflow/stackoverflow.xmi");
+  private USchemapSerializer serializer;
+  private USchemapFactory factory;
 
   @Before
   public void setUp()
   {
     uSchemaIO = new EcoreModelIO();
-    serializer = new USchemaSerializer();
-    factory = new USchemaFactory();
+    serializer = new USchemapSerializer();
+    factory = new USchemapFactory();
   }
 
   @Test
   public void testOpenWrite()
   {
-    USchema schema = uSchemaIO.load(USchema.class, modelPath);
+    USchemap schema = uSchemaIO.load(USchemap.class, modelPath);
     System.out.println(serializer.serialize(schema));
-    uSchemaIO.write(schema, Path.of("../es.um.uschema.models/test.xmi"));
+    uSchemaIO.write(schema, Path.of("../es.um.uschemap.models/test.xmi"));
   }
 
   @Test
   public void testWrite()
   {
-    USchema schema = factory.createUSchema("SchemaName");
+    USchemap schema = factory.createUSchemap("SchemaName");
     EntityType eType = factory.createEntityType("EntityType", true);
     schema.getEntities().add(eType);
     StructuralVariation var = factory.createStructuralVariation(1);
@@ -46,6 +46,6 @@ public class ModelIOTest
     var.getFeatures().add(factory.createAttribute("Attr2", factory.createPrimitiveType("Number")));
 
     System.out.println(serializer.serialize(schema));
-    uSchemaIO.write(schema, Path.of("../es.um.uschema.models/test.xmi"));
+    uSchemaIO.write(schema, Path.of("../es.um.uschemap.models/test.xmi"));
   }
 }

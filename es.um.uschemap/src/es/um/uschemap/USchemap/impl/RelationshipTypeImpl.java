@@ -1,9 +1,9 @@
 /**
  */
-package es.um.uschema.USchema.impl;
+package es.um.uschemap.USchemap.impl;
 
-import es.um.uschema.USchema.RelationshipType;
-import es.um.uschema.USchema.USchemaPackage;
+import es.um.uschemap.USchemap.RelationshipType;
+import es.um.uschemap.USchemap.USchemapPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -31,7 +31,7 @@ public class RelationshipTypeImpl extends SchemaTypeImpl implements Relationship
    */
   @Override
   protected EClass eStaticClass() {
-    return USchemaPackage.Literals.RELATIONSHIP_TYPE;
+    return USchemapPackage.Literals.RELATIONSHIP_TYPE;
   }
 
 } //RelationshipTypeImpl

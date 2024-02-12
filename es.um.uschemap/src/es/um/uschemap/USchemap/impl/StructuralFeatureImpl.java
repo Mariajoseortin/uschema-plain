@@ -1,9 +1,9 @@
 /**
  */
-package es.um.uschema.USchema.impl;
+package es.um.uschemap.USchemap.impl;
 
-import es.um.uschema.USchema.StructuralFeature;
-import es.um.uschema.USchema.USchemaPackage;
+import es.um.uschemap.USchemap.StructuralFeature;
+import es.um.uschemap.USchemap.USchemapPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.um.uschema.USchema.impl.StructuralFeatureImpl#isOptional <em>Optional</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.StructuralFeatureImpl#isOptional <em>Optional</em>}</li>
  * </ul>
  *
  * @generated
@@ -61,7 +61,7 @@ public abstract class StructuralFeatureImpl extends FeatureImpl implements Struc
    */
   @Override
   protected EClass eStaticClass() {
-    return USchemaPackage.Literals.STRUCTURAL_FEATURE;
+    return USchemapPackage.Literals.STRUCTURAL_FEATURE;
   }
 
   /**
@@ -84,7 +84,7 @@ public abstract class StructuralFeatureImpl extends FeatureImpl implements Struc
     boolean oldOptional = optional;
     optional = newOptional;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.STRUCTURAL_FEATURE__OPTIONAL, oldOptional, optional));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.STRUCTURAL_FEATURE__OPTIONAL, oldOptional, optional));
   }
 
   /**
@@ -95,7 +95,7 @@ public abstract class StructuralFeatureImpl extends FeatureImpl implements Struc
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
     switch (featureID) {
-      case USchemaPackage.STRUCTURAL_FEATURE__OPTIONAL:
+      case USchemapPackage.STRUCTURAL_FEATURE__OPTIONAL:
         return isOptional();
     }
     return super.eGet(featureID, resolve, coreType);
@@ -109,7 +109,7 @@ public abstract class StructuralFeatureImpl extends FeatureImpl implements Struc
   @Override
   public void eSet(int featureID, Object newValue) {
     switch (featureID) {
-      case USchemaPackage.STRUCTURAL_FEATURE__OPTIONAL:
+      case USchemapPackage.STRUCTURAL_FEATURE__OPTIONAL:
         setOptional((Boolean)newValue);
         return;
     }
@@ -124,7 +124,7 @@ public abstract class StructuralFeatureImpl extends FeatureImpl implements Struc
   @Override
   public void eUnset(int featureID) {
     switch (featureID) {
-      case USchemaPackage.STRUCTURAL_FEATURE__OPTIONAL:
+      case USchemapPackage.STRUCTURAL_FEATURE__OPTIONAL:
         setOptional(OPTIONAL_EDEFAULT);
         return;
     }
@@ -139,7 +139,7 @@ public abstract class StructuralFeatureImpl extends FeatureImpl implements Struc
   @Override
   public boolean eIsSet(int featureID) {
     switch (featureID) {
-      case USchemaPackage.STRUCTURAL_FEATURE__OPTIONAL:
+      case USchemapPackage.STRUCTURAL_FEATURE__OPTIONAL:
         return optional != OPTIONAL_EDEFAULT;
     }
     return super.eIsSet(featureID);

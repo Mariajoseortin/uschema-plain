@@ -1,6 +1,6 @@
-package es.um.uschema.utils.compare;
+package es.um.uschemap.utils.compare;
 
-import es.um.uschema.USchema.Attribute;
+import es.um.uschemap.USchemap.Attribute;
 
 public class CompareAttribute extends Comparator<Attribute>
 {

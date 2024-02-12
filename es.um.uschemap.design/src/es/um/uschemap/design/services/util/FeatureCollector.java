@@ -1,13 +1,13 @@
-package es.um.uschema.design.services.util;
+package es.um.uschemap.design.services.util;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import es.um.uschema.USchema.Feature;
-import es.um.uschema.USchema.SchemaType;
-import es.um.uschema.USchema.StructuralVariation;
-import es.um.uschema.utils.compare.CompareFeature;
+import es.um.uschemap.USchemap.Feature;
+import es.um.uschemap.USchemap.SchemaType;
+import es.um.uschemap.USchemap.StructuralVariation;
+import es.um.uschemap.utils.compare.CompareFeature;
 
 public class FeatureCollector
 {

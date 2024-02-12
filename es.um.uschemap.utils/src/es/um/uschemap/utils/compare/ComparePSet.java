@@ -1,6 +1,6 @@
-package es.um.uschema.utils.compare;
+package es.um.uschemap.utils.compare;
 
-import es.um.uschema.USchema.PSet;
+import es.um.uschemap.USchemap.PSet;
 
 public class ComparePSet extends Comparator<PSet>
 {

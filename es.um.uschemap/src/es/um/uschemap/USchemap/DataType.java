@@ -1,6 +1,6 @@
 /**
  */
-package es.um.uschema.USchema;
+package es.um.uschemap.USchemap;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -10,7 +10,7 @@ import org.eclipse.emf.ecore.EObject;
  * <!-- end-user-doc -->
  *
  *
- * @see es.um.uschema.USchema.USchemaPackage#getDataType()
+ * @see es.um.uschemap.USchemap.USchemapPackage#getDataType()
  * @model abstract="true"
  * @generated
  */

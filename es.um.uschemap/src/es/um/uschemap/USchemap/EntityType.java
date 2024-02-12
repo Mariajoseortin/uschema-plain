@@ -1,6 +1,6 @@
 /**
  */
-package es.um.uschema.USchema;
+package es.um.uschemap.USchemap;
 
 
 /**
@@ -12,10 +12,10 @@ package es.um.uschema.USchema;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.um.uschema.USchema.EntityType#isRoot <em>Root</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.EntityType#isRoot <em>Root</em>}</li>
  * </ul>
  *
- * @see es.um.uschema.USchema.USchemaPackage#getEntityType()
+ * @see es.um.uschemap.USchemap.USchemapPackage#getEntityType()
  * @model
  * @generated
  */
@@ -27,14 +27,14 @@ public interface EntityType extends SchemaType {
    * <!-- end-user-doc -->
    * @return the value of the '<em>Root</em>' attribute.
    * @see #setRoot(boolean)
-   * @see es.um.uschema.USchema.USchemaPackage#getEntityType_Root()
+   * @see es.um.uschemap.USchemap.USchemapPackage#getEntityType_Root()
    * @model default="false"
    * @generated
    */
   boolean isRoot();
 
   /**
-   * Sets the value of the '{@link es.um.uschema.USchema.EntityType#isRoot <em>Root</em>}' attribute.
+   * Sets the value of the '{@link es.um.uschemap.USchemap.EntityType#isRoot <em>Root</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Root</em>' attribute.

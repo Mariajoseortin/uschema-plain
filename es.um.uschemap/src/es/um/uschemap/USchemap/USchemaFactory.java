@@ -1,6 +1,6 @@
 /**
  */
-package es.um.uschema.USchema;
+package es.um.uschemap.USchemap;
 
 import org.eclipse.emf.ecore.EFactory;
 
@@ -9,26 +9,26 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see es.um.uschema.USchema.USchemaPackage
+ * @see es.um.uschemap.USchemap.USchemapPackage
  * @generated
  */
-public interface USchemaFactory extends EFactory {
+public interface USchemapFactory extends EFactory {
   /**
    * The singleton instance of the factory.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  USchemaFactory eINSTANCE = es.um.uschema.USchema.impl.USchemaFactoryImpl.init();
+  USchemapFactory eINSTANCE = es.um.uschemap.USchemap.impl.USchemapFactoryImpl.init();
 
   /**
-   * Returns a new object of class '<em>USchema</em>'.
+   * Returns a new object of class '<em>USchemap</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>USchema</em>'.
+   * @return a new object of class '<em>USchemap</em>'.
    * @generated
    */
-  USchema createUSchema();
+  USchemap createUSchemap();
 
   /**
    * Returns a new object of class '<em>Entity Type</em>'.
@@ -154,6 +154,6 @@ public interface USchemaFactory extends EFactory {
    * @return the package supported by this factory.
    * @generated
    */
-  USchemaPackage getUSchemaPackage();
+  USchemapPackage getUSchemapPackage();
 
-} //USchemaFactory
+} //USchemapFactory

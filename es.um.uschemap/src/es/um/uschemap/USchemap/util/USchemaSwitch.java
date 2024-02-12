@@ -1,8 +1,8 @@
 /**
  */
-package es.um.uschema.USchema.util;
+package es.um.uschemap.USchemap.util;
 
-import es.um.uschema.USchema.*;
+import es.um.uschemap.USchemap.*;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -19,17 +19,17 @@ import org.eclipse.emf.ecore.util.Switch;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see es.um.uschema.USchema.USchemaPackage
+ * @see es.um.uschemap.USchemap.USchemapPackage
  * @generated
  */
-public class USchemaSwitch<T> extends Switch<T> {
+public class USchemapSwitch<T> extends Switch<T> {
   /**
    * The cached model package
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected static USchemaPackage modelPackage;
+  protected static USchemapPackage modelPackage;
 
   /**
    * Creates an instance of the switch.
@@ -37,9 +37,9 @@ public class USchemaSwitch<T> extends Switch<T> {
    * <!-- end-user-doc -->
    * @generated
    */
-  public USchemaSwitch() {
+  public USchemapSwitch() {
     if (modelPackage == null) {
-      modelPackage = USchemaPackage.eINSTANCE;
+      modelPackage = USchemapPackage.eINSTANCE;
     }
   }
 
@@ -66,32 +66,32 @@ public class USchemaSwitch<T> extends Switch<T> {
   @Override
   protected T doSwitch(int classifierID, EObject theEObject) {
     switch (classifierID) {
-      case USchemaPackage.USCHEMA: {
-        USchema uSchema = (USchema)theEObject;
-        T result = caseUSchema(uSchema);
+      case USchemapPackage.USCHEMA: {
+        USchemap uSchema = (USchemap)theEObject;
+        T result = caseUSchemap(uSchema);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case USchemaPackage.ENTITY_TYPE: {
+      case USchemapPackage.ENTITY_TYPE: {
         EntityType entityType = (EntityType)theEObject;
         T result = caseEntityType(entityType);
         if (result == null) result = caseSchemaType(entityType);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case USchemaPackage.STRUCTURAL_VARIATION: {
+      case USchemapPackage.STRUCTURAL_VARIATION: {
         StructuralVariation structuralVariation = (StructuralVariation)theEObject;
         T result = caseStructuralVariation(structuralVariation);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case USchemaPackage.FEATURE: {
+      case USchemapPackage.FEATURE: {
         Feature feature = (Feature)theEObject;
         T result = caseFeature(feature);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case USchemaPackage.ATTRIBUTE: {
+      case USchemapPackage.ATTRIBUTE: {
         Attribute attribute = (Attribute)theEObject;
         T result = caseAttribute(attribute);
         if (result == null) result = caseStructuralFeature(attribute);
@@ -99,20 +99,20 @@ public class USchemaSwitch<T> extends Switch<T> {
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case USchemaPackage.DATA_TYPE: {
+      case USchemapPackage.DATA_TYPE: {
         DataType dataType = (DataType)theEObject;
         T result = caseDataType(dataType);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case USchemaPackage.PLIST: {
+      case USchemapPackage.PLIST: {
         PList pList = (PList)theEObject;
         T result = casePList(pList);
         if (result == null) result = caseDataType(pList);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case USchemaPackage.REFERENCE: {
+      case USchemapPackage.REFERENCE: {
         Reference reference = (Reference)theEObject;
         T result = caseReference(reference);
         if (result == null) result = caseLogicalFeature(reference);
@@ -120,7 +120,7 @@ public class USchemaSwitch<T> extends Switch<T> {
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case USchemaPackage.AGGREGATE: {
+      case USchemapPackage.AGGREGATE: {
         Aggregate aggregate = (Aggregate)theEObject;
         T result = caseAggregate(aggregate);
         if (result == null) result = caseStructuralFeature(aggregate);
@@ -128,62 +128,62 @@ public class USchemaSwitch<T> extends Switch<T> {
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case USchemaPackage.PRIMITIVE_TYPE: {
+      case USchemapPackage.PRIMITIVE_TYPE: {
         PrimitiveType primitiveType = (PrimitiveType)theEObject;
         T result = casePrimitiveType(primitiveType);
         if (result == null) result = caseDataType(primitiveType);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case USchemaPackage.NULL: {
+      case USchemapPackage.NULL: {
         Null null_ = (Null)theEObject;
         T result = caseNull(null_);
         if (result == null) result = caseDataType(null_);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case USchemaPackage.RELATIONSHIP_TYPE: {
+      case USchemapPackage.RELATIONSHIP_TYPE: {
         RelationshipType relationshipType = (RelationshipType)theEObject;
         T result = caseRelationshipType(relationshipType);
         if (result == null) result = caseSchemaType(relationshipType);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case USchemaPackage.SCHEMA_TYPE: {
+      case USchemapPackage.SCHEMA_TYPE: {
         SchemaType schemaType = (SchemaType)theEObject;
         T result = caseSchemaType(schemaType);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case USchemaPackage.PMAP: {
+      case USchemapPackage.PMAP: {
         PMap pMap = (PMap)theEObject;
         T result = casePMap(pMap);
         if (result == null) result = caseDataType(pMap);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case USchemaPackage.PSET: {
+      case USchemapPackage.PSET: {
         PSet pSet = (PSet)theEObject;
         T result = casePSet(pSet);
         if (result == null) result = caseDataType(pSet);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case USchemaPackage.PTUPLE: {
+      case USchemapPackage.PTUPLE: {
         PTuple pTuple = (PTuple)theEObject;
         T result = casePTuple(pTuple);
         if (result == null) result = caseDataType(pTuple);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case USchemaPackage.LOGICAL_FEATURE: {
+      case USchemapPackage.LOGICAL_FEATURE: {
         LogicalFeature logicalFeature = (LogicalFeature)theEObject;
         T result = caseLogicalFeature(logicalFeature);
         if (result == null) result = caseFeature(logicalFeature);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case USchemaPackage.KEY: {
+      case USchemapPackage.KEY: {
         Key key = (Key)theEObject;
         T result = caseKey(key);
         if (result == null) result = caseLogicalFeature(key);
@@ -191,7 +191,7 @@ public class USchemaSwitch<T> extends Switch<T> {
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case USchemaPackage.STRUCTURAL_FEATURE: {
+      case USchemapPackage.STRUCTURAL_FEATURE: {
         StructuralFeature structuralFeature = (StructuralFeature)theEObject;
         T result = caseStructuralFeature(structuralFeature);
         if (result == null) result = caseFeature(structuralFeature);
@@ -203,17 +203,17 @@ public class USchemaSwitch<T> extends Switch<T> {
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>USchema</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>USchemap</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>USchema</em>'.
+   * @return the result of interpreting the object as an instance of '<em>USchemap</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseUSchema(USchema object) {
+  public T caseUSchemap(USchemap object) {
     return null;
   }
 
@@ -503,4 +503,4 @@ public class USchemaSwitch<T> extends Switch<T> {
     return null;
   }
 
-} //USchemaSwitch
+} //USchemapSwitch

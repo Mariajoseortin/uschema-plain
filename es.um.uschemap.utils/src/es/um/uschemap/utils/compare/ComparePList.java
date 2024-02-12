@@ -1,6 +1,6 @@
-package es.um.uschema.utils.compare;
+package es.um.uschemap.utils.compare;
 
-import es.um.uschema.USchema.PList;
+import es.um.uschemap.USchemap.PList;
 
 public class ComparePList extends Comparator<PList>
 {

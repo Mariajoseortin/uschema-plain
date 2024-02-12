@@ -1,10 +1,10 @@
 /**
  */
-package es.um.uschema.USchema.impl;
+package es.um.uschemap.USchemap.impl;
 
-import es.um.uschema.USchema.SchemaType;
-import es.um.uschema.USchema.StructuralVariation;
-import es.um.uschema.USchema.USchemaPackage;
+import es.um.uschemap.USchemap.SchemaType;
+import es.um.uschemap.USchemap.StructuralVariation;
+import es.um.uschemap.USchemap.USchemapPackage;
 
 import java.util.Collection;
 
@@ -31,9 +31,9 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.um.uschema.USchema.impl.SchemaTypeImpl#getName <em>Name</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.SchemaTypeImpl#getParents <em>Parents</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.SchemaTypeImpl#getVariations <em>Variations</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.SchemaTypeImpl#getName <em>Name</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.SchemaTypeImpl#getParents <em>Parents</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.SchemaTypeImpl#getVariations <em>Variations</em>}</li>
  * </ul>
  *
  * @generated
@@ -95,7 +95,7 @@ public abstract class SchemaTypeImpl extends MinimalEObjectImpl.Container implem
    */
   @Override
   protected EClass eStaticClass() {
-    return USchemaPackage.Literals.SCHEMA_TYPE;
+    return USchemapPackage.Literals.SCHEMA_TYPE;
   }
 
   /**
@@ -118,7 +118,7 @@ public abstract class SchemaTypeImpl extends MinimalEObjectImpl.Container implem
     String oldName = name;
     name = newName;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.SCHEMA_TYPE__NAME, oldName, name));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.SCHEMA_TYPE__NAME, oldName, name));
   }
 
   /**
@@ -129,7 +129,7 @@ public abstract class SchemaTypeImpl extends MinimalEObjectImpl.Container implem
   @Override
   public EList<SchemaType> getParents() {
     if (parents == null) {
-      parents = new EObjectResolvingEList<SchemaType>(SchemaType.class, this, USchemaPackage.SCHEMA_TYPE__PARENTS);
+      parents = new EObjectResolvingEList<SchemaType>(SchemaType.class, this, USchemapPackage.SCHEMA_TYPE__PARENTS);
     }
     return parents;
   }
@@ -142,7 +142,7 @@ public abstract class SchemaTypeImpl extends MinimalEObjectImpl.Container implem
   @Override
   public EList<StructuralVariation> getVariations() {
     if (variations == null) {
-      variations = new EObjectContainmentWithInverseEList<StructuralVariation>(StructuralVariation.class, this, USchemaPackage.SCHEMA_TYPE__VARIATIONS, USchemaPackage.STRUCTURAL_VARIATION__CONTAINER);
+      variations = new EObjectContainmentWithInverseEList<StructuralVariation>(StructuralVariation.class, this, USchemapPackage.SCHEMA_TYPE__VARIATIONS, USchemapPackage.STRUCTURAL_VARIATION__CONTAINER);
     }
     return variations;
   }
@@ -156,7 +156,7 @@ public abstract class SchemaTypeImpl extends MinimalEObjectImpl.Container implem
   @Override
   public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
-      case USchemaPackage.SCHEMA_TYPE__VARIATIONS:
+      case USchemapPackage.SCHEMA_TYPE__VARIATIONS:
         return ((InternalEList<InternalEObject>)(InternalEList<?>)getVariations()).basicAdd(otherEnd, msgs);
     }
     return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -170,7 +170,7 @@ public abstract class SchemaTypeImpl extends MinimalEObjectImpl.Container implem
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
-      case USchemaPackage.SCHEMA_TYPE__VARIATIONS:
+      case USchemapPackage.SCHEMA_TYPE__VARIATIONS:
         return ((InternalEList<?>)getVariations()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -184,11 +184,11 @@ public abstract class SchemaTypeImpl extends MinimalEObjectImpl.Container implem
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
     switch (featureID) {
-      case USchemaPackage.SCHEMA_TYPE__NAME:
+      case USchemapPackage.SCHEMA_TYPE__NAME:
         return getName();
-      case USchemaPackage.SCHEMA_TYPE__PARENTS:
+      case USchemapPackage.SCHEMA_TYPE__PARENTS:
         return getParents();
-      case USchemaPackage.SCHEMA_TYPE__VARIATIONS:
+      case USchemapPackage.SCHEMA_TYPE__VARIATIONS:
         return getVariations();
     }
     return super.eGet(featureID, resolve, coreType);
@@ -203,14 +203,14 @@ public abstract class SchemaTypeImpl extends MinimalEObjectImpl.Container implem
   @Override
   public void eSet(int featureID, Object newValue) {
     switch (featureID) {
-      case USchemaPackage.SCHEMA_TYPE__NAME:
+      case USchemapPackage.SCHEMA_TYPE__NAME:
         setName((String)newValue);
         return;
-      case USchemaPackage.SCHEMA_TYPE__PARENTS:
+      case USchemapPackage.SCHEMA_TYPE__PARENTS:
         getParents().clear();
         getParents().addAll((Collection<? extends SchemaType>)newValue);
         return;
-      case USchemaPackage.SCHEMA_TYPE__VARIATIONS:
+      case USchemapPackage.SCHEMA_TYPE__VARIATIONS:
         getVariations().clear();
         getVariations().addAll((Collection<? extends StructuralVariation>)newValue);
         return;
@@ -226,13 +226,13 @@ public abstract class SchemaTypeImpl extends MinimalEObjectImpl.Container implem
   @Override
   public void eUnset(int featureID) {
     switch (featureID) {
-      case USchemaPackage.SCHEMA_TYPE__NAME:
+      case USchemapPackage.SCHEMA_TYPE__NAME:
         setName(NAME_EDEFAULT);
         return;
-      case USchemaPackage.SCHEMA_TYPE__PARENTS:
+      case USchemapPackage.SCHEMA_TYPE__PARENTS:
         getParents().clear();
         return;
-      case USchemaPackage.SCHEMA_TYPE__VARIATIONS:
+      case USchemapPackage.SCHEMA_TYPE__VARIATIONS:
         getVariations().clear();
         return;
     }
@@ -247,11 +247,11 @@ public abstract class SchemaTypeImpl extends MinimalEObjectImpl.Container implem
   @Override
   public boolean eIsSet(int featureID) {
     switch (featureID) {
-      case USchemaPackage.SCHEMA_TYPE__NAME:
+      case USchemapPackage.SCHEMA_TYPE__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case USchemaPackage.SCHEMA_TYPE__PARENTS:
+      case USchemapPackage.SCHEMA_TYPE__PARENTS:
         return parents != null && !parents.isEmpty();
-      case USchemaPackage.SCHEMA_TYPE__VARIATIONS:
+      case USchemapPackage.SCHEMA_TYPE__VARIATIONS:
         return variations != null && !variations.isEmpty();
     }
     return super.eIsSet(featureID);

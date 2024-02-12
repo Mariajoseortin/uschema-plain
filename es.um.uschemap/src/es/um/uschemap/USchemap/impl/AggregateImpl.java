@@ -1,10 +1,10 @@
 /**
  */
-package es.um.uschema.USchema.impl;
+package es.um.uschemap.USchemap.impl;
 
-import es.um.uschema.USchema.Aggregate;
-import es.um.uschema.USchema.StructuralVariation;
-import es.um.uschema.USchema.USchemaPackage;
+import es.um.uschemap.USchemap.Aggregate;
+import es.um.uschemap.USchemap.StructuralVariation;
+import es.um.uschemap.USchemap.USchemapPackage;
 
 import java.util.Collection;
 
@@ -26,9 +26,9 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.um.uschema.USchema.impl.AggregateImpl#getAggregates <em>Aggregates</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.AggregateImpl#getUpperBound <em>Upper Bound</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.AggregateImpl#getLowerBound <em>Lower Bound</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.AggregateImpl#getAggregates <em>Aggregates</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.AggregateImpl#getUpperBound <em>Upper Bound</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.AggregateImpl#getLowerBound <em>Lower Bound</em>}</li>
  * </ul>
  *
  * @generated
@@ -100,7 +100,7 @@ public class AggregateImpl extends StructuralFeatureImpl implements Aggregate {
    */
   @Override
   protected EClass eStaticClass() {
-    return USchemaPackage.Literals.AGGREGATE;
+    return USchemapPackage.Literals.AGGREGATE;
   }
 
   /**
@@ -111,7 +111,7 @@ public class AggregateImpl extends StructuralFeatureImpl implements Aggregate {
   @Override
   public EList<StructuralVariation> getAggregates() {
     if (aggregates == null) {
-      aggregates = new EObjectResolvingEList<StructuralVariation>(StructuralVariation.class, this, USchemaPackage.AGGREGATE__AGGREGATES);
+      aggregates = new EObjectResolvingEList<StructuralVariation>(StructuralVariation.class, this, USchemapPackage.AGGREGATE__AGGREGATES);
     }
     return aggregates;
   }
@@ -136,7 +136,7 @@ public class AggregateImpl extends StructuralFeatureImpl implements Aggregate {
     int oldUpperBound = upperBound;
     upperBound = newUpperBound;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.AGGREGATE__UPPER_BOUND, oldUpperBound, upperBound));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.AGGREGATE__UPPER_BOUND, oldUpperBound, upperBound));
   }
 
   /**
@@ -159,7 +159,7 @@ public class AggregateImpl extends StructuralFeatureImpl implements Aggregate {
     int oldLowerBound = lowerBound;
     lowerBound = newLowerBound;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.AGGREGATE__LOWER_BOUND, oldLowerBound, lowerBound));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.AGGREGATE__LOWER_BOUND, oldLowerBound, lowerBound));
   }
 
   /**
@@ -170,11 +170,11 @@ public class AggregateImpl extends StructuralFeatureImpl implements Aggregate {
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
     switch (featureID) {
-      case USchemaPackage.AGGREGATE__AGGREGATES:
+      case USchemapPackage.AGGREGATE__AGGREGATES:
         return getAggregates();
-      case USchemaPackage.AGGREGATE__UPPER_BOUND:
+      case USchemapPackage.AGGREGATE__UPPER_BOUND:
         return getUpperBound();
-      case USchemaPackage.AGGREGATE__LOWER_BOUND:
+      case USchemapPackage.AGGREGATE__LOWER_BOUND:
         return getLowerBound();
     }
     return super.eGet(featureID, resolve, coreType);
@@ -189,14 +189,14 @@ public class AggregateImpl extends StructuralFeatureImpl implements Aggregate {
   @Override
   public void eSet(int featureID, Object newValue) {
     switch (featureID) {
-      case USchemaPackage.AGGREGATE__AGGREGATES:
+      case USchemapPackage.AGGREGATE__AGGREGATES:
         getAggregates().clear();
         getAggregates().addAll((Collection<? extends StructuralVariation>)newValue);
         return;
-      case USchemaPackage.AGGREGATE__UPPER_BOUND:
+      case USchemapPackage.AGGREGATE__UPPER_BOUND:
         setUpperBound((Integer)newValue);
         return;
-      case USchemaPackage.AGGREGATE__LOWER_BOUND:
+      case USchemapPackage.AGGREGATE__LOWER_BOUND:
         setLowerBound((Integer)newValue);
         return;
     }
@@ -211,13 +211,13 @@ public class AggregateImpl extends StructuralFeatureImpl implements Aggregate {
   @Override
   public void eUnset(int featureID) {
     switch (featureID) {
-      case USchemaPackage.AGGREGATE__AGGREGATES:
+      case USchemapPackage.AGGREGATE__AGGREGATES:
         getAggregates().clear();
         return;
-      case USchemaPackage.AGGREGATE__UPPER_BOUND:
+      case USchemapPackage.AGGREGATE__UPPER_BOUND:
         setUpperBound(UPPER_BOUND_EDEFAULT);
         return;
-      case USchemaPackage.AGGREGATE__LOWER_BOUND:
+      case USchemapPackage.AGGREGATE__LOWER_BOUND:
         setLowerBound(LOWER_BOUND_EDEFAULT);
         return;
     }
@@ -232,11 +232,11 @@ public class AggregateImpl extends StructuralFeatureImpl implements Aggregate {
   @Override
   public boolean eIsSet(int featureID) {
     switch (featureID) {
-      case USchemaPackage.AGGREGATE__AGGREGATES:
+      case USchemapPackage.AGGREGATE__AGGREGATES:
         return aggregates != null && !aggregates.isEmpty();
-      case USchemaPackage.AGGREGATE__UPPER_BOUND:
+      case USchemapPackage.AGGREGATE__UPPER_BOUND:
         return upperBound != UPPER_BOUND_EDEFAULT;
-      case USchemaPackage.AGGREGATE__LOWER_BOUND:
+      case USchemapPackage.AGGREGATE__LOWER_BOUND:
         return lowerBound != LOWER_BOUND_EDEFAULT;
     }
     return super.eIsSet(featureID);

@@ -1,12 +1,12 @@
 /**
  */
-package es.um.uschema.USchema.impl;
+package es.um.uschemap.USchemap.impl;
 
-import es.um.uschema.USchema.Attribute;
-import es.um.uschema.USchema.DataType;
-import es.um.uschema.USchema.Key;
-import es.um.uschema.USchema.Reference;
-import es.um.uschema.USchema.USchemaPackage;
+import es.um.uschemap.USchemap.Attribute;
+import es.um.uschemap.USchemap.DataType;
+import es.um.uschemap.USchemap.Key;
+import es.um.uschemap.USchemap.Reference;
+import es.um.uschemap.USchemap.USchemapPackage;
 
 import java.util.Collection;
 
@@ -31,9 +31,9 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.um.uschema.USchema.impl.AttributeImpl#getType <em>Type</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.AttributeImpl#getKey <em>Key</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.AttributeImpl#getReferences <em>References</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.AttributeImpl#getType <em>Type</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.AttributeImpl#getKey <em>Key</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.AttributeImpl#getReferences <em>References</em>}</li>
  * </ul>
  *
  * @generated
@@ -85,7 +85,7 @@ public class AttributeImpl extends StructuralFeatureImpl implements Attribute {
    */
   @Override
   protected EClass eStaticClass() {
-    return USchemaPackage.Literals.ATTRIBUTE;
+    return USchemapPackage.Literals.ATTRIBUTE;
   }
 
   /**
@@ -107,7 +107,7 @@ public class AttributeImpl extends StructuralFeatureImpl implements Attribute {
     DataType oldType = type;
     type = newType;
     if (eNotificationRequired()) {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, USchemaPackage.ATTRIBUTE__TYPE, oldType, newType);
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, USchemapPackage.ATTRIBUTE__TYPE, oldType, newType);
       if (msgs == null) msgs = notification; else msgs.add(notification);
     }
     return msgs;
@@ -123,14 +123,14 @@ public class AttributeImpl extends StructuralFeatureImpl implements Attribute {
     if (newType != type) {
       NotificationChain msgs = null;
       if (type != null)
-        msgs = ((InternalEObject)type).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - USchemaPackage.ATTRIBUTE__TYPE, null, msgs);
+        msgs = ((InternalEObject)type).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - USchemapPackage.ATTRIBUTE__TYPE, null, msgs);
       if (newType != null)
-        msgs = ((InternalEObject)newType).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - USchemaPackage.ATTRIBUTE__TYPE, null, msgs);
+        msgs = ((InternalEObject)newType).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - USchemapPackage.ATTRIBUTE__TYPE, null, msgs);
       msgs = basicSetType(newType, msgs);
       if (msgs != null) msgs.dispatch();
     }
     else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.ATTRIBUTE__TYPE, newType, newType));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.ATTRIBUTE__TYPE, newType, newType));
   }
 
   /**
@@ -145,7 +145,7 @@ public class AttributeImpl extends StructuralFeatureImpl implements Attribute {
       key = (Key)eResolveProxy(oldKey);
       if (key != oldKey) {
         if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, USchemaPackage.ATTRIBUTE__KEY, oldKey, key));
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, USchemapPackage.ATTRIBUTE__KEY, oldKey, key));
       }
     }
     return key;
@@ -169,7 +169,7 @@ public class AttributeImpl extends StructuralFeatureImpl implements Attribute {
     Key oldKey = key;
     key = newKey;
     if (eNotificationRequired()) {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, USchemaPackage.ATTRIBUTE__KEY, oldKey, newKey);
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, USchemapPackage.ATTRIBUTE__KEY, oldKey, newKey);
       if (msgs == null) msgs = notification; else msgs.add(notification);
     }
     return msgs;
@@ -185,14 +185,14 @@ public class AttributeImpl extends StructuralFeatureImpl implements Attribute {
     if (newKey != key) {
       NotificationChain msgs = null;
       if (key != null)
-        msgs = ((InternalEObject)key).eInverseRemove(this, USchemaPackage.KEY__ATTRIBUTES, Key.class, msgs);
+        msgs = ((InternalEObject)key).eInverseRemove(this, USchemapPackage.KEY__ATTRIBUTES, Key.class, msgs);
       if (newKey != null)
-        msgs = ((InternalEObject)newKey).eInverseAdd(this, USchemaPackage.KEY__ATTRIBUTES, Key.class, msgs);
+        msgs = ((InternalEObject)newKey).eInverseAdd(this, USchemapPackage.KEY__ATTRIBUTES, Key.class, msgs);
       msgs = basicSetKey(newKey, msgs);
       if (msgs != null) msgs.dispatch();
     }
     else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.ATTRIBUTE__KEY, newKey, newKey));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.ATTRIBUTE__KEY, newKey, newKey));
   }
 
   /**
@@ -203,7 +203,7 @@ public class AttributeImpl extends StructuralFeatureImpl implements Attribute {
   @Override
   public EList<Reference> getReferences() {
     if (references == null) {
-      references = new EObjectWithInverseResolvingEList.ManyInverse<Reference>(Reference.class, this, USchemaPackage.ATTRIBUTE__REFERENCES, USchemaPackage.REFERENCE__ATTRIBUTES);
+      references = new EObjectWithInverseResolvingEList.ManyInverse<Reference>(Reference.class, this, USchemapPackage.ATTRIBUTE__REFERENCES, USchemapPackage.REFERENCE__ATTRIBUTES);
     }
     return references;
   }
@@ -217,11 +217,11 @@ public class AttributeImpl extends StructuralFeatureImpl implements Attribute {
   @Override
   public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
-      case USchemaPackage.ATTRIBUTE__KEY:
+      case USchemapPackage.ATTRIBUTE__KEY:
         if (key != null)
-          msgs = ((InternalEObject)key).eInverseRemove(this, USchemaPackage.KEY__ATTRIBUTES, Key.class, msgs);
+          msgs = ((InternalEObject)key).eInverseRemove(this, USchemapPackage.KEY__ATTRIBUTES, Key.class, msgs);
         return basicSetKey((Key)otherEnd, msgs);
-      case USchemaPackage.ATTRIBUTE__REFERENCES:
+      case USchemapPackage.ATTRIBUTE__REFERENCES:
         return ((InternalEList<InternalEObject>)(InternalEList<?>)getReferences()).basicAdd(otherEnd, msgs);
     }
     return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -235,11 +235,11 @@ public class AttributeImpl extends StructuralFeatureImpl implements Attribute {
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
-      case USchemaPackage.ATTRIBUTE__TYPE:
+      case USchemapPackage.ATTRIBUTE__TYPE:
         return basicSetType(null, msgs);
-      case USchemaPackage.ATTRIBUTE__KEY:
+      case USchemapPackage.ATTRIBUTE__KEY:
         return basicSetKey(null, msgs);
-      case USchemaPackage.ATTRIBUTE__REFERENCES:
+      case USchemapPackage.ATTRIBUTE__REFERENCES:
         return ((InternalEList<?>)getReferences()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -253,12 +253,12 @@ public class AttributeImpl extends StructuralFeatureImpl implements Attribute {
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
     switch (featureID) {
-      case USchemaPackage.ATTRIBUTE__TYPE:
+      case USchemapPackage.ATTRIBUTE__TYPE:
         return getType();
-      case USchemaPackage.ATTRIBUTE__KEY:
+      case USchemapPackage.ATTRIBUTE__KEY:
         if (resolve) return getKey();
         return basicGetKey();
-      case USchemaPackage.ATTRIBUTE__REFERENCES:
+      case USchemapPackage.ATTRIBUTE__REFERENCES:
         return getReferences();
     }
     return super.eGet(featureID, resolve, coreType);
@@ -273,13 +273,13 @@ public class AttributeImpl extends StructuralFeatureImpl implements Attribute {
   @Override
   public void eSet(int featureID, Object newValue) {
     switch (featureID) {
-      case USchemaPackage.ATTRIBUTE__TYPE:
+      case USchemapPackage.ATTRIBUTE__TYPE:
         setType((DataType)newValue);
         return;
-      case USchemaPackage.ATTRIBUTE__KEY:
+      case USchemapPackage.ATTRIBUTE__KEY:
         setKey((Key)newValue);
         return;
-      case USchemaPackage.ATTRIBUTE__REFERENCES:
+      case USchemapPackage.ATTRIBUTE__REFERENCES:
         getReferences().clear();
         getReferences().addAll((Collection<? extends Reference>)newValue);
         return;
@@ -295,13 +295,13 @@ public class AttributeImpl extends StructuralFeatureImpl implements Attribute {
   @Override
   public void eUnset(int featureID) {
     switch (featureID) {
-      case USchemaPackage.ATTRIBUTE__TYPE:
+      case USchemapPackage.ATTRIBUTE__TYPE:
         setType((DataType)null);
         return;
-      case USchemaPackage.ATTRIBUTE__KEY:
+      case USchemapPackage.ATTRIBUTE__KEY:
         setKey((Key)null);
         return;
-      case USchemaPackage.ATTRIBUTE__REFERENCES:
+      case USchemapPackage.ATTRIBUTE__REFERENCES:
         getReferences().clear();
         return;
     }
@@ -316,11 +316,11 @@ public class AttributeImpl extends StructuralFeatureImpl implements Attribute {
   @Override
   public boolean eIsSet(int featureID) {
     switch (featureID) {
-      case USchemaPackage.ATTRIBUTE__TYPE:
+      case USchemapPackage.ATTRIBUTE__TYPE:
         return type != null;
-      case USchemaPackage.ATTRIBUTE__KEY:
+      case USchemapPackage.ATTRIBUTE__KEY:
         return key != null;
-      case USchemaPackage.ATTRIBUTE__REFERENCES:
+      case USchemapPackage.ATTRIBUTE__REFERENCES:
         return references != null && !references.isEmpty();
     }
     return super.eIsSet(featureID);

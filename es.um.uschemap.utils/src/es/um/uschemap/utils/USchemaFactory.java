@@ -1,46 +1,46 @@
-package es.um.uschema.utils;
+package es.um.uschemap.utils;
 
 import java.util.Arrays;
 
-import es.um.uschema.USchema.Aggregate;
-import es.um.uschema.USchema.Attribute;
-import es.um.uschema.USchema.DataType;
-import es.um.uschema.USchema.EntityType;
-import es.um.uschema.USchema.Key;
-import es.um.uschema.USchema.Null;
-import es.um.uschema.USchema.PList;
-import es.um.uschema.USchema.PMap;
-import es.um.uschema.USchema.PSet;
-import es.um.uschema.USchema.PTuple;
-import es.um.uschema.USchema.PrimitiveType;
-import es.um.uschema.USchema.Reference;
-import es.um.uschema.USchema.RelationshipType;
-import es.um.uschema.USchema.StructuralVariation;
-import es.um.uschema.USchema.USchema;
+import es.um.uschemap.USchemap.Aggregate;
+import es.um.uschemap.USchemap.Attribute;
+import es.um.uschemap.USchemap.DataType;
+import es.um.uschemap.USchemap.EntityType;
+import es.um.uschemap.USchemap.Key;
+import es.um.uschemap.USchemap.Null;
+import es.um.uschemap.USchemap.PList;
+import es.um.uschemap.USchemap.PMap;
+import es.um.uschemap.USchemap.PSet;
+import es.um.uschemap.USchemap.PTuple;
+import es.um.uschemap.USchemap.PrimitiveType;
+import es.um.uschemap.USchemap.Reference;
+import es.um.uschemap.USchemap.RelationshipType;
+import es.um.uschemap.USchemap.StructuralVariation;
+import es.um.uschemap.USchemap.USchemap;
 
-public class USchemaFactory 
+public class USchemapFactory 
 {
-  private es.um.uschema.USchema.USchemaFactory factory;
+  private es.um.uschemap.USchemap.USchemapFactory factory;
 
-  public USchemaFactory() 
+  public USchemapFactory() 
   {
-    this.factory = es.um.uschema.USchema.USchemaFactory.eINSTANCE;
+    this.factory = es.um.uschemap.USchemap.USchemapFactory.eINSTANCE;
   }
 
-  public USchema createUSchema(String schemaName)
+  public USchemap createUSchemap(String schemaName)
   {
     if (schemaName == null)
-      throw new IllegalArgumentException("USchemaFactory:createUSchema - Name can't be null");
+      throw new IllegalArgumentException("USchemapFactory:createUSchemap - Name can't be null");
 
-    USchema schema = factory.createUSchema();
+    USchemap schema = factory.createUSchemap();
     schema.setName(schemaName);
 
     return schema;
   }
 
-  public USchema createLinkedUSchema(String schemaName)
+  public USchemap createLinkedUSchemap(String schemaName)
   {
-    USchema schema = createUSchema(schemaName);
+    USchemap schema = createUSchemap(schemaName);
 
     return schema;
   }
@@ -48,7 +48,7 @@ public class USchemaFactory
   public EntityType createEntityType(String entityName)
   {
     if (entityName == null)
-      throw new IllegalArgumentException("USchemaFactory:createEntityType - Name can't be null");
+      throw new IllegalArgumentException("USchemapFactory:createEntityType - Name can't be null");
 
     EntityType entityType = factory.createEntityType();
     entityType.setName(entityName);
@@ -67,7 +67,7 @@ public class USchemaFactory
   public RelationshipType createRelationshipType(String relName)
   {
     if (relName == null)
-      throw new IllegalArgumentException("USchemaFactory:createRelationshipType - Name can't be null");
+      throw new IllegalArgumentException("USchemapFactory:createRelationshipType - Name can't be null");
 
     RelationshipType result = factory.createRelationshipType();
     result.setName(relName);
@@ -78,7 +78,7 @@ public class USchemaFactory
   public StructuralVariation createStructuralVariation(int id)
   {
     if (id < 1)
-      throw new IllegalArgumentException("USchemaFactory:createStructuralVariation - Id must be greater than 0");
+      throw new IllegalArgumentException("USchemapFactory:createStructuralVariation - Id must be greater than 0");
 
     StructuralVariation structuralVariation = factory.createStructuralVariation();
     structuralVariation.setVariationId(id);
@@ -105,7 +105,7 @@ public class USchemaFactory
   public Reference createReference(String refName, int lBound, int uBound, EntityType entity)
   {
     if (entity == null)
-      throw new IllegalArgumentException("USchemaFactory:createReference - EntityType can't be null");
+      throw new IllegalArgumentException("USchemapFactory:createReference - EntityType can't be null");
 
     Reference ref = createReference(refName);
     ref.setLowerBound(lBound);
@@ -118,7 +118,7 @@ public class USchemaFactory
   public Aggregate createAggregate(String aggrName)
   {
     if (aggrName == null)
-      throw new IllegalArgumentException("USchemaFactory:createAggregate - Name can't be null");
+      throw new IllegalArgumentException("USchemapFactory:createAggregate - Name can't be null");
 
     Aggregate aggr = factory.createAggregate();
     aggr.setName(aggrName);
@@ -129,7 +129,7 @@ public class USchemaFactory
   public Aggregate createAggregate(String aggrName, int lBound, int uBound, StructuralVariation... vars)
   {
     if (vars == null || vars.length < 1)
-      throw new IllegalArgumentException("USchemaFactory:createAggregate - Variations should contain at least one element");
+      throw new IllegalArgumentException("USchemapFactory:createAggregate - Variations should contain at least one element");
 
     Aggregate aggr = createAggregate(aggrName);
     aggr.setLowerBound(lBound);
@@ -142,10 +142,10 @@ public class USchemaFactory
   public Attribute createAttribute(String name, DataType type)
   {
     if (name == null)
-      throw new IllegalArgumentException("USchemaFactory:createAttribute - Name can't be null");
+      throw new IllegalArgumentException("USchemapFactory:createAttribute - Name can't be null");
 
     if (type == null)
-      throw new IllegalArgumentException("USchemaFactory:createAttribute - DataType can't be null");
+      throw new IllegalArgumentException("USchemapFactory:createAttribute - DataType can't be null");
 
     Attribute attribute = factory.createAttribute();
     attribute.setName(name);
@@ -173,7 +173,7 @@ public class USchemaFactory
   public PList createPList(DataType elementType)
   {
     if (elementType == null)
-      throw new IllegalArgumentException("USchemaFactory:createPList - ElementType can't be null");
+      throw new IllegalArgumentException("USchemapFactory:createPList - ElementType can't be null");
 
     PList pList = factory.createPList();
     pList.setElementType(elementType);
@@ -184,7 +184,7 @@ public class USchemaFactory
   public PSet createPSet(DataType elementType)
   {
     if (elementType == null)
-      throw new IllegalArgumentException("USchemaFactory:createPSet - ElementType can't be null");
+      throw new IllegalArgumentException("USchemapFactory:createPSet - ElementType can't be null");
 
     PSet pSet = factory.createPSet();
     pSet.setElementType(elementType);
@@ -195,10 +195,10 @@ public class USchemaFactory
   public PMap createPMap(PrimitiveType keyType, DataType valueType)
   {
     if (keyType == null)
-      throw new IllegalArgumentException("USchemaFactory:createPMap - KeyType can't be null");
+      throw new IllegalArgumentException("USchemapFactory:createPMap - KeyType can't be null");
 
     if (valueType == null)
-      throw new IllegalArgumentException("USchemaFactory:createPMap - ValueType can't be null");
+      throw new IllegalArgumentException("USchemapFactory:createPMap - ValueType can't be null");
 
     PMap pMap = factory.createPMap();
     pMap.setKeyType(keyType);
@@ -210,7 +210,7 @@ public class USchemaFactory
   public PTuple createPTuple(DataType...dataTypes)
   {
     if (dataTypes == null || dataTypes.length < 1)
-      throw new IllegalArgumentException("USchemaFactory:createPTuple - DataTypes should contain at least one element");
+      throw new IllegalArgumentException("USchemapFactory:createPTuple - DataTypes should contain at least one element");
 
     PTuple pTuple = factory.createPTuple();
     pTuple.getElements().addAll(Arrays.asList(dataTypes));

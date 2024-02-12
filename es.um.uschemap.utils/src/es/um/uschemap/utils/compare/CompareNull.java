@@ -1,6 +1,6 @@
-package es.um.uschema.utils.compare;
+package es.um.uschemap.utils.compare;
 
-import es.um.uschema.USchema.Null;
+import es.um.uschemap.USchemap.Null;
 
 public class CompareNull extends Comparator<Null>
 {

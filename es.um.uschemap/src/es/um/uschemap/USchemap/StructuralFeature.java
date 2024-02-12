@@ -1,6 +1,6 @@
 /**
  */
-package es.um.uschema.USchema;
+package es.um.uschemap.USchemap;
 
 
 /**
@@ -12,10 +12,10 @@ package es.um.uschema.USchema;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.um.uschema.USchema.StructuralFeature#isOptional <em>Optional</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.StructuralFeature#isOptional <em>Optional</em>}</li>
  * </ul>
  *
- * @see es.um.uschema.USchema.USchemaPackage#getStructuralFeature()
+ * @see es.um.uschemap.USchemap.USchemapPackage#getStructuralFeature()
  * @model abstract="true"
  * @generated
  */
@@ -27,14 +27,14 @@ public interface StructuralFeature extends Feature {
    * <!-- end-user-doc -->
    * @return the value of the '<em>Optional</em>' attribute.
    * @see #setOptional(boolean)
-   * @see es.um.uschema.USchema.USchemaPackage#getStructuralFeature_Optional()
+   * @see es.um.uschemap.USchemap.USchemapPackage#getStructuralFeature_Optional()
    * @model default="false"
    * @generated
    */
   boolean isOptional();
 
   /**
-   * Sets the value of the '{@link es.um.uschema.USchema.StructuralFeature#isOptional <em>Optional</em>}' attribute.
+   * Sets the value of the '{@link es.um.uschemap.USchemap.StructuralFeature#isOptional <em>Optional</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Optional</em>' attribute.

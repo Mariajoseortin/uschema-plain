@@ -1,20 +1,20 @@
-package es.um.uschema.utils.compare;
+package es.um.uschemap.utils.compare;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import es.um.uschema.USchema.Attribute;
-import es.um.uschema.USchema.EntityType;
-import es.um.uschema.USchema.RelationshipType;
-import es.um.uschema.USchema.StructuralVariation;
-import es.um.uschema.USchema.USchemaFactory;
-import es.um.uschema.USchema.USchema;
+import es.um.uschemap.USchemap.Attribute;
+import es.um.uschemap.USchemap.EntityType;
+import es.um.uschemap.USchemap.RelationshipType;
+import es.um.uschemap.USchemap.StructuralVariation;
+import es.um.uschemap.USchemap.USchemapFactory;
+import es.um.uschemap.USchemap.USchemap;
 
-public class CompareUSchemaTest
+public class CompareUSchemapTest
 {
-  private CompareUSchema cSchema;
+  private CompareUSchemap cSchema;
   private CompareSchemaType cSchemaType;
   private CompareRelationshipType cRel;
   private CompareEntityType cEntity;
@@ -23,7 +23,7 @@ public class CompareUSchemaTest
   @Before
   public void setUp()
   {
-    cSchema = new CompareUSchema();
+    cSchema = new CompareUSchemap();
     cSchemaType = new CompareSchemaType();
     cRel = new CompareRelationshipType();
     cEntity = new CompareEntityType();
@@ -31,25 +31,25 @@ public class CompareUSchemaTest
   }
 
   /**
-   * TestUSchema SHOULD check: Name and RelationshipType/EntityType comparison with SchemaType.
+   * TestUSchemap SHOULD check: Name and RelationshipType/EntityType comparison with SchemaType.
    */
   @Test
-  public void testUSchema()
+  public void testUSchemap()
   {
     assertFalse(cSchema.compare(null, null));
 
-    assertTrue(cSchema.compare(createUSchema("name", null, null), createUSchema("name", null, null)));
-    assertFalse(cSchema.compare(createUSchema("name1", null, null), createUSchema("name2", null, null)));
+    assertTrue(cSchema.compare(createUSchemap("name", null, null), createUSchemap("name", null, null)));
+    assertFalse(cSchema.compare(createUSchemap("name1", null, null), createUSchemap("name2", null, null)));
 
-    assertFalse(cSchema.compare(createUSchema("name", new String[] {"entityName"}, null),
-        createUSchema("name", null, null)));
-    assertTrue(cSchema.compare(createUSchema("name", new String[] {"entityName1", "entityName2"}, null),
-        createUSchema("name", new String[] {"entityName1", "entityName2"}, null)));
+    assertFalse(cSchema.compare(createUSchemap("name", new String[] {"entityName"}, null),
+        createUSchemap("name", null, null)));
+    assertTrue(cSchema.compare(createUSchemap("name", new String[] {"entityName1", "entityName2"}, null),
+        createUSchemap("name", new String[] {"entityName1", "entityName2"}, null)));
 
-    assertFalse(cSchema.compare(createUSchema("name", null, new String[] {"refName"}),
-        createUSchema("name", null, null)));
-    assertFalse(cSchema.compare(createUSchema("name", null, new String[] {"refName1"}),
-        createUSchema("name", null, new String[] {"refName2"})));
+    assertFalse(cSchema.compare(createUSchemap("name", null, new String[] {"refName"}),
+        createUSchemap("name", null, null)));
+    assertFalse(cSchema.compare(createUSchemap("name", null, new String[] {"refName1"}),
+        createUSchemap("name", null, new String[] {"refName2"})));
   }
 
   /**
@@ -134,15 +134,15 @@ public class CompareUSchemaTest
     assertTrue(cVariation.compare(createVar(0, 0, 0, "prop1", "prop2"), createVar(0, 0, 0, "prop2", "prop1")));
   }
 
-  private USchema createUSchema(String name, String[] entities, String[] refs)
+  private USchemap createUSchemap(String name, String[] entities, String[] refs)
   {
-    USchema schema = USchemaFactory.eINSTANCE.createUSchema();
+    USchemap schema = USchemapFactory.eINSTANCE.createUSchemap();
     schema.setName(name);
 
     if (entities != null)
       for (String e : entities)
       {
-        EntityType entity = USchemaFactory.eINSTANCE.createEntityType();
+        EntityType entity = USchemapFactory.eINSTANCE.createEntityType();
         entity.setName(e);
         schema.getEntities().add(entity);
       }
@@ -150,7 +150,7 @@ public class CompareUSchemaTest
     if (refs != null)
       for (String ref : refs)
       {
-        RelationshipType reference = USchemaFactory.eINSTANCE.createRelationshipType();
+        RelationshipType reference = USchemapFactory.eINSTANCE.createRelationshipType();
         reference.setName(ref);
         schema.getRelationships().add(reference);
       }
@@ -160,21 +160,21 @@ public class CompareUSchemaTest
 
   private EntityType createEntity(String name, boolean root, String[] parents, Integer... varIds)
   {
-    EntityType entity = USchemaFactory.eINSTANCE.createEntityType();
+    EntityType entity = USchemapFactory.eINSTANCE.createEntityType();
     entity.setName(name);
     entity.setRoot(root);
 
     if (parents != null)
       for (String parentName : parents)
       {
-        EntityType parent = USchemaFactory.eINSTANCE.createEntityType();
+        EntityType parent = USchemapFactory.eINSTANCE.createEntityType();
         parent.setName(parentName);
         entity.getParents().add(parent);
       }
 
     for (int varId : varIds)
     {
-      StructuralVariation var = USchemaFactory.eINSTANCE.createStructuralVariation();
+      StructuralVariation var = USchemapFactory.eINSTANCE.createStructuralVariation();
       var.setVariationId(varId);
       entity.getVariations().add(var);
     }
@@ -184,20 +184,20 @@ public class CompareUSchemaTest
 
   private RelationshipType createRel(String name, String[] parents, Integer... varIds)
   {
-    RelationshipType ref = USchemaFactory.eINSTANCE.createRelationshipType();
+    RelationshipType ref = USchemapFactory.eINSTANCE.createRelationshipType();
     ref.setName(name);
 
     if (parents != null)
       for (String parentName : parents)
       {
-        EntityType parent = USchemaFactory.eINSTANCE.createEntityType();
+        EntityType parent = USchemapFactory.eINSTANCE.createEntityType();
         parent.setName(parentName);
         ref.getParents().add(parent);
       }
 
     for (int varId : varIds)
     {
-      StructuralVariation var = USchemaFactory.eINSTANCE.createStructuralVariation();
+      StructuralVariation var = USchemapFactory.eINSTANCE.createStructuralVariation();
       var.setVariationId(varId);
       ref.getVariations().add(var);
     }
@@ -207,16 +207,16 @@ public class CompareUSchemaTest
 
   private StructuralVariation createVar(int varId, long count, long ts, String... props)
   {
-    StructuralVariation variation = USchemaFactory.eINSTANCE.createStructuralVariation();
+    StructuralVariation variation = USchemapFactory.eINSTANCE.createStructuralVariation();
     variation.setVariationId(varId);
     variation.setCount(count);
     variation.setFirstTimestamp(ts);
 
     for (String prop : props)
     {
-      Attribute nullProp = USchemaFactory.eINSTANCE.createAttribute();
+      Attribute nullProp = USchemapFactory.eINSTANCE.createAttribute();
       nullProp.setName(prop);
-      nullProp.setType(USchemaFactory.eINSTANCE.createNull());
+      nullProp.setType(USchemapFactory.eINSTANCE.createNull());
       variation.getFeatures().add(nullProp);
     }
 

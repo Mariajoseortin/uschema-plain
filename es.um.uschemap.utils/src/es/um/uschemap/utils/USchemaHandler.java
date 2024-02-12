@@ -1,4 +1,4 @@
-package es.um.uschema.utils;
+package es.um.uschemap.utils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,29 +9,29 @@ import java.util.stream.Collectors;
 
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
-import es.um.uschema.USchema.Aggregate;
-import es.um.uschema.USchema.Attribute;
-import es.um.uschema.USchema.DataType;
-import es.um.uschema.USchema.EntityType;
-import es.um.uschema.USchema.Feature;
-import es.um.uschema.USchema.Key;
-import es.um.uschema.USchema.LogicalFeature;
-import es.um.uschema.USchema.Null;
-import es.um.uschema.USchema.PList;
-import es.um.uschema.USchema.PSet;
-import es.um.uschema.USchema.PTuple;
-import es.um.uschema.USchema.PrimitiveType;
-import es.um.uschema.USchema.Reference;
-import es.um.uschema.USchema.SchemaType;
-import es.um.uschema.USchema.StructuralFeature;
-import es.um.uschema.USchema.StructuralVariation;
-import es.um.uschema.USchema.USchema;
+import es.um.uschemap.USchemap.Aggregate;
+import es.um.uschemap.USchemap.Attribute;
+import es.um.uschemap.USchemap.DataType;
+import es.um.uschemap.USchemap.EntityType;
+import es.um.uschemap.USchemap.Feature;
+import es.um.uschemap.USchemap.Key;
+import es.um.uschemap.USchemap.LogicalFeature;
+import es.um.uschemap.USchemap.Null;
+import es.um.uschemap.USchemap.PList;
+import es.um.uschemap.USchemap.PSet;
+import es.um.uschemap.USchemap.PTuple;
+import es.um.uschemap.USchemap.PrimitiveType;
+import es.um.uschemap.USchemap.Reference;
+import es.um.uschemap.USchemap.SchemaType;
+import es.um.uschemap.USchemap.StructuralFeature;
+import es.um.uschemap.USchemap.StructuralVariation;
+import es.um.uschemap.USchemap.USchemap;
 
-public class USchemaHandler
+public class USchemapHandler
 {
-  private USchemaFactory factory = new USchemaFactory();
+  private USchemapFactory factory = new USchemapFactory();
 
-  public EntityType getEntityType(USchema schema, String name)
+  public EntityType getEntityType(USchemap schema, String name)
   {
     return schema.getEntities().stream().filter(e -> e.getName().equals(name)).findFirst().get();
   }
@@ -170,7 +170,7 @@ public class USchemaHandler
     return ((Aggregate)getFirstFeatureNameIn(entity, Aggregate.class, aggrName).get()).getUpperBound();
   }
 
-  public String getDefaultIdName(USchema schema)
+  public String getDefaultIdName(USchemap schema)
   {
     return schema.getEntities().stream().flatMap(e -> e.getVariations().stream()).flatMap(v -> v.getFeatures().stream())
         .filter(f -> f instanceof Key).map(f -> (Key)f).findFirst().get().getAttributes().get(0).getName();

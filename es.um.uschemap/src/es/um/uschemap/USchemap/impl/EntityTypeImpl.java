@@ -1,9 +1,9 @@
 /**
  */
-package es.um.uschema.USchema.impl;
+package es.um.uschemap.USchemap.impl;
 
-import es.um.uschema.USchema.EntityType;
-import es.um.uschema.USchema.USchemaPackage;
+import es.um.uschemap.USchemap.EntityType;
+import es.um.uschemap.USchemap.USchemapPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.um.uschema.USchema.impl.EntityTypeImpl#isRoot <em>Root</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.EntityTypeImpl#isRoot <em>Root</em>}</li>
  * </ul>
  *
  * @generated
@@ -61,7 +61,7 @@ public class EntityTypeImpl extends SchemaTypeImpl implements EntityType {
    */
   @Override
   protected EClass eStaticClass() {
-    return USchemaPackage.Literals.ENTITY_TYPE;
+    return USchemapPackage.Literals.ENTITY_TYPE;
   }
 
   /**
@@ -84,7 +84,7 @@ public class EntityTypeImpl extends SchemaTypeImpl implements EntityType {
     boolean oldRoot = root;
     root = newRoot;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.ENTITY_TYPE__ROOT, oldRoot, root));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.ENTITY_TYPE__ROOT, oldRoot, root));
   }
 
   /**
@@ -95,7 +95,7 @@ public class EntityTypeImpl extends SchemaTypeImpl implements EntityType {
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
     switch (featureID) {
-      case USchemaPackage.ENTITY_TYPE__ROOT:
+      case USchemapPackage.ENTITY_TYPE__ROOT:
         return isRoot();
     }
     return super.eGet(featureID, resolve, coreType);
@@ -109,7 +109,7 @@ public class EntityTypeImpl extends SchemaTypeImpl implements EntityType {
   @Override
   public void eSet(int featureID, Object newValue) {
     switch (featureID) {
-      case USchemaPackage.ENTITY_TYPE__ROOT:
+      case USchemapPackage.ENTITY_TYPE__ROOT:
         setRoot((Boolean)newValue);
         return;
     }
@@ -124,7 +124,7 @@ public class EntityTypeImpl extends SchemaTypeImpl implements EntityType {
   @Override
   public void eUnset(int featureID) {
     switch (featureID) {
-      case USchemaPackage.ENTITY_TYPE__ROOT:
+      case USchemapPackage.ENTITY_TYPE__ROOT:
         setRoot(ROOT_EDEFAULT);
         return;
     }
@@ -139,7 +139,7 @@ public class EntityTypeImpl extends SchemaTypeImpl implements EntityType {
   @Override
   public boolean eIsSet(int featureID) {
     switch (featureID) {
-      case USchemaPackage.ENTITY_TYPE__ROOT:
+      case USchemapPackage.ENTITY_TYPE__ROOT:
         return root != ROOT_EDEFAULT;
     }
     return super.eIsSet(featureID);

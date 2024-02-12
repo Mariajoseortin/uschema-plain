@@ -1,10 +1,10 @@
 /**
  */
-package es.um.uschema.USchema.impl;
+package es.um.uschemap.USchemap.impl;
 
-import es.um.uschema.USchema.Attribute;
-import es.um.uschema.USchema.Key;
-import es.um.uschema.USchema.USchemaPackage;
+import es.um.uschemap.USchemap.Attribute;
+import es.um.uschemap.USchemap.Key;
+import es.um.uschemap.USchemap.USchemapPackage;
 
 import java.util.Collection;
 
@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.um.uschema.USchema.impl.KeyImpl#getAttributes <em>Attributes</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.KeyImpl#getAttributes <em>Attributes</em>}</li>
  * </ul>
  *
  * @generated
@@ -58,7 +58,7 @@ public class KeyImpl extends LogicalFeatureImpl implements Key {
    */
   @Override
   protected EClass eStaticClass() {
-    return USchemaPackage.Literals.KEY;
+    return USchemapPackage.Literals.KEY;
   }
 
   /**
@@ -69,7 +69,7 @@ public class KeyImpl extends LogicalFeatureImpl implements Key {
   @Override
   public EList<Attribute> getAttributes() {
     if (attributes == null) {
-      attributes = new EObjectWithInverseResolvingEList<Attribute>(Attribute.class, this, USchemaPackage.KEY__ATTRIBUTES, USchemaPackage.ATTRIBUTE__KEY);
+      attributes = new EObjectWithInverseResolvingEList<Attribute>(Attribute.class, this, USchemapPackage.KEY__ATTRIBUTES, USchemapPackage.ATTRIBUTE__KEY);
     }
     return attributes;
   }
@@ -83,7 +83,7 @@ public class KeyImpl extends LogicalFeatureImpl implements Key {
   @Override
   public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
-      case USchemaPackage.KEY__ATTRIBUTES:
+      case USchemapPackage.KEY__ATTRIBUTES:
         return ((InternalEList<InternalEObject>)(InternalEList<?>)getAttributes()).basicAdd(otherEnd, msgs);
     }
     return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -97,7 +97,7 @@ public class KeyImpl extends LogicalFeatureImpl implements Key {
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
-      case USchemaPackage.KEY__ATTRIBUTES:
+      case USchemapPackage.KEY__ATTRIBUTES:
         return ((InternalEList<?>)getAttributes()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -111,7 +111,7 @@ public class KeyImpl extends LogicalFeatureImpl implements Key {
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
     switch (featureID) {
-      case USchemaPackage.KEY__ATTRIBUTES:
+      case USchemapPackage.KEY__ATTRIBUTES:
         return getAttributes();
     }
     return super.eGet(featureID, resolve, coreType);
@@ -126,7 +126,7 @@ public class KeyImpl extends LogicalFeatureImpl implements Key {
   @Override
   public void eSet(int featureID, Object newValue) {
     switch (featureID) {
-      case USchemaPackage.KEY__ATTRIBUTES:
+      case USchemapPackage.KEY__ATTRIBUTES:
         getAttributes().clear();
         getAttributes().addAll((Collection<? extends Attribute>)newValue);
         return;
@@ -142,7 +142,7 @@ public class KeyImpl extends LogicalFeatureImpl implements Key {
   @Override
   public void eUnset(int featureID) {
     switch (featureID) {
-      case USchemaPackage.KEY__ATTRIBUTES:
+      case USchemapPackage.KEY__ATTRIBUTES:
         getAttributes().clear();
         return;
     }
@@ -157,7 +157,7 @@ public class KeyImpl extends LogicalFeatureImpl implements Key {
   @Override
   public boolean eIsSet(int featureID) {
     switch (featureID) {
-      case USchemaPackage.KEY__ATTRIBUTES:
+      case USchemapPackage.KEY__ATTRIBUTES:
         return attributes != null && !attributes.isEmpty();
     }
     return super.eIsSet(featureID);

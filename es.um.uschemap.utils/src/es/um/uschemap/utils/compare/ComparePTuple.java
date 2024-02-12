@@ -1,11 +1,11 @@
-package es.um.uschema.utils.compare;
+package es.um.uschemap.utils.compare;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import es.um.uschema.USchema.DataType;
-import es.um.uschema.USchema.PTuple;
+import es.um.uschemap.USchemap.DataType;
+import es.um.uschemap.USchemap.PTuple;
 
 public class ComparePTuple extends Comparator<PTuple>
 {

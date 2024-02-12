@@ -1,10 +1,10 @@
 /**
  */
-package es.um.uschema.USchema.impl;
+package es.um.uschemap.USchemap.impl;
 
-import es.um.uschema.USchema.DataType;
-import es.um.uschema.USchema.PSet;
-import es.um.uschema.USchema.USchemaPackage;
+import es.um.uschemap.USchemap.DataType;
+import es.um.uschemap.USchemap.PSet;
+import es.um.uschemap.USchemap.USchemapPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -22,7 +22,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.um.uschema.USchema.impl.PSetImpl#getElementType <em>Element Type</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.PSetImpl#getElementType <em>Element Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -54,7 +54,7 @@ public class PSetImpl extends DataTypeImpl implements PSet {
    */
   @Override
   protected EClass eStaticClass() {
-    return USchemaPackage.Literals.PSET;
+    return USchemapPackage.Literals.PSET;
   }
 
   /**
@@ -76,7 +76,7 @@ public class PSetImpl extends DataTypeImpl implements PSet {
     DataType oldElementType = elementType;
     elementType = newElementType;
     if (eNotificationRequired()) {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, USchemaPackage.PSET__ELEMENT_TYPE, oldElementType, newElementType);
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, USchemapPackage.PSET__ELEMENT_TYPE, oldElementType, newElementType);
       if (msgs == null) msgs = notification; else msgs.add(notification);
     }
     return msgs;
@@ -92,14 +92,14 @@ public class PSetImpl extends DataTypeImpl implements PSet {
     if (newElementType != elementType) {
       NotificationChain msgs = null;
       if (elementType != null)
-        msgs = ((InternalEObject)elementType).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - USchemaPackage.PSET__ELEMENT_TYPE, null, msgs);
+        msgs = ((InternalEObject)elementType).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - USchemapPackage.PSET__ELEMENT_TYPE, null, msgs);
       if (newElementType != null)
-        msgs = ((InternalEObject)newElementType).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - USchemaPackage.PSET__ELEMENT_TYPE, null, msgs);
+        msgs = ((InternalEObject)newElementType).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - USchemapPackage.PSET__ELEMENT_TYPE, null, msgs);
       msgs = basicSetElementType(newElementType, msgs);
       if (msgs != null) msgs.dispatch();
     }
     else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.PSET__ELEMENT_TYPE, newElementType, newElementType));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.PSET__ELEMENT_TYPE, newElementType, newElementType));
   }
 
   /**
@@ -110,7 +110,7 @@ public class PSetImpl extends DataTypeImpl implements PSet {
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
-      case USchemaPackage.PSET__ELEMENT_TYPE:
+      case USchemapPackage.PSET__ELEMENT_TYPE:
         return basicSetElementType(null, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -124,7 +124,7 @@ public class PSetImpl extends DataTypeImpl implements PSet {
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
     switch (featureID) {
-      case USchemaPackage.PSET__ELEMENT_TYPE:
+      case USchemapPackage.PSET__ELEMENT_TYPE:
         return getElementType();
     }
     return super.eGet(featureID, resolve, coreType);
@@ -138,7 +138,7 @@ public class PSetImpl extends DataTypeImpl implements PSet {
   @Override
   public void eSet(int featureID, Object newValue) {
     switch (featureID) {
-      case USchemaPackage.PSET__ELEMENT_TYPE:
+      case USchemapPackage.PSET__ELEMENT_TYPE:
         setElementType((DataType)newValue);
         return;
     }
@@ -153,7 +153,7 @@ public class PSetImpl extends DataTypeImpl implements PSet {
   @Override
   public void eUnset(int featureID) {
     switch (featureID) {
-      case USchemaPackage.PSET__ELEMENT_TYPE:
+      case USchemapPackage.PSET__ELEMENT_TYPE:
         setElementType((DataType)null);
         return;
     }
@@ -168,7 +168,7 @@ public class PSetImpl extends DataTypeImpl implements PSet {
   @Override
   public boolean eIsSet(int featureID) {
     switch (featureID) {
-      case USchemaPackage.PSET__ELEMENT_TYPE:
+      case USchemapPackage.PSET__ELEMENT_TYPE:
         return elementType != null;
     }
     return super.eIsSet(featureID);

@@ -1,4 +1,4 @@
-package es.um.uschema.design;
+package es.um.uschemap.design;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -13,7 +13,7 @@ import org.osgi.framework.BundleContext;
  */
 public class Activator extends AbstractUIPlugin {
     // The plug-in ID
-    public static final String PLUGIN_ID = "es.um.uschema.design";
+    public static final String PLUGIN_ID = "es.um.uschemap.design";
 
     // The shared instance
     private static Activator plugin;
@@ -35,7 +35,7 @@ public class Activator extends AbstractUIPlugin {
       super.start(context);
 	  plugin = this;
 	  viewpoints = new HashSet<Viewpoint>();
-	  viewpoints.addAll(ViewpointRegistry.getInstance().registerFromPlugin(PLUGIN_ID + "/description/uschema.odesign")); 
+	  viewpoints.addAll(ViewpointRegistry.getInstance().registerFromPlugin(PLUGIN_ID + "/description/uschemap.odesign")); 
     }
 
     /*

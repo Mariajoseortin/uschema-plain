@@ -1,11 +1,11 @@
-package es.um.uschema.utils.custom.compare;
+package es.um.uschemap.utils.custom.compare;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import es.um.uschema.USchema.Attribute;
-import es.um.uschema.USchema.Reference;
+import es.um.uschemap.USchemap.Attribute;
+import es.um.uschemap.USchemap.Reference;
 
 public class CompareReference extends Comparator<Reference>
 {

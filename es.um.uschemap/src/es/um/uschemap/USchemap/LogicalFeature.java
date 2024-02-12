@@ -1,6 +1,6 @@
 /**
  */
-package es.um.uschema.USchema;
+package es.um.uschemap.USchemap;
 
 
 /**
@@ -9,7 +9,7 @@ package es.um.uschema.USchema;
  * <!-- end-user-doc -->
  *
  *
- * @see es.um.uschema.USchema.USchemaPackage#getLogicalFeature()
+ * @see es.um.uschemap.USchemap.USchemapPackage#getLogicalFeature()
  * @model abstract="true"
  * @generated
  */

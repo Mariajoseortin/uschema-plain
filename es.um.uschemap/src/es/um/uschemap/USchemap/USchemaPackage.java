@@ -1,6 +1,6 @@
 /**
  */
-package es.um.uschema.USchema;
+package es.um.uschemap.USchemap;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -19,18 +19,18 @@ import org.eclipse.emf.ecore.EReference;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see es.um.uschema.USchema.USchemaFactory
+ * @see es.um.uschemap.USchemap.USchemapFactory
  * @model kind="package"
  * @generated
  */
-public interface USchemaPackage extends EPackage {
+public interface USchemapPackage extends EPackage {
   /**
    * The package name.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  String eNAME = "USchema";
+  String eNAME = "USchemap";
 
   /**
    * The package namespace URI.
@@ -38,7 +38,7 @@ public interface USchemaPackage extends EPackage {
    * <!-- end-user-doc -->
    * @generated
    */
-  String eNS_URI = "http://www.modelum.es/USchema";
+  String eNS_URI = "http://www.modelum.es/USchemap";
 
   /**
    * The package namespace name.
@@ -46,7 +46,7 @@ public interface USchemaPackage extends EPackage {
    * <!-- end-user-doc -->
    * @generated
    */
-  String eNS_PREFIX = "USchema";
+  String eNS_PREFIX = "USchemap";
 
   /**
    * The singleton instance of the package.
@@ -54,14 +54,14 @@ public interface USchemaPackage extends EPackage {
    * <!-- end-user-doc -->
    * @generated
    */
-  USchemaPackage eINSTANCE = es.um.uschema.USchema.impl.USchemaPackageImpl.init();
+  USchemapPackage eINSTANCE = es.um.uschemap.USchemap.impl.USchemapPackageImpl.init();
 
   /**
-   * The meta object id for the '{@link es.um.uschema.USchema.impl.USchemaImpl <em>USchema</em>}' class.
+   * The meta object id for the '{@link es.um.uschemap.USchemap.impl.USchemapImpl <em>USchemap</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see es.um.uschema.USchema.impl.USchemaImpl
-   * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getUSchema()
+   * @see es.um.uschemap.USchemap.impl.USchemapImpl
+   * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getUSchemap()
    * @generated
    */
   int USCHEMA = 0;
@@ -94,7 +94,7 @@ public interface USchemaPackage extends EPackage {
   int USCHEMA__RELATIONSHIPS = 2;
 
   /**
-   * The number of structural features of the '<em>USchema</em>' class.
+   * The number of structural features of the '<em>USchemap</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -103,7 +103,7 @@ public interface USchemaPackage extends EPackage {
   int USCHEMA_FEATURE_COUNT = 3;
 
   /**
-   * The number of operations of the '<em>USchema</em>' class.
+   * The number of operations of the '<em>USchemap</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -112,11 +112,11 @@ public interface USchemaPackage extends EPackage {
   int USCHEMA_OPERATION_COUNT = 0;
 
   /**
-   * The meta object id for the '{@link es.um.uschema.USchema.impl.SchemaTypeImpl <em>Schema Type</em>}' class.
+   * The meta object id for the '{@link es.um.uschemap.USchemap.impl.SchemaTypeImpl <em>Schema Type</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see es.um.uschema.USchema.impl.SchemaTypeImpl
-   * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getSchemaType()
+   * @see es.um.uschemap.USchemap.impl.SchemaTypeImpl
+   * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getSchemaType()
    * @generated
    */
   int SCHEMA_TYPE = 12;
@@ -167,11 +167,11 @@ public interface USchemaPackage extends EPackage {
   int SCHEMA_TYPE_OPERATION_COUNT = 0;
 
   /**
-   * The meta object id for the '{@link es.um.uschema.USchema.impl.EntityTypeImpl <em>Entity Type</em>}' class.
+   * The meta object id for the '{@link es.um.uschemap.USchemap.impl.EntityTypeImpl <em>Entity Type</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see es.um.uschema.USchema.impl.EntityTypeImpl
-   * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getEntityType()
+   * @see es.um.uschemap.USchemap.impl.EntityTypeImpl
+   * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getEntityType()
    * @generated
    */
   int ENTITY_TYPE = 1;
@@ -231,11 +231,11 @@ public interface USchemaPackage extends EPackage {
   int ENTITY_TYPE_OPERATION_COUNT = SCHEMA_TYPE_OPERATION_COUNT + 0;
 
   /**
-   * The meta object id for the '{@link es.um.uschema.USchema.impl.StructuralVariationImpl <em>Structural Variation</em>}' class.
+   * The meta object id for the '{@link es.um.uschemap.USchemap.impl.StructuralVariationImpl <em>Structural Variation</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see es.um.uschema.USchema.impl.StructuralVariationImpl
-   * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getStructuralVariation()
+   * @see es.um.uschemap.USchemap.impl.StructuralVariationImpl
+   * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getStructuralVariation()
    * @generated
    */
   int STRUCTURAL_VARIATION = 2;
@@ -331,11 +331,11 @@ public interface USchemaPackage extends EPackage {
   int STRUCTURAL_VARIATION_OPERATION_COUNT = 0;
 
   /**
-   * The meta object id for the '{@link es.um.uschema.USchema.impl.FeatureImpl <em>Feature</em>}' class.
+   * The meta object id for the '{@link es.um.uschemap.USchemap.impl.FeatureImpl <em>Feature</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see es.um.uschema.USchema.impl.FeatureImpl
-   * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getFeature()
+   * @see es.um.uschemap.USchemap.impl.FeatureImpl
+   * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getFeature()
    * @generated
    */
   int FEATURE = 3;
@@ -368,11 +368,11 @@ public interface USchemaPackage extends EPackage {
   int FEATURE_OPERATION_COUNT = 0;
 
   /**
-   * The meta object id for the '{@link es.um.uschema.USchema.impl.StructuralFeatureImpl <em>Structural Feature</em>}' class.
+   * The meta object id for the '{@link es.um.uschemap.USchemap.impl.StructuralFeatureImpl <em>Structural Feature</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see es.um.uschema.USchema.impl.StructuralFeatureImpl
-   * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getStructuralFeature()
+   * @see es.um.uschemap.USchemap.impl.StructuralFeatureImpl
+   * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getStructuralFeature()
    * @generated
    */
   int STRUCTURAL_FEATURE = 18;
@@ -414,11 +414,11 @@ public interface USchemaPackage extends EPackage {
   int STRUCTURAL_FEATURE_OPERATION_COUNT = FEATURE_OPERATION_COUNT + 0;
 
   /**
-   * The meta object id for the '{@link es.um.uschema.USchema.impl.AttributeImpl <em>Attribute</em>}' class.
+   * The meta object id for the '{@link es.um.uschemap.USchemap.impl.AttributeImpl <em>Attribute</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see es.um.uschema.USchema.impl.AttributeImpl
-   * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getAttribute()
+   * @see es.um.uschemap.USchemap.impl.AttributeImpl
+   * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getAttribute()
    * @generated
    */
   int ATTRIBUTE = 4;
@@ -487,11 +487,11 @@ public interface USchemaPackage extends EPackage {
   int ATTRIBUTE_OPERATION_COUNT = STRUCTURAL_FEATURE_OPERATION_COUNT + 0;
 
   /**
-   * The meta object id for the '{@link es.um.uschema.USchema.impl.DataTypeImpl <em>Data Type</em>}' class.
+   * The meta object id for the '{@link es.um.uschemap.USchemap.impl.DataTypeImpl <em>Data Type</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see es.um.uschema.USchema.impl.DataTypeImpl
-   * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getDataType()
+   * @see es.um.uschemap.USchemap.impl.DataTypeImpl
+   * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getDataType()
    * @generated
    */
   int DATA_TYPE = 5;
@@ -515,11 +515,11 @@ public interface USchemaPackage extends EPackage {
   int DATA_TYPE_OPERATION_COUNT = 0;
 
   /**
-   * The meta object id for the '{@link es.um.uschema.USchema.impl.PListImpl <em>PList</em>}' class.
+   * The meta object id for the '{@link es.um.uschemap.USchemap.impl.PListImpl <em>PList</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see es.um.uschema.USchema.impl.PListImpl
-   * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getPList()
+   * @see es.um.uschemap.USchemap.impl.PListImpl
+   * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getPList()
    * @generated
    */
   int PLIST = 6;
@@ -552,11 +552,11 @@ public interface USchemaPackage extends EPackage {
   int PLIST_OPERATION_COUNT = DATA_TYPE_OPERATION_COUNT + 0;
 
   /**
-   * The meta object id for the '{@link es.um.uschema.USchema.impl.LogicalFeatureImpl <em>Logical Feature</em>}' class.
+   * The meta object id for the '{@link es.um.uschemap.USchemap.impl.LogicalFeatureImpl <em>Logical Feature</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see es.um.uschema.USchema.impl.LogicalFeatureImpl
-   * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getLogicalFeature()
+   * @see es.um.uschemap.USchemap.impl.LogicalFeatureImpl
+   * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getLogicalFeature()
    * @generated
    */
   int LOGICAL_FEATURE = 16;
@@ -589,11 +589,11 @@ public interface USchemaPackage extends EPackage {
   int LOGICAL_FEATURE_OPERATION_COUNT = FEATURE_OPERATION_COUNT + 0;
 
   /**
-   * The meta object id for the '{@link es.um.uschema.USchema.impl.ReferenceImpl <em>Reference</em>}' class.
+   * The meta object id for the '{@link es.um.uschemap.USchemap.impl.ReferenceImpl <em>Reference</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see es.um.uschema.USchema.impl.ReferenceImpl
-   * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getReference()
+   * @see es.um.uschemap.USchemap.impl.ReferenceImpl
+   * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getReference()
    * @generated
    */
   int REFERENCE = 7;
@@ -680,11 +680,11 @@ public interface USchemaPackage extends EPackage {
   int REFERENCE_OPERATION_COUNT = LOGICAL_FEATURE_OPERATION_COUNT + 0;
 
   /**
-   * The meta object id for the '{@link es.um.uschema.USchema.impl.AggregateImpl <em>Aggregate</em>}' class.
+   * The meta object id for the '{@link es.um.uschemap.USchemap.impl.AggregateImpl <em>Aggregate</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see es.um.uschema.USchema.impl.AggregateImpl
-   * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getAggregate()
+   * @see es.um.uschemap.USchemap.impl.AggregateImpl
+   * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getAggregate()
    * @generated
    */
   int AGGREGATE = 8;
@@ -753,11 +753,11 @@ public interface USchemaPackage extends EPackage {
   int AGGREGATE_OPERATION_COUNT = STRUCTURAL_FEATURE_OPERATION_COUNT + 0;
 
   /**
-   * The meta object id for the '{@link es.um.uschema.USchema.impl.PrimitiveTypeImpl <em>Primitive Type</em>}' class.
+   * The meta object id for the '{@link es.um.uschemap.USchemap.impl.PrimitiveTypeImpl <em>Primitive Type</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see es.um.uschema.USchema.impl.PrimitiveTypeImpl
-   * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getPrimitiveType()
+   * @see es.um.uschemap.USchemap.impl.PrimitiveTypeImpl
+   * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getPrimitiveType()
    * @generated
    */
   int PRIMITIVE_TYPE = 9;
@@ -790,11 +790,11 @@ public interface USchemaPackage extends EPackage {
   int PRIMITIVE_TYPE_OPERATION_COUNT = DATA_TYPE_OPERATION_COUNT + 0;
 
   /**
-   * The meta object id for the '{@link es.um.uschema.USchema.impl.NullImpl <em>Null</em>}' class.
+   * The meta object id for the '{@link es.um.uschemap.USchemap.impl.NullImpl <em>Null</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see es.um.uschema.USchema.impl.NullImpl
-   * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getNull()
+   * @see es.um.uschemap.USchemap.impl.NullImpl
+   * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getNull()
    * @generated
    */
   int NULL = 10;
@@ -818,11 +818,11 @@ public interface USchemaPackage extends EPackage {
   int NULL_OPERATION_COUNT = DATA_TYPE_OPERATION_COUNT + 0;
 
   /**
-   * The meta object id for the '{@link es.um.uschema.USchema.impl.RelationshipTypeImpl <em>Relationship Type</em>}' class.
+   * The meta object id for the '{@link es.um.uschemap.USchemap.impl.RelationshipTypeImpl <em>Relationship Type</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see es.um.uschema.USchema.impl.RelationshipTypeImpl
-   * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getRelationshipType()
+   * @see es.um.uschemap.USchemap.impl.RelationshipTypeImpl
+   * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getRelationshipType()
    * @generated
    */
   int RELATIONSHIP_TYPE = 11;
@@ -873,11 +873,11 @@ public interface USchemaPackage extends EPackage {
   int RELATIONSHIP_TYPE_OPERATION_COUNT = SCHEMA_TYPE_OPERATION_COUNT + 0;
 
   /**
-   * The meta object id for the '{@link es.um.uschema.USchema.impl.PMapImpl <em>PMap</em>}' class.
+   * The meta object id for the '{@link es.um.uschemap.USchemap.impl.PMapImpl <em>PMap</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see es.um.uschema.USchema.impl.PMapImpl
-   * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getPMap()
+   * @see es.um.uschemap.USchemap.impl.PMapImpl
+   * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getPMap()
    * @generated
    */
   int PMAP = 13;
@@ -919,11 +919,11 @@ public interface USchemaPackage extends EPackage {
   int PMAP_OPERATION_COUNT = DATA_TYPE_OPERATION_COUNT + 0;
 
   /**
-   * The meta object id for the '{@link es.um.uschema.USchema.impl.PSetImpl <em>PSet</em>}' class.
+   * The meta object id for the '{@link es.um.uschemap.USchemap.impl.PSetImpl <em>PSet</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see es.um.uschema.USchema.impl.PSetImpl
-   * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getPSet()
+   * @see es.um.uschemap.USchemap.impl.PSetImpl
+   * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getPSet()
    * @generated
    */
   int PSET = 14;
@@ -956,11 +956,11 @@ public interface USchemaPackage extends EPackage {
   int PSET_OPERATION_COUNT = DATA_TYPE_OPERATION_COUNT + 0;
 
   /**
-   * The meta object id for the '{@link es.um.uschema.USchema.impl.PTupleImpl <em>PTuple</em>}' class.
+   * The meta object id for the '{@link es.um.uschemap.USchemap.impl.PTupleImpl <em>PTuple</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see es.um.uschema.USchema.impl.PTupleImpl
-   * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getPTuple()
+   * @see es.um.uschemap.USchemap.impl.PTupleImpl
+   * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getPTuple()
    * @generated
    */
   int PTUPLE = 15;
@@ -993,11 +993,11 @@ public interface USchemaPackage extends EPackage {
   int PTUPLE_OPERATION_COUNT = DATA_TYPE_OPERATION_COUNT + 0;
 
   /**
-   * The meta object id for the '{@link es.um.uschema.USchema.impl.KeyImpl <em>Key</em>}' class.
+   * The meta object id for the '{@link es.um.uschemap.USchemap.impl.KeyImpl <em>Key</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see es.um.uschema.USchema.impl.KeyImpl
-   * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getKey()
+   * @see es.um.uschemap.USchemap.impl.KeyImpl
+   * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getKey()
    * @generated
    */
   int KEY = 17;
@@ -1040,586 +1040,586 @@ public interface USchemaPackage extends EPackage {
 
 
   /**
-   * Returns the meta object for class '{@link es.um.uschema.USchema.USchema <em>USchema</em>}'.
+   * Returns the meta object for class '{@link es.um.uschemap.USchemap.USchemap <em>USchemap</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>USchema</em>'.
-   * @see es.um.uschema.USchema.USchema
+   * @return the meta object for class '<em>USchemap</em>'.
+   * @see es.um.uschemap.USchemap.USchemap
    * @generated
    */
-  EClass getUSchema();
+  EClass getUSchemap();
 
   /**
-   * Returns the meta object for the attribute '{@link es.um.uschema.USchema.USchema#getName <em>Name</em>}'.
+   * Returns the meta object for the attribute '{@link es.um.uschemap.USchemap.USchemap#getName <em>Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Name</em>'.
-   * @see es.um.uschema.USchema.USchema#getName()
-   * @see #getUSchema()
+   * @see es.um.uschemap.USchemap.USchemap#getName()
+   * @see #getUSchemap()
    * @generated
    */
-  EAttribute getUSchema_Name();
+  EAttribute getUSchemap_Name();
 
   /**
-   * Returns the meta object for the containment reference list '{@link es.um.uschema.USchema.USchema#getEntities <em>Entities</em>}'.
+   * Returns the meta object for the containment reference list '{@link es.um.uschemap.USchemap.USchemap#getEntities <em>Entities</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference list '<em>Entities</em>'.
-   * @see es.um.uschema.USchema.USchema#getEntities()
-   * @see #getUSchema()
+   * @see es.um.uschemap.USchemap.USchemap#getEntities()
+   * @see #getUSchemap()
    * @generated
    */
-  EReference getUSchema_Entities();
+  EReference getUSchemap_Entities();
 
   /**
-   * Returns the meta object for the containment reference list '{@link es.um.uschema.USchema.USchema#getRelationships <em>Relationships</em>}'.
+   * Returns the meta object for the containment reference list '{@link es.um.uschemap.USchemap.USchemap#getRelationships <em>Relationships</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference list '<em>Relationships</em>'.
-   * @see es.um.uschema.USchema.USchema#getRelationships()
-   * @see #getUSchema()
+   * @see es.um.uschemap.USchemap.USchemap#getRelationships()
+   * @see #getUSchemap()
    * @generated
    */
-  EReference getUSchema_Relationships();
+  EReference getUSchemap_Relationships();
 
   /**
-   * Returns the meta object for class '{@link es.um.uschema.USchema.EntityType <em>Entity Type</em>}'.
+   * Returns the meta object for class '{@link es.um.uschemap.USchemap.EntityType <em>Entity Type</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for class '<em>Entity Type</em>'.
-   * @see es.um.uschema.USchema.EntityType
+   * @see es.um.uschemap.USchemap.EntityType
    * @generated
    */
   EClass getEntityType();
 
   /**
-   * Returns the meta object for the attribute '{@link es.um.uschema.USchema.EntityType#isRoot <em>Root</em>}'.
+   * Returns the meta object for the attribute '{@link es.um.uschemap.USchemap.EntityType#isRoot <em>Root</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Root</em>'.
-   * @see es.um.uschema.USchema.EntityType#isRoot()
+   * @see es.um.uschemap.USchemap.EntityType#isRoot()
    * @see #getEntityType()
    * @generated
    */
   EAttribute getEntityType_Root();
 
   /**
-   * Returns the meta object for class '{@link es.um.uschema.USchema.StructuralVariation <em>Structural Variation</em>}'.
+   * Returns the meta object for class '{@link es.um.uschemap.USchemap.StructuralVariation <em>Structural Variation</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for class '<em>Structural Variation</em>'.
-   * @see es.um.uschema.USchema.StructuralVariation
+   * @see es.um.uschemap.USchemap.StructuralVariation
    * @generated
    */
   EClass getStructuralVariation();
 
   /**
-   * Returns the meta object for the attribute '{@link es.um.uschema.USchema.StructuralVariation#getVariationId <em>Variation Id</em>}'.
+   * Returns the meta object for the attribute '{@link es.um.uschemap.USchemap.StructuralVariation#getVariationId <em>Variation Id</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Variation Id</em>'.
-   * @see es.um.uschema.USchema.StructuralVariation#getVariationId()
+   * @see es.um.uschemap.USchemap.StructuralVariation#getVariationId()
    * @see #getStructuralVariation()
    * @generated
    */
   EAttribute getStructuralVariation_VariationId();
 
   /**
-   * Returns the meta object for the containment reference list '{@link es.um.uschema.USchema.StructuralVariation#getFeatures <em>Features</em>}'.
+   * Returns the meta object for the containment reference list '{@link es.um.uschemap.USchemap.StructuralVariation#getFeatures <em>Features</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference list '<em>Features</em>'.
-   * @see es.um.uschema.USchema.StructuralVariation#getFeatures()
+   * @see es.um.uschemap.USchemap.StructuralVariation#getFeatures()
    * @see #getStructuralVariation()
    * @generated
    */
   EReference getStructuralVariation_Features();
 
   /**
-   * Returns the meta object for the attribute '{@link es.um.uschema.USchema.StructuralVariation#getCount <em>Count</em>}'.
+   * Returns the meta object for the attribute '{@link es.um.uschemap.USchemap.StructuralVariation#getCount <em>Count</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Count</em>'.
-   * @see es.um.uschema.USchema.StructuralVariation#getCount()
+   * @see es.um.uschemap.USchemap.StructuralVariation#getCount()
    * @see #getStructuralVariation()
    * @generated
    */
   EAttribute getStructuralVariation_Count();
 
   /**
-   * Returns the meta object for the attribute '{@link es.um.uschema.USchema.StructuralVariation#getFirstTimestamp <em>First Timestamp</em>}'.
+   * Returns the meta object for the attribute '{@link es.um.uschemap.USchemap.StructuralVariation#getFirstTimestamp <em>First Timestamp</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>First Timestamp</em>'.
-   * @see es.um.uschema.USchema.StructuralVariation#getFirstTimestamp()
+   * @see es.um.uschemap.USchemap.StructuralVariation#getFirstTimestamp()
    * @see #getStructuralVariation()
    * @generated
    */
   EAttribute getStructuralVariation_FirstTimestamp();
 
   /**
-   * Returns the meta object for the attribute '{@link es.um.uschema.USchema.StructuralVariation#getLastTimestamp <em>Last Timestamp</em>}'.
+   * Returns the meta object for the attribute '{@link es.um.uschemap.USchemap.StructuralVariation#getLastTimestamp <em>Last Timestamp</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Last Timestamp</em>'.
-   * @see es.um.uschema.USchema.StructuralVariation#getLastTimestamp()
+   * @see es.um.uschemap.USchemap.StructuralVariation#getLastTimestamp()
    * @see #getStructuralVariation()
    * @generated
    */
   EAttribute getStructuralVariation_LastTimestamp();
 
   /**
-   * Returns the meta object for the container reference '{@link es.um.uschema.USchema.StructuralVariation#getContainer <em>Container</em>}'.
+   * Returns the meta object for the container reference '{@link es.um.uschemap.USchemap.StructuralVariation#getContainer <em>Container</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the container reference '<em>Container</em>'.
-   * @see es.um.uschema.USchema.StructuralVariation#getContainer()
+   * @see es.um.uschemap.USchemap.StructuralVariation#getContainer()
    * @see #getStructuralVariation()
    * @generated
    */
   EReference getStructuralVariation_Container();
 
   /**
-   * Returns the meta object for the reference list '{@link es.um.uschema.USchema.StructuralVariation#getLogicalFeatures <em>Logical Features</em>}'.
+   * Returns the meta object for the reference list '{@link es.um.uschemap.USchemap.StructuralVariation#getLogicalFeatures <em>Logical Features</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the reference list '<em>Logical Features</em>'.
-   * @see es.um.uschema.USchema.StructuralVariation#getLogicalFeatures()
+   * @see es.um.uschemap.USchemap.StructuralVariation#getLogicalFeatures()
    * @see #getStructuralVariation()
    * @generated
    */
   EReference getStructuralVariation_LogicalFeatures();
 
   /**
-   * Returns the meta object for the reference list '{@link es.um.uschema.USchema.StructuralVariation#getStructuralFeatures <em>Structural Features</em>}'.
+   * Returns the meta object for the reference list '{@link es.um.uschemap.USchemap.StructuralVariation#getStructuralFeatures <em>Structural Features</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the reference list '<em>Structural Features</em>'.
-   * @see es.um.uschema.USchema.StructuralVariation#getStructuralFeatures()
+   * @see es.um.uschemap.USchemap.StructuralVariation#getStructuralFeatures()
    * @see #getStructuralVariation()
    * @generated
    */
   EReference getStructuralVariation_StructuralFeatures();
 
   /**
-   * Returns the meta object for class '{@link es.um.uschema.USchema.Feature <em>Feature</em>}'.
+   * Returns the meta object for class '{@link es.um.uschemap.USchemap.Feature <em>Feature</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for class '<em>Feature</em>'.
-   * @see es.um.uschema.USchema.Feature
+   * @see es.um.uschemap.USchemap.Feature
    * @generated
    */
   EClass getFeature();
 
   /**
-   * Returns the meta object for the attribute '{@link es.um.uschema.USchema.Feature#getName <em>Name</em>}'.
+   * Returns the meta object for the attribute '{@link es.um.uschemap.USchemap.Feature#getName <em>Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Name</em>'.
-   * @see es.um.uschema.USchema.Feature#getName()
+   * @see es.um.uschemap.USchemap.Feature#getName()
    * @see #getFeature()
    * @generated
    */
   EAttribute getFeature_Name();
 
   /**
-   * Returns the meta object for class '{@link es.um.uschema.USchema.Attribute <em>Attribute</em>}'.
+   * Returns the meta object for class '{@link es.um.uschemap.USchemap.Attribute <em>Attribute</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for class '<em>Attribute</em>'.
-   * @see es.um.uschema.USchema.Attribute
+   * @see es.um.uschemap.USchemap.Attribute
    * @generated
    */
   EClass getAttribute();
 
   /**
-   * Returns the meta object for the containment reference '{@link es.um.uschema.USchema.Attribute#getType <em>Type</em>}'.
+   * Returns the meta object for the containment reference '{@link es.um.uschemap.USchemap.Attribute#getType <em>Type</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference '<em>Type</em>'.
-   * @see es.um.uschema.USchema.Attribute#getType()
+   * @see es.um.uschemap.USchemap.Attribute#getType()
    * @see #getAttribute()
    * @generated
    */
   EReference getAttribute_Type();
 
   /**
-   * Returns the meta object for the reference '{@link es.um.uschema.USchema.Attribute#getKey <em>Key</em>}'.
+   * Returns the meta object for the reference '{@link es.um.uschemap.USchemap.Attribute#getKey <em>Key</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the reference '<em>Key</em>'.
-   * @see es.um.uschema.USchema.Attribute#getKey()
+   * @see es.um.uschemap.USchemap.Attribute#getKey()
    * @see #getAttribute()
    * @generated
    */
   EReference getAttribute_Key();
 
   /**
-   * Returns the meta object for the reference list '{@link es.um.uschema.USchema.Attribute#getReferences <em>References</em>}'.
+   * Returns the meta object for the reference list '{@link es.um.uschemap.USchemap.Attribute#getReferences <em>References</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the reference list '<em>References</em>'.
-   * @see es.um.uschema.USchema.Attribute#getReferences()
+   * @see es.um.uschemap.USchemap.Attribute#getReferences()
    * @see #getAttribute()
    * @generated
    */
   EReference getAttribute_References();
 
   /**
-   * Returns the meta object for class '{@link es.um.uschema.USchema.DataType <em>Data Type</em>}'.
+   * Returns the meta object for class '{@link es.um.uschemap.USchemap.DataType <em>Data Type</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for class '<em>Data Type</em>'.
-   * @see es.um.uschema.USchema.DataType
+   * @see es.um.uschemap.USchemap.DataType
    * @generated
    */
   EClass getDataType();
 
   /**
-   * Returns the meta object for class '{@link es.um.uschema.USchema.PList <em>PList</em>}'.
+   * Returns the meta object for class '{@link es.um.uschemap.USchemap.PList <em>PList</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for class '<em>PList</em>'.
-   * @see es.um.uschema.USchema.PList
+   * @see es.um.uschemap.USchemap.PList
    * @generated
    */
   EClass getPList();
 
   /**
-   * Returns the meta object for the containment reference '{@link es.um.uschema.USchema.PList#getElementType <em>Element Type</em>}'.
+   * Returns the meta object for the containment reference '{@link es.um.uschemap.USchemap.PList#getElementType <em>Element Type</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference '<em>Element Type</em>'.
-   * @see es.um.uschema.USchema.PList#getElementType()
+   * @see es.um.uschemap.USchemap.PList#getElementType()
    * @see #getPList()
    * @generated
    */
   EReference getPList_ElementType();
 
   /**
-   * Returns the meta object for class '{@link es.um.uschema.USchema.Reference <em>Reference</em>}'.
+   * Returns the meta object for class '{@link es.um.uschemap.USchemap.Reference <em>Reference</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for class '<em>Reference</em>'.
-   * @see es.um.uschema.USchema.Reference
+   * @see es.um.uschemap.USchemap.Reference
    * @generated
    */
   EClass getReference();
 
   /**
-   * Returns the meta object for the reference '{@link es.um.uschema.USchema.Reference#getOpposite <em>Opposite</em>}'.
+   * Returns the meta object for the reference '{@link es.um.uschemap.USchemap.Reference#getOpposite <em>Opposite</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the reference '<em>Opposite</em>'.
-   * @see es.um.uschema.USchema.Reference#getOpposite()
+   * @see es.um.uschemap.USchemap.Reference#getOpposite()
    * @see #getReference()
    * @generated
    */
   EReference getReference_Opposite();
 
   /**
-   * Returns the meta object for the reference '{@link es.um.uschema.USchema.Reference#getRefsTo <em>Refs To</em>}'.
+   * Returns the meta object for the reference '{@link es.um.uschemap.USchemap.Reference#getRefsTo <em>Refs To</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the reference '<em>Refs To</em>'.
-   * @see es.um.uschema.USchema.Reference#getRefsTo()
+   * @see es.um.uschemap.USchemap.Reference#getRefsTo()
    * @see #getReference()
    * @generated
    */
   EReference getReference_RefsTo();
 
   /**
-   * Returns the meta object for the reference list '{@link es.um.uschema.USchema.Reference#getIsFeaturedBy <em>Is Featured By</em>}'.
+   * Returns the meta object for the reference list '{@link es.um.uschemap.USchemap.Reference#getIsFeaturedBy <em>Is Featured By</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the reference list '<em>Is Featured By</em>'.
-   * @see es.um.uschema.USchema.Reference#getIsFeaturedBy()
+   * @see es.um.uschemap.USchemap.Reference#getIsFeaturedBy()
    * @see #getReference()
    * @generated
    */
   EReference getReference_IsFeaturedBy();
 
   /**
-   * Returns the meta object for the reference list '{@link es.um.uschema.USchema.Reference#getAttributes <em>Attributes</em>}'.
+   * Returns the meta object for the reference list '{@link es.um.uschemap.USchemap.Reference#getAttributes <em>Attributes</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the reference list '<em>Attributes</em>'.
-   * @see es.um.uschema.USchema.Reference#getAttributes()
+   * @see es.um.uschemap.USchemap.Reference#getAttributes()
    * @see #getReference()
    * @generated
    */
   EReference getReference_Attributes();
 
   /**
-   * Returns the meta object for the attribute '{@link es.um.uschema.USchema.Reference#getUpperBound <em>Upper Bound</em>}'.
+   * Returns the meta object for the attribute '{@link es.um.uschemap.USchemap.Reference#getUpperBound <em>Upper Bound</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Upper Bound</em>'.
-   * @see es.um.uschema.USchema.Reference#getUpperBound()
+   * @see es.um.uschemap.USchemap.Reference#getUpperBound()
    * @see #getReference()
    * @generated
    */
   EAttribute getReference_UpperBound();
 
   /**
-   * Returns the meta object for the attribute '{@link es.um.uschema.USchema.Reference#getLowerBound <em>Lower Bound</em>}'.
+   * Returns the meta object for the attribute '{@link es.um.uschemap.USchemap.Reference#getLowerBound <em>Lower Bound</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Lower Bound</em>'.
-   * @see es.um.uschema.USchema.Reference#getLowerBound()
+   * @see es.um.uschemap.USchemap.Reference#getLowerBound()
    * @see #getReference()
    * @generated
    */
   EAttribute getReference_LowerBound();
 
   /**
-   * Returns the meta object for class '{@link es.um.uschema.USchema.Aggregate <em>Aggregate</em>}'.
+   * Returns the meta object for class '{@link es.um.uschemap.USchemap.Aggregate <em>Aggregate</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for class '<em>Aggregate</em>'.
-   * @see es.um.uschema.USchema.Aggregate
+   * @see es.um.uschemap.USchemap.Aggregate
    * @generated
    */
   EClass getAggregate();
 
   /**
-   * Returns the meta object for the reference list '{@link es.um.uschema.USchema.Aggregate#getAggregates <em>Aggregates</em>}'.
+   * Returns the meta object for the reference list '{@link es.um.uschemap.USchemap.Aggregate#getAggregates <em>Aggregates</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the reference list '<em>Aggregates</em>'.
-   * @see es.um.uschema.USchema.Aggregate#getAggregates()
+   * @see es.um.uschemap.USchemap.Aggregate#getAggregates()
    * @see #getAggregate()
    * @generated
    */
   EReference getAggregate_Aggregates();
 
   /**
-   * Returns the meta object for the attribute '{@link es.um.uschema.USchema.Aggregate#getUpperBound <em>Upper Bound</em>}'.
+   * Returns the meta object for the attribute '{@link es.um.uschemap.USchemap.Aggregate#getUpperBound <em>Upper Bound</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Upper Bound</em>'.
-   * @see es.um.uschema.USchema.Aggregate#getUpperBound()
+   * @see es.um.uschemap.USchemap.Aggregate#getUpperBound()
    * @see #getAggregate()
    * @generated
    */
   EAttribute getAggregate_UpperBound();
 
   /**
-   * Returns the meta object for the attribute '{@link es.um.uschema.USchema.Aggregate#getLowerBound <em>Lower Bound</em>}'.
+   * Returns the meta object for the attribute '{@link es.um.uschemap.USchemap.Aggregate#getLowerBound <em>Lower Bound</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Lower Bound</em>'.
-   * @see es.um.uschema.USchema.Aggregate#getLowerBound()
+   * @see es.um.uschemap.USchemap.Aggregate#getLowerBound()
    * @see #getAggregate()
    * @generated
    */
   EAttribute getAggregate_LowerBound();
 
   /**
-   * Returns the meta object for class '{@link es.um.uschema.USchema.PrimitiveType <em>Primitive Type</em>}'.
+   * Returns the meta object for class '{@link es.um.uschemap.USchemap.PrimitiveType <em>Primitive Type</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for class '<em>Primitive Type</em>'.
-   * @see es.um.uschema.USchema.PrimitiveType
+   * @see es.um.uschemap.USchemap.PrimitiveType
    * @generated
    */
   EClass getPrimitiveType();
 
   /**
-   * Returns the meta object for the attribute '{@link es.um.uschema.USchema.PrimitiveType#getName <em>Name</em>}'.
+   * Returns the meta object for the attribute '{@link es.um.uschemap.USchemap.PrimitiveType#getName <em>Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Name</em>'.
-   * @see es.um.uschema.USchema.PrimitiveType#getName()
+   * @see es.um.uschemap.USchemap.PrimitiveType#getName()
    * @see #getPrimitiveType()
    * @generated
    */
   EAttribute getPrimitiveType_Name();
 
   /**
-   * Returns the meta object for class '{@link es.um.uschema.USchema.Null <em>Null</em>}'.
+   * Returns the meta object for class '{@link es.um.uschemap.USchemap.Null <em>Null</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for class '<em>Null</em>'.
-   * @see es.um.uschema.USchema.Null
+   * @see es.um.uschemap.USchemap.Null
    * @generated
    */
   EClass getNull();
 
   /**
-   * Returns the meta object for class '{@link es.um.uschema.USchema.RelationshipType <em>Relationship Type</em>}'.
+   * Returns the meta object for class '{@link es.um.uschemap.USchemap.RelationshipType <em>Relationship Type</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for class '<em>Relationship Type</em>'.
-   * @see es.um.uschema.USchema.RelationshipType
+   * @see es.um.uschemap.USchemap.RelationshipType
    * @generated
    */
   EClass getRelationshipType();
 
   /**
-   * Returns the meta object for class '{@link es.um.uschema.USchema.SchemaType <em>Schema Type</em>}'.
+   * Returns the meta object for class '{@link es.um.uschemap.USchemap.SchemaType <em>Schema Type</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for class '<em>Schema Type</em>'.
-   * @see es.um.uschema.USchema.SchemaType
+   * @see es.um.uschemap.USchemap.SchemaType
    * @generated
    */
   EClass getSchemaType();
 
   /**
-   * Returns the meta object for the attribute '{@link es.um.uschema.USchema.SchemaType#getName <em>Name</em>}'.
+   * Returns the meta object for the attribute '{@link es.um.uschemap.USchemap.SchemaType#getName <em>Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Name</em>'.
-   * @see es.um.uschema.USchema.SchemaType#getName()
+   * @see es.um.uschemap.USchemap.SchemaType#getName()
    * @see #getSchemaType()
    * @generated
    */
   EAttribute getSchemaType_Name();
 
   /**
-   * Returns the meta object for the reference list '{@link es.um.uschema.USchema.SchemaType#getParents <em>Parents</em>}'.
+   * Returns the meta object for the reference list '{@link es.um.uschemap.USchemap.SchemaType#getParents <em>Parents</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the reference list '<em>Parents</em>'.
-   * @see es.um.uschema.USchema.SchemaType#getParents()
+   * @see es.um.uschemap.USchemap.SchemaType#getParents()
    * @see #getSchemaType()
    * @generated
    */
   EReference getSchemaType_Parents();
 
   /**
-   * Returns the meta object for the containment reference list '{@link es.um.uschema.USchema.SchemaType#getVariations <em>Variations</em>}'.
+   * Returns the meta object for the containment reference list '{@link es.um.uschemap.USchemap.SchemaType#getVariations <em>Variations</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference list '<em>Variations</em>'.
-   * @see es.um.uschema.USchema.SchemaType#getVariations()
+   * @see es.um.uschemap.USchemap.SchemaType#getVariations()
    * @see #getSchemaType()
    * @generated
    */
   EReference getSchemaType_Variations();
 
   /**
-   * Returns the meta object for class '{@link es.um.uschema.USchema.PMap <em>PMap</em>}'.
+   * Returns the meta object for class '{@link es.um.uschemap.USchemap.PMap <em>PMap</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for class '<em>PMap</em>'.
-   * @see es.um.uschema.USchema.PMap
+   * @see es.um.uschemap.USchemap.PMap
    * @generated
    */
   EClass getPMap();
 
   /**
-   * Returns the meta object for the containment reference '{@link es.um.uschema.USchema.PMap#getKeyType <em>Key Type</em>}'.
+   * Returns the meta object for the containment reference '{@link es.um.uschemap.USchemap.PMap#getKeyType <em>Key Type</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference '<em>Key Type</em>'.
-   * @see es.um.uschema.USchema.PMap#getKeyType()
+   * @see es.um.uschemap.USchemap.PMap#getKeyType()
    * @see #getPMap()
    * @generated
    */
   EReference getPMap_KeyType();
 
   /**
-   * Returns the meta object for the containment reference '{@link es.um.uschema.USchema.PMap#getValueType <em>Value Type</em>}'.
+   * Returns the meta object for the containment reference '{@link es.um.uschemap.USchemap.PMap#getValueType <em>Value Type</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference '<em>Value Type</em>'.
-   * @see es.um.uschema.USchema.PMap#getValueType()
+   * @see es.um.uschemap.USchemap.PMap#getValueType()
    * @see #getPMap()
    * @generated
    */
   EReference getPMap_ValueType();
 
   /**
-   * Returns the meta object for class '{@link es.um.uschema.USchema.PSet <em>PSet</em>}'.
+   * Returns the meta object for class '{@link es.um.uschemap.USchemap.PSet <em>PSet</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for class '<em>PSet</em>'.
-   * @see es.um.uschema.USchema.PSet
+   * @see es.um.uschemap.USchemap.PSet
    * @generated
    */
   EClass getPSet();
 
   /**
-   * Returns the meta object for the containment reference '{@link es.um.uschema.USchema.PSet#getElementType <em>Element Type</em>}'.
+   * Returns the meta object for the containment reference '{@link es.um.uschemap.USchemap.PSet#getElementType <em>Element Type</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference '<em>Element Type</em>'.
-   * @see es.um.uschema.USchema.PSet#getElementType()
+   * @see es.um.uschemap.USchemap.PSet#getElementType()
    * @see #getPSet()
    * @generated
    */
   EReference getPSet_ElementType();
 
   /**
-   * Returns the meta object for class '{@link es.um.uschema.USchema.PTuple <em>PTuple</em>}'.
+   * Returns the meta object for class '{@link es.um.uschemap.USchemap.PTuple <em>PTuple</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for class '<em>PTuple</em>'.
-   * @see es.um.uschema.USchema.PTuple
+   * @see es.um.uschemap.USchemap.PTuple
    * @generated
    */
   EClass getPTuple();
 
   /**
-   * Returns the meta object for the containment reference list '{@link es.um.uschema.USchema.PTuple#getElements <em>Elements</em>}'.
+   * Returns the meta object for the containment reference list '{@link es.um.uschemap.USchemap.PTuple#getElements <em>Elements</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference list '<em>Elements</em>'.
-   * @see es.um.uschema.USchema.PTuple#getElements()
+   * @see es.um.uschemap.USchemap.PTuple#getElements()
    * @see #getPTuple()
    * @generated
    */
   EReference getPTuple_Elements();
 
   /**
-   * Returns the meta object for class '{@link es.um.uschema.USchema.LogicalFeature <em>Logical Feature</em>}'.
+   * Returns the meta object for class '{@link es.um.uschemap.USchemap.LogicalFeature <em>Logical Feature</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for class '<em>Logical Feature</em>'.
-   * @see es.um.uschema.USchema.LogicalFeature
+   * @see es.um.uschemap.USchemap.LogicalFeature
    * @generated
    */
   EClass getLogicalFeature();
 
   /**
-   * Returns the meta object for class '{@link es.um.uschema.USchema.Key <em>Key</em>}'.
+   * Returns the meta object for class '{@link es.um.uschemap.USchemap.Key <em>Key</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for class '<em>Key</em>'.
-   * @see es.um.uschema.USchema.Key
+   * @see es.um.uschemap.USchemap.Key
    * @generated
    */
   EClass getKey();
 
   /**
-   * Returns the meta object for the reference list '{@link es.um.uschema.USchema.Key#getAttributes <em>Attributes</em>}'.
+   * Returns the meta object for the reference list '{@link es.um.uschemap.USchemap.Key#getAttributes <em>Attributes</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the reference list '<em>Attributes</em>'.
-   * @see es.um.uschema.USchema.Key#getAttributes()
+   * @see es.um.uschemap.USchemap.Key#getAttributes()
    * @see #getKey()
    * @generated
    */
   EReference getKey_Attributes();
 
   /**
-   * Returns the meta object for class '{@link es.um.uschema.USchema.StructuralFeature <em>Structural Feature</em>}'.
+   * Returns the meta object for class '{@link es.um.uschemap.USchemap.StructuralFeature <em>Structural Feature</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for class '<em>Structural Feature</em>'.
-   * @see es.um.uschema.USchema.StructuralFeature
+   * @see es.um.uschemap.USchemap.StructuralFeature
    * @generated
    */
   EClass getStructuralFeature();
 
   /**
-   * Returns the meta object for the attribute '{@link es.um.uschema.USchema.StructuralFeature#isOptional <em>Optional</em>}'.
+   * Returns the meta object for the attribute '{@link es.um.uschemap.USchemap.StructuralFeature#isOptional <em>Optional</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Optional</em>'.
-   * @see es.um.uschema.USchema.StructuralFeature#isOptional()
+   * @see es.um.uschemap.USchemap.StructuralFeature#isOptional()
    * @see #getStructuralFeature()
    * @generated
    */
@@ -1632,7 +1632,7 @@ public interface USchemaPackage extends EPackage {
    * @return the factory that creates the instances of the model.
    * @generated
    */
-  USchemaFactory getUSchemaFactory();
+  USchemapFactory getUSchemapFactory();
 
   /**
    * <!-- begin-user-doc -->
@@ -1649,14 +1649,14 @@ public interface USchemaPackage extends EPackage {
    */
   interface Literals {
     /**
-     * The meta object literal for the '{@link es.um.uschema.USchema.impl.USchemaImpl <em>USchema</em>}' class.
+     * The meta object literal for the '{@link es.um.uschemap.USchemap.impl.USchemapImpl <em>USchemap</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see es.um.uschema.USchema.impl.USchemaImpl
-     * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getUSchema()
+     * @see es.um.uschemap.USchemap.impl.USchemapImpl
+     * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getUSchemap()
      * @generated
      */
-    EClass USCHEMA = eINSTANCE.getUSchema();
+    EClass USCHEMA = eINSTANCE.getUSchemap();
 
     /**
      * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -1664,7 +1664,7 @@ public interface USchemaPackage extends EPackage {
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute USCHEMA__NAME = eINSTANCE.getUSchema_Name();
+    EAttribute USCHEMA__NAME = eINSTANCE.getUSchemap_Name();
 
     /**
      * The meta object literal for the '<em><b>Entities</b></em>' containment reference list feature.
@@ -1672,7 +1672,7 @@ public interface USchemaPackage extends EPackage {
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference USCHEMA__ENTITIES = eINSTANCE.getUSchema_Entities();
+    EReference USCHEMA__ENTITIES = eINSTANCE.getUSchemap_Entities();
 
     /**
      * The meta object literal for the '<em><b>Relationships</b></em>' containment reference list feature.
@@ -1680,14 +1680,14 @@ public interface USchemaPackage extends EPackage {
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference USCHEMA__RELATIONSHIPS = eINSTANCE.getUSchema_Relationships();
+    EReference USCHEMA__RELATIONSHIPS = eINSTANCE.getUSchemap_Relationships();
 
     /**
-     * The meta object literal for the '{@link es.um.uschema.USchema.impl.EntityTypeImpl <em>Entity Type</em>}' class.
+     * The meta object literal for the '{@link es.um.uschemap.USchemap.impl.EntityTypeImpl <em>Entity Type</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see es.um.uschema.USchema.impl.EntityTypeImpl
-     * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getEntityType()
+     * @see es.um.uschemap.USchemap.impl.EntityTypeImpl
+     * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getEntityType()
      * @generated
      */
     EClass ENTITY_TYPE = eINSTANCE.getEntityType();
@@ -1701,11 +1701,11 @@ public interface USchemaPackage extends EPackage {
     EAttribute ENTITY_TYPE__ROOT = eINSTANCE.getEntityType_Root();
 
     /**
-     * The meta object literal for the '{@link es.um.uschema.USchema.impl.StructuralVariationImpl <em>Structural Variation</em>}' class.
+     * The meta object literal for the '{@link es.um.uschemap.USchemap.impl.StructuralVariationImpl <em>Structural Variation</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see es.um.uschema.USchema.impl.StructuralVariationImpl
-     * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getStructuralVariation()
+     * @see es.um.uschemap.USchemap.impl.StructuralVariationImpl
+     * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getStructuralVariation()
      * @generated
      */
     EClass STRUCTURAL_VARIATION = eINSTANCE.getStructuralVariation();
@@ -1775,11 +1775,11 @@ public interface USchemaPackage extends EPackage {
     EReference STRUCTURAL_VARIATION__STRUCTURAL_FEATURES = eINSTANCE.getStructuralVariation_StructuralFeatures();
 
     /**
-     * The meta object literal for the '{@link es.um.uschema.USchema.impl.FeatureImpl <em>Feature</em>}' class.
+     * The meta object literal for the '{@link es.um.uschemap.USchemap.impl.FeatureImpl <em>Feature</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see es.um.uschema.USchema.impl.FeatureImpl
-     * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getFeature()
+     * @see es.um.uschemap.USchemap.impl.FeatureImpl
+     * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getFeature()
      * @generated
      */
     EClass FEATURE = eINSTANCE.getFeature();
@@ -1793,11 +1793,11 @@ public interface USchemaPackage extends EPackage {
     EAttribute FEATURE__NAME = eINSTANCE.getFeature_Name();
 
     /**
-     * The meta object literal for the '{@link es.um.uschema.USchema.impl.AttributeImpl <em>Attribute</em>}' class.
+     * The meta object literal for the '{@link es.um.uschemap.USchemap.impl.AttributeImpl <em>Attribute</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see es.um.uschema.USchema.impl.AttributeImpl
-     * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getAttribute()
+     * @see es.um.uschemap.USchemap.impl.AttributeImpl
+     * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getAttribute()
      * @generated
      */
     EClass ATTRIBUTE = eINSTANCE.getAttribute();
@@ -1827,21 +1827,21 @@ public interface USchemaPackage extends EPackage {
     EReference ATTRIBUTE__REFERENCES = eINSTANCE.getAttribute_References();
 
     /**
-     * The meta object literal for the '{@link es.um.uschema.USchema.impl.DataTypeImpl <em>Data Type</em>}' class.
+     * The meta object literal for the '{@link es.um.uschemap.USchemap.impl.DataTypeImpl <em>Data Type</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see es.um.uschema.USchema.impl.DataTypeImpl
-     * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getDataType()
+     * @see es.um.uschemap.USchemap.impl.DataTypeImpl
+     * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getDataType()
      * @generated
      */
     EClass DATA_TYPE = eINSTANCE.getDataType();
 
     /**
-     * The meta object literal for the '{@link es.um.uschema.USchema.impl.PListImpl <em>PList</em>}' class.
+     * The meta object literal for the '{@link es.um.uschemap.USchemap.impl.PListImpl <em>PList</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see es.um.uschema.USchema.impl.PListImpl
-     * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getPList()
+     * @see es.um.uschemap.USchemap.impl.PListImpl
+     * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getPList()
      * @generated
      */
     EClass PLIST = eINSTANCE.getPList();
@@ -1855,11 +1855,11 @@ public interface USchemaPackage extends EPackage {
     EReference PLIST__ELEMENT_TYPE = eINSTANCE.getPList_ElementType();
 
     /**
-     * The meta object literal for the '{@link es.um.uschema.USchema.impl.ReferenceImpl <em>Reference</em>}' class.
+     * The meta object literal for the '{@link es.um.uschemap.USchemap.impl.ReferenceImpl <em>Reference</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see es.um.uschema.USchema.impl.ReferenceImpl
-     * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getReference()
+     * @see es.um.uschemap.USchemap.impl.ReferenceImpl
+     * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getReference()
      * @generated
      */
     EClass REFERENCE = eINSTANCE.getReference();
@@ -1913,11 +1913,11 @@ public interface USchemaPackage extends EPackage {
     EAttribute REFERENCE__LOWER_BOUND = eINSTANCE.getReference_LowerBound();
 
     /**
-     * The meta object literal for the '{@link es.um.uschema.USchema.impl.AggregateImpl <em>Aggregate</em>}' class.
+     * The meta object literal for the '{@link es.um.uschemap.USchemap.impl.AggregateImpl <em>Aggregate</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see es.um.uschema.USchema.impl.AggregateImpl
-     * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getAggregate()
+     * @see es.um.uschemap.USchemap.impl.AggregateImpl
+     * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getAggregate()
      * @generated
      */
     EClass AGGREGATE = eINSTANCE.getAggregate();
@@ -1947,11 +1947,11 @@ public interface USchemaPackage extends EPackage {
     EAttribute AGGREGATE__LOWER_BOUND = eINSTANCE.getAggregate_LowerBound();
 
     /**
-     * The meta object literal for the '{@link es.um.uschema.USchema.impl.PrimitiveTypeImpl <em>Primitive Type</em>}' class.
+     * The meta object literal for the '{@link es.um.uschemap.USchemap.impl.PrimitiveTypeImpl <em>Primitive Type</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see es.um.uschema.USchema.impl.PrimitiveTypeImpl
-     * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getPrimitiveType()
+     * @see es.um.uschemap.USchemap.impl.PrimitiveTypeImpl
+     * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getPrimitiveType()
      * @generated
      */
     EClass PRIMITIVE_TYPE = eINSTANCE.getPrimitiveType();
@@ -1965,31 +1965,31 @@ public interface USchemaPackage extends EPackage {
     EAttribute PRIMITIVE_TYPE__NAME = eINSTANCE.getPrimitiveType_Name();
 
     /**
-     * The meta object literal for the '{@link es.um.uschema.USchema.impl.NullImpl <em>Null</em>}' class.
+     * The meta object literal for the '{@link es.um.uschemap.USchemap.impl.NullImpl <em>Null</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see es.um.uschema.USchema.impl.NullImpl
-     * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getNull()
+     * @see es.um.uschemap.USchemap.impl.NullImpl
+     * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getNull()
      * @generated
      */
     EClass NULL = eINSTANCE.getNull();
 
     /**
-     * The meta object literal for the '{@link es.um.uschema.USchema.impl.RelationshipTypeImpl <em>Relationship Type</em>}' class.
+     * The meta object literal for the '{@link es.um.uschemap.USchemap.impl.RelationshipTypeImpl <em>Relationship Type</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see es.um.uschema.USchema.impl.RelationshipTypeImpl
-     * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getRelationshipType()
+     * @see es.um.uschemap.USchemap.impl.RelationshipTypeImpl
+     * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getRelationshipType()
      * @generated
      */
     EClass RELATIONSHIP_TYPE = eINSTANCE.getRelationshipType();
 
     /**
-     * The meta object literal for the '{@link es.um.uschema.USchema.impl.SchemaTypeImpl <em>Schema Type</em>}' class.
+     * The meta object literal for the '{@link es.um.uschemap.USchemap.impl.SchemaTypeImpl <em>Schema Type</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see es.um.uschema.USchema.impl.SchemaTypeImpl
-     * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getSchemaType()
+     * @see es.um.uschemap.USchemap.impl.SchemaTypeImpl
+     * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getSchemaType()
      * @generated
      */
     EClass SCHEMA_TYPE = eINSTANCE.getSchemaType();
@@ -2019,11 +2019,11 @@ public interface USchemaPackage extends EPackage {
     EReference SCHEMA_TYPE__VARIATIONS = eINSTANCE.getSchemaType_Variations();
 
     /**
-     * The meta object literal for the '{@link es.um.uschema.USchema.impl.PMapImpl <em>PMap</em>}' class.
+     * The meta object literal for the '{@link es.um.uschemap.USchemap.impl.PMapImpl <em>PMap</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see es.um.uschema.USchema.impl.PMapImpl
-     * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getPMap()
+     * @see es.um.uschemap.USchemap.impl.PMapImpl
+     * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getPMap()
      * @generated
      */
     EClass PMAP = eINSTANCE.getPMap();
@@ -2045,11 +2045,11 @@ public interface USchemaPackage extends EPackage {
     EReference PMAP__VALUE_TYPE = eINSTANCE.getPMap_ValueType();
 
     /**
-     * The meta object literal for the '{@link es.um.uschema.USchema.impl.PSetImpl <em>PSet</em>}' class.
+     * The meta object literal for the '{@link es.um.uschemap.USchemap.impl.PSetImpl <em>PSet</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see es.um.uschema.USchema.impl.PSetImpl
-     * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getPSet()
+     * @see es.um.uschemap.USchemap.impl.PSetImpl
+     * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getPSet()
      * @generated
      */
     EClass PSET = eINSTANCE.getPSet();
@@ -2063,11 +2063,11 @@ public interface USchemaPackage extends EPackage {
     EReference PSET__ELEMENT_TYPE = eINSTANCE.getPSet_ElementType();
 
     /**
-     * The meta object literal for the '{@link es.um.uschema.USchema.impl.PTupleImpl <em>PTuple</em>}' class.
+     * The meta object literal for the '{@link es.um.uschemap.USchemap.impl.PTupleImpl <em>PTuple</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see es.um.uschema.USchema.impl.PTupleImpl
-     * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getPTuple()
+     * @see es.um.uschemap.USchemap.impl.PTupleImpl
+     * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getPTuple()
      * @generated
      */
     EClass PTUPLE = eINSTANCE.getPTuple();
@@ -2081,21 +2081,21 @@ public interface USchemaPackage extends EPackage {
     EReference PTUPLE__ELEMENTS = eINSTANCE.getPTuple_Elements();
 
     /**
-     * The meta object literal for the '{@link es.um.uschema.USchema.impl.LogicalFeatureImpl <em>Logical Feature</em>}' class.
+     * The meta object literal for the '{@link es.um.uschemap.USchemap.impl.LogicalFeatureImpl <em>Logical Feature</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see es.um.uschema.USchema.impl.LogicalFeatureImpl
-     * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getLogicalFeature()
+     * @see es.um.uschemap.USchemap.impl.LogicalFeatureImpl
+     * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getLogicalFeature()
      * @generated
      */
     EClass LOGICAL_FEATURE = eINSTANCE.getLogicalFeature();
 
     /**
-     * The meta object literal for the '{@link es.um.uschema.USchema.impl.KeyImpl <em>Key</em>}' class.
+     * The meta object literal for the '{@link es.um.uschemap.USchemap.impl.KeyImpl <em>Key</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see es.um.uschema.USchema.impl.KeyImpl
-     * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getKey()
+     * @see es.um.uschemap.USchemap.impl.KeyImpl
+     * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getKey()
      * @generated
      */
     EClass KEY = eINSTANCE.getKey();
@@ -2109,11 +2109,11 @@ public interface USchemaPackage extends EPackage {
     EReference KEY__ATTRIBUTES = eINSTANCE.getKey_Attributes();
 
     /**
-     * The meta object literal for the '{@link es.um.uschema.USchema.impl.StructuralFeatureImpl <em>Structural Feature</em>}' class.
+     * The meta object literal for the '{@link es.um.uschemap.USchemap.impl.StructuralFeatureImpl <em>Structural Feature</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see es.um.uschema.USchema.impl.StructuralFeatureImpl
-     * @see es.um.uschema.USchema.impl.USchemaPackageImpl#getStructuralFeature()
+     * @see es.um.uschemap.USchemap.impl.StructuralFeatureImpl
+     * @see es.um.uschemap.USchemap.impl.USchemapPackageImpl#getStructuralFeature()
      * @generated
      */
     EClass STRUCTURAL_FEATURE = eINSTANCE.getStructuralFeature();
@@ -2128,4 +2128,4 @@ public interface USchemaPackage extends EPackage {
 
   }
 
-} //USchemaPackage
+} //USchemapPackage

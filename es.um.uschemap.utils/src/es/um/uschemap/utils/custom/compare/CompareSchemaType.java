@@ -1,14 +1,14 @@
-package es.um.uschema.utils.custom.compare;
+package es.um.uschemap.utils.custom.compare;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Function;
 
-import es.um.uschema.USchema.EntityType;
-import es.um.uschema.USchema.RelationshipType;
-import es.um.uschema.USchema.SchemaType;
-import es.um.uschema.USchema.StructuralVariation;
+import es.um.uschemap.USchemap.EntityType;
+import es.um.uschemap.USchemap.RelationshipType;
+import es.um.uschemap.USchemap.SchemaType;
+import es.um.uschemap.USchemap.StructuralVariation;
 
 public class CompareSchemaType extends Comparator<SchemaType>
 {

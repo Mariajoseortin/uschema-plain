@@ -1,6 +1,6 @@
 /**
  */
-package es.um.uschema.USchema;
+package es.um.uschemap.USchemap;
 
 
 /**
@@ -12,11 +12,11 @@ package es.um.uschema.USchema;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.um.uschema.USchema.PMap#getKeyType <em>Key Type</em>}</li>
- *   <li>{@link es.um.uschema.USchema.PMap#getValueType <em>Value Type</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.PMap#getKeyType <em>Key Type</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.PMap#getValueType <em>Value Type</em>}</li>
  * </ul>
  *
- * @see es.um.uschema.USchema.USchemaPackage#getPMap()
+ * @see es.um.uschemap.USchemap.USchemapPackage#getPMap()
  * @model
  * @generated
  */
@@ -27,14 +27,14 @@ public interface PMap extends DataType {
    * <!-- end-user-doc -->
    * @return the value of the '<em>Key Type</em>' containment reference.
    * @see #setKeyType(PrimitiveType)
-   * @see es.um.uschema.USchema.USchemaPackage#getPMap_KeyType()
+   * @see es.um.uschemap.USchemap.USchemapPackage#getPMap_KeyType()
    * @model containment="true" required="true"
    * @generated
    */
   PrimitiveType getKeyType();
 
   /**
-   * Sets the value of the '{@link es.um.uschema.USchema.PMap#getKeyType <em>Key Type</em>}' containment reference.
+   * Sets the value of the '{@link es.um.uschemap.USchemap.PMap#getKeyType <em>Key Type</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Key Type</em>' containment reference.
@@ -49,14 +49,14 @@ public interface PMap extends DataType {
    * <!-- end-user-doc -->
    * @return the value of the '<em>Value Type</em>' containment reference.
    * @see #setValueType(DataType)
-   * @see es.um.uschema.USchema.USchemaPackage#getPMap_ValueType()
+   * @see es.um.uschemap.USchemap.USchemapPackage#getPMap_ValueType()
    * @model containment="true" required="true"
    * @generated
    */
   DataType getValueType();
 
   /**
-   * Sets the value of the '{@link es.um.uschema.USchema.PMap#getValueType <em>Value Type</em>}' containment reference.
+   * Sets the value of the '{@link es.um.uschemap.USchemap.PMap#getValueType <em>Value Type</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Value Type</em>' containment reference.

@@ -1,17 +1,17 @@
-package es.um.uschema.utils.compare;
+package es.um.uschemap.utils.compare;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import es.um.uschema.USchema.Reference;
-import es.um.uschema.USchema.StructuralVariation;
-import es.um.uschema.utils.USchemaFactory;
+import es.um.uschemap.USchemap.Reference;
+import es.um.uschemap.USchemap.StructuralVariation;
+import es.um.uschemap.utils.USchemapFactory;
 
 public class ComparePropertyTest
 {
-  private USchemaFactory f;
+  private USchemapFactory f;
   private CompareFeature cFeature;
   private CompareLogicalFeature cLogicalFeat;
   private CompareStructuralFeature cStructuralFeat;
@@ -22,7 +22,7 @@ public class ComparePropertyTest
   @Before
   public void setUp()
   {
-    f = new USchemaFactory();
+    f = new USchemapFactory();
     cFeature = new CompareFeature();
     cLogicalFeat = new CompareLogicalFeature();
     cStructuralFeat = new CompareStructuralFeature();

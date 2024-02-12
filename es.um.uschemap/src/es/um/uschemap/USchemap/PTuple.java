@@ -1,6 +1,6 @@
 /**
  */
-package es.um.uschema.USchema;
+package es.um.uschemap.USchemap;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -13,21 +13,21 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.um.uschema.USchema.PTuple#getElements <em>Elements</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.PTuple#getElements <em>Elements</em>}</li>
  * </ul>
  *
- * @see es.um.uschema.USchema.USchemaPackage#getPTuple()
+ * @see es.um.uschemap.USchemap.USchemapPackage#getPTuple()
  * @model
  * @generated
  */
 public interface PTuple extends DataType {
   /**
    * Returns the value of the '<em><b>Elements</b></em>' containment reference list.
-   * The list contents are of type {@link es.um.uschema.USchema.DataType}.
+   * The list contents are of type {@link es.um.uschemap.USchemap.DataType}.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the value of the '<em>Elements</em>' containment reference list.
-   * @see es.um.uschema.USchema.USchemaPackage#getPTuple_Elements()
+   * @see es.um.uschemap.USchemap.USchemapPackage#getPTuple_Elements()
    * @model containment="true" required="true"
    * @generated
    */

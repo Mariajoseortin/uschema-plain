@@ -1,6 +1,6 @@
 /**
  */
-package es.um.uschema.USchema;
+package es.um.uschemap.USchemap;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -15,17 +15,17 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.um.uschema.USchema.StructuralVariation#getVariationId <em>Variation Id</em>}</li>
- *   <li>{@link es.um.uschema.USchema.StructuralVariation#getFeatures <em>Features</em>}</li>
- *   <li>{@link es.um.uschema.USchema.StructuralVariation#getCount <em>Count</em>}</li>
- *   <li>{@link es.um.uschema.USchema.StructuralVariation#getFirstTimestamp <em>First Timestamp</em>}</li>
- *   <li>{@link es.um.uschema.USchema.StructuralVariation#getLastTimestamp <em>Last Timestamp</em>}</li>
- *   <li>{@link es.um.uschema.USchema.StructuralVariation#getContainer <em>Container</em>}</li>
- *   <li>{@link es.um.uschema.USchema.StructuralVariation#getLogicalFeatures <em>Logical Features</em>}</li>
- *   <li>{@link es.um.uschema.USchema.StructuralVariation#getStructuralFeatures <em>Structural Features</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.StructuralVariation#getVariationId <em>Variation Id</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.StructuralVariation#getFeatures <em>Features</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.StructuralVariation#getCount <em>Count</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.StructuralVariation#getFirstTimestamp <em>First Timestamp</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.StructuralVariation#getLastTimestamp <em>Last Timestamp</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.StructuralVariation#getContainer <em>Container</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.StructuralVariation#getLogicalFeatures <em>Logical Features</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.StructuralVariation#getStructuralFeatures <em>Structural Features</em>}</li>
  * </ul>
  *
- * @see es.um.uschema.USchema.USchemaPackage#getStructuralVariation()
+ * @see es.um.uschemap.USchemap.USchemapPackage#getStructuralVariation()
  * @model
  * @generated
  */
@@ -36,14 +36,14 @@ public interface StructuralVariation extends EObject {
    * <!-- end-user-doc -->
    * @return the value of the '<em>Variation Id</em>' attribute.
    * @see #setVariationId(int)
-   * @see es.um.uschema.USchema.USchemaPackage#getStructuralVariation_VariationId()
+   * @see es.um.uschemap.USchemap.USchemapPackage#getStructuralVariation_VariationId()
    * @model required="true"
    * @generated
    */
   int getVariationId();
 
   /**
-   * Sets the value of the '{@link es.um.uschema.USchema.StructuralVariation#getVariationId <em>Variation Id</em>}' attribute.
+   * Sets the value of the '{@link es.um.uschemap.USchemap.StructuralVariation#getVariationId <em>Variation Id</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Variation Id</em>' attribute.
@@ -54,11 +54,11 @@ public interface StructuralVariation extends EObject {
 
   /**
    * Returns the value of the '<em><b>Features</b></em>' containment reference list.
-   * The list contents are of type {@link es.um.uschema.USchema.Feature}.
+   * The list contents are of type {@link es.um.uschemap.USchemap.Feature}.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the value of the '<em>Features</em>' containment reference list.
-   * @see es.um.uschema.USchema.USchemaPackage#getStructuralVariation_Features()
+   * @see es.um.uschemap.USchemap.USchemapPackage#getStructuralVariation_Features()
    * @model containment="true"
    * @generated
    */
@@ -71,14 +71,14 @@ public interface StructuralVariation extends EObject {
    * <!-- end-user-doc -->
    * @return the value of the '<em>Count</em>' attribute.
    * @see #setCount(long)
-   * @see es.um.uschema.USchema.USchemaPackage#getStructuralVariation_Count()
+   * @see es.um.uschemap.USchemap.USchemapPackage#getStructuralVariation_Count()
    * @model default="0"
    * @generated
    */
   long getCount();
 
   /**
-   * Sets the value of the '{@link es.um.uschema.USchema.StructuralVariation#getCount <em>Count</em>}' attribute.
+   * Sets the value of the '{@link es.um.uschemap.USchemap.StructuralVariation#getCount <em>Count</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Count</em>' attribute.
@@ -93,14 +93,14 @@ public interface StructuralVariation extends EObject {
    * <!-- end-user-doc -->
    * @return the value of the '<em>First Timestamp</em>' attribute.
    * @see #setFirstTimestamp(long)
-   * @see es.um.uschema.USchema.USchemaPackage#getStructuralVariation_FirstTimestamp()
+   * @see es.um.uschemap.USchemap.USchemapPackage#getStructuralVariation_FirstTimestamp()
    * @model
    * @generated
    */
   long getFirstTimestamp();
 
   /**
-   * Sets the value of the '{@link es.um.uschema.USchema.StructuralVariation#getFirstTimestamp <em>First Timestamp</em>}' attribute.
+   * Sets the value of the '{@link es.um.uschemap.USchemap.StructuralVariation#getFirstTimestamp <em>First Timestamp</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>First Timestamp</em>' attribute.
@@ -115,14 +115,14 @@ public interface StructuralVariation extends EObject {
    * <!-- end-user-doc -->
    * @return the value of the '<em>Last Timestamp</em>' attribute.
    * @see #setLastTimestamp(long)
-   * @see es.um.uschema.USchema.USchemaPackage#getStructuralVariation_LastTimestamp()
+   * @see es.um.uschemap.USchemap.USchemapPackage#getStructuralVariation_LastTimestamp()
    * @model
    * @generated
    */
   long getLastTimestamp();
 
   /**
-   * Sets the value of the '{@link es.um.uschema.USchema.StructuralVariation#getLastTimestamp <em>Last Timestamp</em>}' attribute.
+   * Sets the value of the '{@link es.um.uschemap.USchemap.StructuralVariation#getLastTimestamp <em>Last Timestamp</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Last Timestamp</em>' attribute.
@@ -133,20 +133,20 @@ public interface StructuralVariation extends EObject {
 
   /**
    * Returns the value of the '<em><b>Container</b></em>' container reference.
-   * It is bidirectional and its opposite is '{@link es.um.uschema.USchema.SchemaType#getVariations <em>Variations</em>}'.
+   * It is bidirectional and its opposite is '{@link es.um.uschemap.USchemap.SchemaType#getVariations <em>Variations</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the value of the '<em>Container</em>' container reference.
    * @see #setContainer(SchemaType)
-   * @see es.um.uschema.USchema.USchemaPackage#getStructuralVariation_Container()
-   * @see es.um.uschema.USchema.SchemaType#getVariations
+   * @see es.um.uschemap.USchemap.USchemapPackage#getStructuralVariation_Container()
+   * @see es.um.uschemap.USchemap.SchemaType#getVariations
    * @model opposite="variations" required="true" transient="false"
    * @generated
    */
   SchemaType getContainer();
 
   /**
-   * Sets the value of the '{@link es.um.uschema.USchema.StructuralVariation#getContainer <em>Container</em>}' container reference.
+   * Sets the value of the '{@link es.um.uschemap.USchemap.StructuralVariation#getContainer <em>Container</em>}' container reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Container</em>' container reference.
@@ -157,11 +157,11 @@ public interface StructuralVariation extends EObject {
 
   /**
    * Returns the value of the '<em><b>Logical Features</b></em>' reference list.
-   * The list contents are of type {@link es.um.uschema.USchema.LogicalFeature}.
+   * The list contents are of type {@link es.um.uschemap.USchemap.LogicalFeature}.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the value of the '<em>Logical Features</em>' reference list.
-   * @see es.um.uschema.USchema.USchemaPackage#getStructuralVariation_LogicalFeatures()
+   * @see es.um.uschemap.USchemap.USchemapPackage#getStructuralVariation_LogicalFeatures()
    * @model
    * @generated
    */
@@ -169,11 +169,11 @@ public interface StructuralVariation extends EObject {
 
   /**
    * Returns the value of the '<em><b>Structural Features</b></em>' reference list.
-   * The list contents are of type {@link es.um.uschema.USchema.StructuralFeature}.
+   * The list contents are of type {@link es.um.uschemap.USchemap.StructuralFeature}.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the value of the '<em>Structural Features</em>' reference list.
-   * @see es.um.uschema.USchema.USchemaPackage#getStructuralVariation_StructuralFeatures()
+   * @see es.um.uschemap.USchemap.USchemapPackage#getStructuralVariation_StructuralFeatures()
    * @model
    * @generated
    */

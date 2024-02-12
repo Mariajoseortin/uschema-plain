@@ -1,9 +1,9 @@
 /**
  */
-package es.um.uschema.USchema.impl;
+package es.um.uschemap.USchemap.impl;
 
-import es.um.uschema.USchema.Null;
-import es.um.uschema.USchema.USchemaPackage;
+import es.um.uschemap.USchemap.Null;
+import es.um.uschemap.USchemap.USchemapPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -31,7 +31,7 @@ public class NullImpl extends DataTypeImpl implements Null {
    */
   @Override
   protected EClass eStaticClass() {
-    return USchemaPackage.Literals.NULL;
+    return USchemapPackage.Literals.NULL;
   }
 
 } //NullImpl

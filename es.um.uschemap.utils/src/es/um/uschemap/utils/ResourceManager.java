@@ -1,4 +1,4 @@
-package es.um.uschema.utils;
+package es.um.uschemap.utils;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EPackage;

@@ -1,11 +1,11 @@
-package es.um.uschema.utils.custom.compare;
+package es.um.uschemap.utils.custom.compare;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import es.um.uschema.USchema.Aggregate;
-import es.um.uschema.USchema.StructuralVariation;
+import es.um.uschemap.USchemap.Aggregate;
+import es.um.uschemap.USchemap.StructuralVariation;
 
 public class CompareAggregate extends Comparator<Aggregate>
 {

@@ -1,8 +1,8 @@
-package es.um.uschema.utils.compare;
+package es.um.uschemap.utils.compare;
 
-import es.um.uschema.USchema.Feature;
-import es.um.uschema.USchema.LogicalFeature;
-import es.um.uschema.USchema.StructuralFeature;
+import es.um.uschemap.USchemap.Feature;
+import es.um.uschemap.USchemap.LogicalFeature;
+import es.um.uschemap.USchemap.StructuralFeature;
 
 public class CompareFeature extends Comparator<Feature>
 {

@@ -1,24 +1,24 @@
-package es.um.uschema.utils;
+package es.um.uschemap.utils;
 
 import java.nio.file.Path;
 
-import es.um.uschema.USchema.USchemaPackage;
-import es.um.uschema.USchema.USchema;
-import es.um.uschema.utils.compare.CompareUSchema;
+import es.um.uschemap.USchemap.USchemapPackage;
+import es.um.uschemap.USchemap.USchemap;
+import es.um.uschemap.utils.compare.CompareUSchemap;
 
-public class USchemaComparator
+public class USchemapComparator
 {
   public boolean compare(Path model1Path, Path model2Path)
   {
-    EcoreModelIO uSchemaIO = new EcoreModelIO(USchemaPackage.eINSTANCE);
-    USchema schema1 = uSchemaIO.load(USchema.class, model1Path);
-    USchema schema2 = uSchemaIO.load(USchema.class, model2Path);
+    EcoreModelIO uSchemaIO = new EcoreModelIO(USchemapPackage.eINSTANCE);
+    USchemap schema1 = uSchemaIO.load(USchemap.class, model1Path);
+    USchemap schema2 = uSchemaIO.load(USchemap.class, model2Path);
 
     return compare(schema1, schema2);
   }
 
-  public boolean compare(USchema schema1, USchema schema2)
+  public boolean compare(USchemap schema1, USchemap schema2)
   {
-    return new CompareUSchema().compare(schema1, schema2);
+    return new CompareUSchemap().compare(schema1, schema2);
   }
 }

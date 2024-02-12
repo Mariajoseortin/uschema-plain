@@ -1,11 +1,11 @@
 /**
  */
-package es.um.uschema.USchema.impl;
+package es.um.uschemap.USchemap.impl;
 
-import es.um.uschema.USchema.EntityType;
-import es.um.uschema.USchema.RelationshipType;
-import es.um.uschema.USchema.USchema;
-import es.um.uschema.USchema.USchemaPackage;
+import es.um.uschemap.USchemap.EntityType;
+import es.um.uschemap.USchemap.RelationshipType;
+import es.um.uschemap.USchemap.USchemap;
+import es.um.uschemap.USchemap.USchemapPackage;
 
 import java.util.Collection;
 
@@ -25,20 +25,20 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>USchema</b></em>'.
+ * An implementation of the model object '<em><b>USchemap</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.um.uschema.USchema.impl.USchemaImpl#getName <em>Name</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.USchemaImpl#getEntities <em>Entities</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.USchemaImpl#getRelationships <em>Relationships</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.USchemapImpl#getName <em>Name</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.USchemapImpl#getEntities <em>Entities</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.USchemapImpl#getRelationships <em>Relationships</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class USchemaImpl extends MinimalEObjectImpl.Container implements USchema {
+public class USchemapImpl extends MinimalEObjectImpl.Container implements USchemap {
   /**
    * The default value of the '{@link #getName() <em>Name</em>}' attribute.
    * <!-- begin-user-doc -->
@@ -84,7 +84,7 @@ public class USchemaImpl extends MinimalEObjectImpl.Container implements USchema
    * <!-- end-user-doc -->
    * @generated
    */
-  protected USchemaImpl() {
+  protected USchemapImpl() {
     super();
   }
 
@@ -95,7 +95,7 @@ public class USchemaImpl extends MinimalEObjectImpl.Container implements USchema
    */
   @Override
   protected EClass eStaticClass() {
-    return USchemaPackage.Literals.USCHEMA;
+    return USchemapPackage.Literals.USCHEMA;
   }
 
   /**
@@ -118,7 +118,7 @@ public class USchemaImpl extends MinimalEObjectImpl.Container implements USchema
     String oldName = name;
     name = newName;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.USCHEMA__NAME, oldName, name));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.USCHEMA__NAME, oldName, name));
   }
 
   /**
@@ -129,7 +129,7 @@ public class USchemaImpl extends MinimalEObjectImpl.Container implements USchema
   @Override
   public EList<EntityType> getEntities() {
     if (entities == null) {
-      entities = new EObjectContainmentEList<EntityType>(EntityType.class, this, USchemaPackage.USCHEMA__ENTITIES);
+      entities = new EObjectContainmentEList<EntityType>(EntityType.class, this, USchemapPackage.USCHEMA__ENTITIES);
     }
     return entities;
   }
@@ -142,7 +142,7 @@ public class USchemaImpl extends MinimalEObjectImpl.Container implements USchema
   @Override
   public EList<RelationshipType> getRelationships() {
     if (relationships == null) {
-      relationships = new EObjectContainmentEList<RelationshipType>(RelationshipType.class, this, USchemaPackage.USCHEMA__RELATIONSHIPS);
+      relationships = new EObjectContainmentEList<RelationshipType>(RelationshipType.class, this, USchemapPackage.USCHEMA__RELATIONSHIPS);
     }
     return relationships;
   }
@@ -155,9 +155,9 @@ public class USchemaImpl extends MinimalEObjectImpl.Container implements USchema
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
-      case USchemaPackage.USCHEMA__ENTITIES:
+      case USchemapPackage.USCHEMA__ENTITIES:
         return ((InternalEList<?>)getEntities()).basicRemove(otherEnd, msgs);
-      case USchemaPackage.USCHEMA__RELATIONSHIPS:
+      case USchemapPackage.USCHEMA__RELATIONSHIPS:
         return ((InternalEList<?>)getRelationships()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -171,11 +171,11 @@ public class USchemaImpl extends MinimalEObjectImpl.Container implements USchema
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
     switch (featureID) {
-      case USchemaPackage.USCHEMA__NAME:
+      case USchemapPackage.USCHEMA__NAME:
         return getName();
-      case USchemaPackage.USCHEMA__ENTITIES:
+      case USchemapPackage.USCHEMA__ENTITIES:
         return getEntities();
-      case USchemaPackage.USCHEMA__RELATIONSHIPS:
+      case USchemapPackage.USCHEMA__RELATIONSHIPS:
         return getRelationships();
     }
     return super.eGet(featureID, resolve, coreType);
@@ -190,14 +190,14 @@ public class USchemaImpl extends MinimalEObjectImpl.Container implements USchema
   @Override
   public void eSet(int featureID, Object newValue) {
     switch (featureID) {
-      case USchemaPackage.USCHEMA__NAME:
+      case USchemapPackage.USCHEMA__NAME:
         setName((String)newValue);
         return;
-      case USchemaPackage.USCHEMA__ENTITIES:
+      case USchemapPackage.USCHEMA__ENTITIES:
         getEntities().clear();
         getEntities().addAll((Collection<? extends EntityType>)newValue);
         return;
-      case USchemaPackage.USCHEMA__RELATIONSHIPS:
+      case USchemapPackage.USCHEMA__RELATIONSHIPS:
         getRelationships().clear();
         getRelationships().addAll((Collection<? extends RelationshipType>)newValue);
         return;
@@ -213,13 +213,13 @@ public class USchemaImpl extends MinimalEObjectImpl.Container implements USchema
   @Override
   public void eUnset(int featureID) {
     switch (featureID) {
-      case USchemaPackage.USCHEMA__NAME:
+      case USchemapPackage.USCHEMA__NAME:
         setName(NAME_EDEFAULT);
         return;
-      case USchemaPackage.USCHEMA__ENTITIES:
+      case USchemapPackage.USCHEMA__ENTITIES:
         getEntities().clear();
         return;
-      case USchemaPackage.USCHEMA__RELATIONSHIPS:
+      case USchemapPackage.USCHEMA__RELATIONSHIPS:
         getRelationships().clear();
         return;
     }
@@ -234,11 +234,11 @@ public class USchemaImpl extends MinimalEObjectImpl.Container implements USchema
   @Override
   public boolean eIsSet(int featureID) {
     switch (featureID) {
-      case USchemaPackage.USCHEMA__NAME:
+      case USchemapPackage.USCHEMA__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case USchemaPackage.USCHEMA__ENTITIES:
+      case USchemapPackage.USCHEMA__ENTITIES:
         return entities != null && !entities.isEmpty();
-      case USchemaPackage.USCHEMA__RELATIONSHIPS:
+      case USchemapPackage.USCHEMA__RELATIONSHIPS:
         return relationships != null && !relationships.isEmpty();
     }
     return super.eIsSet(featureID);
@@ -260,4 +260,4 @@ public class USchemaImpl extends MinimalEObjectImpl.Container implements USchema
     return result.toString();
   }
 
-} //USchemaImpl
+} //USchemapImpl

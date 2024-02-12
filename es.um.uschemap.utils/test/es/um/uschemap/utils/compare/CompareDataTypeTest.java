@@ -1,15 +1,15 @@
-package es.um.uschema.utils.compare;
+package es.um.uschemap.utils.compare;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import es.um.uschema.utils.USchemaFactory;
+import es.um.uschemap.utils.USchemapFactory;
 
 public class CompareDataTypeTest
 {
-  private USchemaFactory f;
+  private USchemapFactory f;
   private ComparePrimitiveType cPrimitiveType;
   private ComparePMap cPMap;
   private ComparePTuple cPTuple;
@@ -20,7 +20,7 @@ public class CompareDataTypeTest
   @Before
   public void setUp()
   {
-    f = new USchemaFactory();
+    f = new USchemapFactory();
     cPrimitiveType = new ComparePrimitiveType();
     cPMap = new ComparePMap();
     cPTuple = new ComparePTuple();

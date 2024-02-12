@@ -6,10 +6,10 @@
 
 <plugin>
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated uschema -->
+      <!-- @generated uschemap -->
       <package
-            uri="http://www.modelum.es/USchema"
-            class="es.um.uschema.USchema.USchemaPackage"
-            genModel="model/uschema.genmodel"/>
+            uri="http://www.modelum.es/USchemap"
+            class="es.um.uschemap.USchemap.USchemapPackage"
+            genModel="model/uschemap.genmodel"/>
    </extension>
 </plugin>

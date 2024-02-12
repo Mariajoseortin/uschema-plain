@@ -1,17 +1,17 @@
-package es.um.uschema.utils.custom.compare;
+package es.um.uschemap.utils.custom.compare;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import es.um.uschema.USchema.EntityType;
-import es.um.uschema.USchema.RelationshipType;
-import es.um.uschema.USchema.USchema;
+import es.um.uschemap.USchemap.EntityType;
+import es.um.uschemap.USchemap.RelationshipType;
+import es.um.uschemap.USchemap.USchemap;
 
-public class CompareUSchema extends Comparator<USchema>
+public class CompareUSchemap extends Comparator<USchemap>
 {
   @Override
-  public boolean compare(USchema s1, USchema s2)
+  public boolean compare(USchemap s1, USchemap s2)
   {
     if (super.checkNulls(s1, s2))
       return false;

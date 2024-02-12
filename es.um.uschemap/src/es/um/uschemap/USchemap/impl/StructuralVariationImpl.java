@@ -1,13 +1,13 @@
 /**
  */
-package es.um.uschema.USchema.impl;
+package es.um.uschemap.USchemap.impl;
 
-import es.um.uschema.USchema.Feature;
-import es.um.uschema.USchema.LogicalFeature;
-import es.um.uschema.USchema.SchemaType;
-import es.um.uschema.USchema.StructuralFeature;
-import es.um.uschema.USchema.StructuralVariation;
-import es.um.uschema.USchema.USchemaPackage;
+import es.um.uschemap.USchemap.Feature;
+import es.um.uschemap.USchemap.LogicalFeature;
+import es.um.uschemap.USchemap.SchemaType;
+import es.um.uschemap.USchemap.StructuralFeature;
+import es.um.uschemap.USchemap.StructuralVariation;
+import es.um.uschemap.USchemap.USchemapPackage;
 
 import java.util.Collection;
 
@@ -35,14 +35,14 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.um.uschema.USchema.impl.StructuralVariationImpl#getVariationId <em>Variation Id</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.StructuralVariationImpl#getFeatures <em>Features</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.StructuralVariationImpl#getCount <em>Count</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.StructuralVariationImpl#getFirstTimestamp <em>First Timestamp</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.StructuralVariationImpl#getLastTimestamp <em>Last Timestamp</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.StructuralVariationImpl#getContainer <em>Container</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.StructuralVariationImpl#getLogicalFeatures <em>Logical Features</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.StructuralVariationImpl#getStructuralFeatures <em>Structural Features</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.StructuralVariationImpl#getVariationId <em>Variation Id</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.StructuralVariationImpl#getFeatures <em>Features</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.StructuralVariationImpl#getCount <em>Count</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.StructuralVariationImpl#getFirstTimestamp <em>First Timestamp</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.StructuralVariationImpl#getLastTimestamp <em>Last Timestamp</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.StructuralVariationImpl#getContainer <em>Container</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.StructuralVariationImpl#getLogicalFeatures <em>Logical Features</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.StructuralVariationImpl#getStructuralFeatures <em>Structural Features</em>}</li>
  * </ul>
  *
  * @generated
@@ -174,7 +174,7 @@ public class StructuralVariationImpl extends MinimalEObjectImpl.Container implem
    */
   @Override
   protected EClass eStaticClass() {
-    return USchemaPackage.Literals.STRUCTURAL_VARIATION;
+    return USchemapPackage.Literals.STRUCTURAL_VARIATION;
   }
 
   /**
@@ -197,7 +197,7 @@ public class StructuralVariationImpl extends MinimalEObjectImpl.Container implem
     int oldVariationId = variationId;
     variationId = newVariationId;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.STRUCTURAL_VARIATION__VARIATION_ID, oldVariationId, variationId));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.STRUCTURAL_VARIATION__VARIATION_ID, oldVariationId, variationId));
   }
 
   /**
@@ -208,7 +208,7 @@ public class StructuralVariationImpl extends MinimalEObjectImpl.Container implem
   @Override
   public EList<Feature> getFeatures() {
     if (features == null) {
-      features = new EObjectContainmentEList<Feature>(Feature.class, this, USchemaPackage.STRUCTURAL_VARIATION__FEATURES);
+      features = new EObjectContainmentEList<Feature>(Feature.class, this, USchemapPackage.STRUCTURAL_VARIATION__FEATURES);
     }
     return features;
   }
@@ -233,7 +233,7 @@ public class StructuralVariationImpl extends MinimalEObjectImpl.Container implem
     long oldCount = count;
     count = newCount;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.STRUCTURAL_VARIATION__COUNT, oldCount, count));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.STRUCTURAL_VARIATION__COUNT, oldCount, count));
   }
 
   /**
@@ -256,7 +256,7 @@ public class StructuralVariationImpl extends MinimalEObjectImpl.Container implem
     long oldFirstTimestamp = firstTimestamp;
     firstTimestamp = newFirstTimestamp;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.STRUCTURAL_VARIATION__FIRST_TIMESTAMP, oldFirstTimestamp, firstTimestamp));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.STRUCTURAL_VARIATION__FIRST_TIMESTAMP, oldFirstTimestamp, firstTimestamp));
   }
 
   /**
@@ -279,7 +279,7 @@ public class StructuralVariationImpl extends MinimalEObjectImpl.Container implem
     long oldLastTimestamp = lastTimestamp;
     lastTimestamp = newLastTimestamp;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.STRUCTURAL_VARIATION__LAST_TIMESTAMP, oldLastTimestamp, lastTimestamp));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.STRUCTURAL_VARIATION__LAST_TIMESTAMP, oldLastTimestamp, lastTimestamp));
   }
 
   /**
@@ -289,7 +289,7 @@ public class StructuralVariationImpl extends MinimalEObjectImpl.Container implem
    */
   @Override
   public SchemaType getContainer() {
-    if (eContainerFeatureID() != USchemaPackage.STRUCTURAL_VARIATION__CONTAINER) return null;
+    if (eContainerFeatureID() != USchemapPackage.STRUCTURAL_VARIATION__CONTAINER) return null;
     return (SchemaType)eInternalContainer();
   }
 
@@ -299,7 +299,7 @@ public class StructuralVariationImpl extends MinimalEObjectImpl.Container implem
    * @generated
    */
   public NotificationChain basicSetContainer(SchemaType newContainer, NotificationChain msgs) {
-    msgs = eBasicSetContainer((InternalEObject)newContainer, USchemaPackage.STRUCTURAL_VARIATION__CONTAINER, msgs);
+    msgs = eBasicSetContainer((InternalEObject)newContainer, USchemapPackage.STRUCTURAL_VARIATION__CONTAINER, msgs);
     return msgs;
   }
 
@@ -310,19 +310,19 @@ public class StructuralVariationImpl extends MinimalEObjectImpl.Container implem
    */
   @Override
   public void setContainer(SchemaType newContainer) {
-    if (newContainer != eInternalContainer() || (eContainerFeatureID() != USchemaPackage.STRUCTURAL_VARIATION__CONTAINER && newContainer != null)) {
+    if (newContainer != eInternalContainer() || (eContainerFeatureID() != USchemapPackage.STRUCTURAL_VARIATION__CONTAINER && newContainer != null)) {
       if (EcoreUtil.isAncestor(this, newContainer))
         throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
       NotificationChain msgs = null;
       if (eInternalContainer() != null)
         msgs = eBasicRemoveFromContainer(msgs);
       if (newContainer != null)
-        msgs = ((InternalEObject)newContainer).eInverseAdd(this, USchemaPackage.SCHEMA_TYPE__VARIATIONS, SchemaType.class, msgs);
+        msgs = ((InternalEObject)newContainer).eInverseAdd(this, USchemapPackage.SCHEMA_TYPE__VARIATIONS, SchemaType.class, msgs);
       msgs = basicSetContainer(newContainer, msgs);
       if (msgs != null) msgs.dispatch();
     }
     else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.STRUCTURAL_VARIATION__CONTAINER, newContainer, newContainer));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.STRUCTURAL_VARIATION__CONTAINER, newContainer, newContainer));
   }
 
   /**
@@ -333,7 +333,7 @@ public class StructuralVariationImpl extends MinimalEObjectImpl.Container implem
   @Override
   public EList<LogicalFeature> getLogicalFeatures() {
     if (logicalFeatures == null) {
-      logicalFeatures = new EObjectResolvingEList<LogicalFeature>(LogicalFeature.class, this, USchemaPackage.STRUCTURAL_VARIATION__LOGICAL_FEATURES);
+      logicalFeatures = new EObjectResolvingEList<LogicalFeature>(LogicalFeature.class, this, USchemapPackage.STRUCTURAL_VARIATION__LOGICAL_FEATURES);
     }
     return logicalFeatures;
   }
@@ -346,7 +346,7 @@ public class StructuralVariationImpl extends MinimalEObjectImpl.Container implem
   @Override
   public EList<StructuralFeature> getStructuralFeatures() {
     if (structuralFeatures == null) {
-      structuralFeatures = new EObjectResolvingEList<StructuralFeature>(StructuralFeature.class, this, USchemaPackage.STRUCTURAL_VARIATION__STRUCTURAL_FEATURES);
+      structuralFeatures = new EObjectResolvingEList<StructuralFeature>(StructuralFeature.class, this, USchemapPackage.STRUCTURAL_VARIATION__STRUCTURAL_FEATURES);
     }
     return structuralFeatures;
   }
@@ -359,7 +359,7 @@ public class StructuralVariationImpl extends MinimalEObjectImpl.Container implem
   @Override
   public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
-      case USchemaPackage.STRUCTURAL_VARIATION__CONTAINER:
+      case USchemapPackage.STRUCTURAL_VARIATION__CONTAINER:
         if (eInternalContainer() != null)
           msgs = eBasicRemoveFromContainer(msgs);
         return basicSetContainer((SchemaType)otherEnd, msgs);
@@ -375,9 +375,9 @@ public class StructuralVariationImpl extends MinimalEObjectImpl.Container implem
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
-      case USchemaPackage.STRUCTURAL_VARIATION__FEATURES:
+      case USchemapPackage.STRUCTURAL_VARIATION__FEATURES:
         return ((InternalEList<?>)getFeatures()).basicRemove(otherEnd, msgs);
-      case USchemaPackage.STRUCTURAL_VARIATION__CONTAINER:
+      case USchemapPackage.STRUCTURAL_VARIATION__CONTAINER:
         return basicSetContainer(null, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -391,8 +391,8 @@ public class StructuralVariationImpl extends MinimalEObjectImpl.Container implem
   @Override
   public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
     switch (eContainerFeatureID()) {
-      case USchemaPackage.STRUCTURAL_VARIATION__CONTAINER:
-        return eInternalContainer().eInverseRemove(this, USchemaPackage.SCHEMA_TYPE__VARIATIONS, SchemaType.class, msgs);
+      case USchemapPackage.STRUCTURAL_VARIATION__CONTAINER:
+        return eInternalContainer().eInverseRemove(this, USchemapPackage.SCHEMA_TYPE__VARIATIONS, SchemaType.class, msgs);
     }
     return super.eBasicRemoveFromContainerFeature(msgs);
   }
@@ -405,21 +405,21 @@ public class StructuralVariationImpl extends MinimalEObjectImpl.Container implem
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
     switch (featureID) {
-      case USchemaPackage.STRUCTURAL_VARIATION__VARIATION_ID:
+      case USchemapPackage.STRUCTURAL_VARIATION__VARIATION_ID:
         return getVariationId();
-      case USchemaPackage.STRUCTURAL_VARIATION__FEATURES:
+      case USchemapPackage.STRUCTURAL_VARIATION__FEATURES:
         return getFeatures();
-      case USchemaPackage.STRUCTURAL_VARIATION__COUNT:
+      case USchemapPackage.STRUCTURAL_VARIATION__COUNT:
         return getCount();
-      case USchemaPackage.STRUCTURAL_VARIATION__FIRST_TIMESTAMP:
+      case USchemapPackage.STRUCTURAL_VARIATION__FIRST_TIMESTAMP:
         return getFirstTimestamp();
-      case USchemaPackage.STRUCTURAL_VARIATION__LAST_TIMESTAMP:
+      case USchemapPackage.STRUCTURAL_VARIATION__LAST_TIMESTAMP:
         return getLastTimestamp();
-      case USchemaPackage.STRUCTURAL_VARIATION__CONTAINER:
+      case USchemapPackage.STRUCTURAL_VARIATION__CONTAINER:
         return getContainer();
-      case USchemaPackage.STRUCTURAL_VARIATION__LOGICAL_FEATURES:
+      case USchemapPackage.STRUCTURAL_VARIATION__LOGICAL_FEATURES:
         return getLogicalFeatures();
-      case USchemaPackage.STRUCTURAL_VARIATION__STRUCTURAL_FEATURES:
+      case USchemapPackage.STRUCTURAL_VARIATION__STRUCTURAL_FEATURES:
         return getStructuralFeatures();
     }
     return super.eGet(featureID, resolve, coreType);
@@ -434,30 +434,30 @@ public class StructuralVariationImpl extends MinimalEObjectImpl.Container implem
   @Override
   public void eSet(int featureID, Object newValue) {
     switch (featureID) {
-      case USchemaPackage.STRUCTURAL_VARIATION__VARIATION_ID:
+      case USchemapPackage.STRUCTURAL_VARIATION__VARIATION_ID:
         setVariationId((Integer)newValue);
         return;
-      case USchemaPackage.STRUCTURAL_VARIATION__FEATURES:
+      case USchemapPackage.STRUCTURAL_VARIATION__FEATURES:
         getFeatures().clear();
         getFeatures().addAll((Collection<? extends Feature>)newValue);
         return;
-      case USchemaPackage.STRUCTURAL_VARIATION__COUNT:
+      case USchemapPackage.STRUCTURAL_VARIATION__COUNT:
         setCount((Long)newValue);
         return;
-      case USchemaPackage.STRUCTURAL_VARIATION__FIRST_TIMESTAMP:
+      case USchemapPackage.STRUCTURAL_VARIATION__FIRST_TIMESTAMP:
         setFirstTimestamp((Long)newValue);
         return;
-      case USchemaPackage.STRUCTURAL_VARIATION__LAST_TIMESTAMP:
+      case USchemapPackage.STRUCTURAL_VARIATION__LAST_TIMESTAMP:
         setLastTimestamp((Long)newValue);
         return;
-      case USchemaPackage.STRUCTURAL_VARIATION__CONTAINER:
+      case USchemapPackage.STRUCTURAL_VARIATION__CONTAINER:
         setContainer((SchemaType)newValue);
         return;
-      case USchemaPackage.STRUCTURAL_VARIATION__LOGICAL_FEATURES:
+      case USchemapPackage.STRUCTURAL_VARIATION__LOGICAL_FEATURES:
         getLogicalFeatures().clear();
         getLogicalFeatures().addAll((Collection<? extends LogicalFeature>)newValue);
         return;
-      case USchemaPackage.STRUCTURAL_VARIATION__STRUCTURAL_FEATURES:
+      case USchemapPackage.STRUCTURAL_VARIATION__STRUCTURAL_FEATURES:
         getStructuralFeatures().clear();
         getStructuralFeatures().addAll((Collection<? extends StructuralFeature>)newValue);
         return;
@@ -473,28 +473,28 @@ public class StructuralVariationImpl extends MinimalEObjectImpl.Container implem
   @Override
   public void eUnset(int featureID) {
     switch (featureID) {
-      case USchemaPackage.STRUCTURAL_VARIATION__VARIATION_ID:
+      case USchemapPackage.STRUCTURAL_VARIATION__VARIATION_ID:
         setVariationId(VARIATION_ID_EDEFAULT);
         return;
-      case USchemaPackage.STRUCTURAL_VARIATION__FEATURES:
+      case USchemapPackage.STRUCTURAL_VARIATION__FEATURES:
         getFeatures().clear();
         return;
-      case USchemaPackage.STRUCTURAL_VARIATION__COUNT:
+      case USchemapPackage.STRUCTURAL_VARIATION__COUNT:
         setCount(COUNT_EDEFAULT);
         return;
-      case USchemaPackage.STRUCTURAL_VARIATION__FIRST_TIMESTAMP:
+      case USchemapPackage.STRUCTURAL_VARIATION__FIRST_TIMESTAMP:
         setFirstTimestamp(FIRST_TIMESTAMP_EDEFAULT);
         return;
-      case USchemaPackage.STRUCTURAL_VARIATION__LAST_TIMESTAMP:
+      case USchemapPackage.STRUCTURAL_VARIATION__LAST_TIMESTAMP:
         setLastTimestamp(LAST_TIMESTAMP_EDEFAULT);
         return;
-      case USchemaPackage.STRUCTURAL_VARIATION__CONTAINER:
+      case USchemapPackage.STRUCTURAL_VARIATION__CONTAINER:
         setContainer((SchemaType)null);
         return;
-      case USchemaPackage.STRUCTURAL_VARIATION__LOGICAL_FEATURES:
+      case USchemapPackage.STRUCTURAL_VARIATION__LOGICAL_FEATURES:
         getLogicalFeatures().clear();
         return;
-      case USchemaPackage.STRUCTURAL_VARIATION__STRUCTURAL_FEATURES:
+      case USchemapPackage.STRUCTURAL_VARIATION__STRUCTURAL_FEATURES:
         getStructuralFeatures().clear();
         return;
     }
@@ -509,21 +509,21 @@ public class StructuralVariationImpl extends MinimalEObjectImpl.Container implem
   @Override
   public boolean eIsSet(int featureID) {
     switch (featureID) {
-      case USchemaPackage.STRUCTURAL_VARIATION__VARIATION_ID:
+      case USchemapPackage.STRUCTURAL_VARIATION__VARIATION_ID:
         return variationId != VARIATION_ID_EDEFAULT;
-      case USchemaPackage.STRUCTURAL_VARIATION__FEATURES:
+      case USchemapPackage.STRUCTURAL_VARIATION__FEATURES:
         return features != null && !features.isEmpty();
-      case USchemaPackage.STRUCTURAL_VARIATION__COUNT:
+      case USchemapPackage.STRUCTURAL_VARIATION__COUNT:
         return count != COUNT_EDEFAULT;
-      case USchemaPackage.STRUCTURAL_VARIATION__FIRST_TIMESTAMP:
+      case USchemapPackage.STRUCTURAL_VARIATION__FIRST_TIMESTAMP:
         return firstTimestamp != FIRST_TIMESTAMP_EDEFAULT;
-      case USchemaPackage.STRUCTURAL_VARIATION__LAST_TIMESTAMP:
+      case USchemapPackage.STRUCTURAL_VARIATION__LAST_TIMESTAMP:
         return lastTimestamp != LAST_TIMESTAMP_EDEFAULT;
-      case USchemaPackage.STRUCTURAL_VARIATION__CONTAINER:
+      case USchemapPackage.STRUCTURAL_VARIATION__CONTAINER:
         return getContainer() != null;
-      case USchemaPackage.STRUCTURAL_VARIATION__LOGICAL_FEATURES:
+      case USchemapPackage.STRUCTURAL_VARIATION__LOGICAL_FEATURES:
         return logicalFeatures != null && !logicalFeatures.isEmpty();
-      case USchemaPackage.STRUCTURAL_VARIATION__STRUCTURAL_FEATURES:
+      case USchemapPackage.STRUCTURAL_VARIATION__STRUCTURAL_FEATURES:
         return structuralFeatures != null && !structuralFeatures.isEmpty();
     }
     return super.eIsSet(featureID);

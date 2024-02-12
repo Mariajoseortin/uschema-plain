@@ -1,4 +1,4 @@
-package es.um.uschema.utils.compare;
+package es.um.uschemap.utils.compare;
 
 public abstract class Comparator<T>
 {

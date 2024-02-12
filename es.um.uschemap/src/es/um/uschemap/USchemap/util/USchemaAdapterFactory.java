@@ -1,8 +1,8 @@
 /**
  */
-package es.um.uschema.USchema.util;
+package es.um.uschemap.USchemap.util;
 
-import es.um.uschema.USchema.*;
+import es.um.uschemap.USchemap.*;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
@@ -16,17 +16,17 @@ import org.eclipse.emf.ecore.EObject;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see es.um.uschema.USchema.USchemaPackage
+ * @see es.um.uschemap.USchemap.USchemapPackage
  * @generated
  */
-public class USchemaAdapterFactory extends AdapterFactoryImpl {
+public class USchemapAdapterFactory extends AdapterFactoryImpl {
   /**
    * The cached model package.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected static USchemaPackage modelPackage;
+  protected static USchemapPackage modelPackage;
 
   /**
    * Creates an instance of the adapter factory.
@@ -34,9 +34,9 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
    * <!-- end-user-doc -->
    * @generated
    */
-  public USchemaAdapterFactory() {
+  public USchemapAdapterFactory() {
     if (modelPackage == null) {
-      modelPackage = USchemaPackage.eINSTANCE;
+      modelPackage = USchemapPackage.eINSTANCE;
     }
   }
 
@@ -65,11 +65,11 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
    * <!-- end-user-doc -->
    * @generated
    */
-  protected USchemaSwitch<Adapter> modelSwitch =
-    new USchemaSwitch<Adapter>() {
+  protected USchemapSwitch<Adapter> modelSwitch =
+    new USchemapSwitch<Adapter>() {
       @Override
-      public Adapter caseUSchema(USchema object) {
-        return createUSchemaAdapter();
+      public Adapter caseUSchemap(USchemap object) {
+        return createUSchemapAdapter();
       }
       @Override
       public Adapter caseEntityType(EntityType object) {
@@ -164,27 +164,27 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
 
 
   /**
-   * Creates a new adapter for an object of class '{@link es.um.uschema.USchema.USchema <em>USchema</em>}'.
+   * Creates a new adapter for an object of class '{@link es.um.uschemap.USchemap.USchemap <em>USchemap</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see es.um.uschema.USchema.USchema
+   * @see es.um.uschemap.USchemap.USchemap
    * @generated
    */
-  public Adapter createUSchemaAdapter() {
+  public Adapter createUSchemapAdapter() {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link es.um.uschema.USchema.EntityType <em>Entity Type</em>}'.
+   * Creates a new adapter for an object of class '{@link es.um.uschemap.USchemap.EntityType <em>Entity Type</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see es.um.uschema.USchema.EntityType
+   * @see es.um.uschemap.USchemap.EntityType
    * @generated
    */
   public Adapter createEntityTypeAdapter() {
@@ -192,13 +192,13 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link es.um.uschema.USchema.StructuralVariation <em>Structural Variation</em>}'.
+   * Creates a new adapter for an object of class '{@link es.um.uschemap.USchemap.StructuralVariation <em>Structural Variation</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see es.um.uschema.USchema.StructuralVariation
+   * @see es.um.uschemap.USchemap.StructuralVariation
    * @generated
    */
   public Adapter createStructuralVariationAdapter() {
@@ -206,13 +206,13 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link es.um.uschema.USchema.Feature <em>Feature</em>}'.
+   * Creates a new adapter for an object of class '{@link es.um.uschemap.USchemap.Feature <em>Feature</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see es.um.uschema.USchema.Feature
+   * @see es.um.uschemap.USchemap.Feature
    * @generated
    */
   public Adapter createFeatureAdapter() {
@@ -220,13 +220,13 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link es.um.uschema.USchema.Attribute <em>Attribute</em>}'.
+   * Creates a new adapter for an object of class '{@link es.um.uschemap.USchemap.Attribute <em>Attribute</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see es.um.uschema.USchema.Attribute
+   * @see es.um.uschemap.USchemap.Attribute
    * @generated
    */
   public Adapter createAttributeAdapter() {
@@ -234,13 +234,13 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link es.um.uschema.USchema.DataType <em>Data Type</em>}'.
+   * Creates a new adapter for an object of class '{@link es.um.uschemap.USchemap.DataType <em>Data Type</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see es.um.uschema.USchema.DataType
+   * @see es.um.uschemap.USchemap.DataType
    * @generated
    */
   public Adapter createDataTypeAdapter() {
@@ -248,13 +248,13 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link es.um.uschema.USchema.PList <em>PList</em>}'.
+   * Creates a new adapter for an object of class '{@link es.um.uschemap.USchemap.PList <em>PList</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see es.um.uschema.USchema.PList
+   * @see es.um.uschemap.USchemap.PList
    * @generated
    */
   public Adapter createPListAdapter() {
@@ -262,13 +262,13 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link es.um.uschema.USchema.Reference <em>Reference</em>}'.
+   * Creates a new adapter for an object of class '{@link es.um.uschemap.USchemap.Reference <em>Reference</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see es.um.uschema.USchema.Reference
+   * @see es.um.uschemap.USchemap.Reference
    * @generated
    */
   public Adapter createReferenceAdapter() {
@@ -276,13 +276,13 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link es.um.uschema.USchema.Aggregate <em>Aggregate</em>}'.
+   * Creates a new adapter for an object of class '{@link es.um.uschemap.USchemap.Aggregate <em>Aggregate</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see es.um.uschema.USchema.Aggregate
+   * @see es.um.uschemap.USchemap.Aggregate
    * @generated
    */
   public Adapter createAggregateAdapter() {
@@ -290,13 +290,13 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link es.um.uschema.USchema.PrimitiveType <em>Primitive Type</em>}'.
+   * Creates a new adapter for an object of class '{@link es.um.uschemap.USchemap.PrimitiveType <em>Primitive Type</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see es.um.uschema.USchema.PrimitiveType
+   * @see es.um.uschemap.USchemap.PrimitiveType
    * @generated
    */
   public Adapter createPrimitiveTypeAdapter() {
@@ -304,13 +304,13 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link es.um.uschema.USchema.Null <em>Null</em>}'.
+   * Creates a new adapter for an object of class '{@link es.um.uschemap.USchemap.Null <em>Null</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see es.um.uschema.USchema.Null
+   * @see es.um.uschemap.USchemap.Null
    * @generated
    */
   public Adapter createNullAdapter() {
@@ -318,13 +318,13 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link es.um.uschema.USchema.RelationshipType <em>Relationship Type</em>}'.
+   * Creates a new adapter for an object of class '{@link es.um.uschemap.USchemap.RelationshipType <em>Relationship Type</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see es.um.uschema.USchema.RelationshipType
+   * @see es.um.uschemap.USchemap.RelationshipType
    * @generated
    */
   public Adapter createRelationshipTypeAdapter() {
@@ -332,13 +332,13 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link es.um.uschema.USchema.SchemaType <em>Schema Type</em>}'.
+   * Creates a new adapter for an object of class '{@link es.um.uschemap.USchemap.SchemaType <em>Schema Type</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see es.um.uschema.USchema.SchemaType
+   * @see es.um.uschemap.USchemap.SchemaType
    * @generated
    */
   public Adapter createSchemaTypeAdapter() {
@@ -346,13 +346,13 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link es.um.uschema.USchema.PMap <em>PMap</em>}'.
+   * Creates a new adapter for an object of class '{@link es.um.uschemap.USchemap.PMap <em>PMap</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see es.um.uschema.USchema.PMap
+   * @see es.um.uschemap.USchemap.PMap
    * @generated
    */
   public Adapter createPMapAdapter() {
@@ -360,13 +360,13 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link es.um.uschema.USchema.PSet <em>PSet</em>}'.
+   * Creates a new adapter for an object of class '{@link es.um.uschemap.USchemap.PSet <em>PSet</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see es.um.uschema.USchema.PSet
+   * @see es.um.uschemap.USchemap.PSet
    * @generated
    */
   public Adapter createPSetAdapter() {
@@ -374,13 +374,13 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link es.um.uschema.USchema.PTuple <em>PTuple</em>}'.
+   * Creates a new adapter for an object of class '{@link es.um.uschemap.USchemap.PTuple <em>PTuple</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see es.um.uschema.USchema.PTuple
+   * @see es.um.uschemap.USchemap.PTuple
    * @generated
    */
   public Adapter createPTupleAdapter() {
@@ -388,13 +388,13 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link es.um.uschema.USchema.LogicalFeature <em>Logical Feature</em>}'.
+   * Creates a new adapter for an object of class '{@link es.um.uschemap.USchemap.LogicalFeature <em>Logical Feature</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see es.um.uschema.USchema.LogicalFeature
+   * @see es.um.uschemap.USchemap.LogicalFeature
    * @generated
    */
   public Adapter createLogicalFeatureAdapter() {
@@ -402,13 +402,13 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link es.um.uschema.USchema.Key <em>Key</em>}'.
+   * Creates a new adapter for an object of class '{@link es.um.uschemap.USchemap.Key <em>Key</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see es.um.uschema.USchema.Key
+   * @see es.um.uschemap.USchemap.Key
    * @generated
    */
   public Adapter createKeyAdapter() {
@@ -416,13 +416,13 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link es.um.uschema.USchema.StructuralFeature <em>Structural Feature</em>}'.
+   * Creates a new adapter for an object of class '{@link es.um.uschemap.USchemap.StructuralFeature <em>Structural Feature</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see es.um.uschema.USchema.StructuralFeature
+   * @see es.um.uschemap.USchemap.StructuralFeature
    * @generated
    */
   public Adapter createStructuralFeatureAdapter() {
@@ -441,4 +441,4 @@ public class USchemaAdapterFactory extends AdapterFactoryImpl {
     return null;
   }
 
-} //USchemaAdapterFactory
+} //USchemapAdapterFactory

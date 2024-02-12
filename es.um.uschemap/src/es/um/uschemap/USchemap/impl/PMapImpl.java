@@ -1,11 +1,11 @@
 /**
  */
-package es.um.uschema.USchema.impl;
+package es.um.uschemap.USchemap.impl;
 
-import es.um.uschema.USchema.DataType;
-import es.um.uschema.USchema.PMap;
-import es.um.uschema.USchema.PrimitiveType;
-import es.um.uschema.USchema.USchemaPackage;
+import es.um.uschemap.USchemap.DataType;
+import es.um.uschemap.USchemap.PMap;
+import es.um.uschemap.USchemap.PrimitiveType;
+import es.um.uschemap.USchemap.USchemapPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -23,8 +23,8 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.um.uschema.USchema.impl.PMapImpl#getKeyType <em>Key Type</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.PMapImpl#getValueType <em>Value Type</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.PMapImpl#getKeyType <em>Key Type</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.PMapImpl#getValueType <em>Value Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -66,7 +66,7 @@ public class PMapImpl extends DataTypeImpl implements PMap {
    */
   @Override
   protected EClass eStaticClass() {
-    return USchemaPackage.Literals.PMAP;
+    return USchemapPackage.Literals.PMAP;
   }
 
   /**
@@ -88,7 +88,7 @@ public class PMapImpl extends DataTypeImpl implements PMap {
     PrimitiveType oldKeyType = keyType;
     keyType = newKeyType;
     if (eNotificationRequired()) {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, USchemaPackage.PMAP__KEY_TYPE, oldKeyType, newKeyType);
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, USchemapPackage.PMAP__KEY_TYPE, oldKeyType, newKeyType);
       if (msgs == null) msgs = notification; else msgs.add(notification);
     }
     return msgs;
@@ -104,14 +104,14 @@ public class PMapImpl extends DataTypeImpl implements PMap {
     if (newKeyType != keyType) {
       NotificationChain msgs = null;
       if (keyType != null)
-        msgs = ((InternalEObject)keyType).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - USchemaPackage.PMAP__KEY_TYPE, null, msgs);
+        msgs = ((InternalEObject)keyType).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - USchemapPackage.PMAP__KEY_TYPE, null, msgs);
       if (newKeyType != null)
-        msgs = ((InternalEObject)newKeyType).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - USchemaPackage.PMAP__KEY_TYPE, null, msgs);
+        msgs = ((InternalEObject)newKeyType).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - USchemapPackage.PMAP__KEY_TYPE, null, msgs);
       msgs = basicSetKeyType(newKeyType, msgs);
       if (msgs != null) msgs.dispatch();
     }
     else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.PMAP__KEY_TYPE, newKeyType, newKeyType));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.PMAP__KEY_TYPE, newKeyType, newKeyType));
   }
 
   /**
@@ -133,7 +133,7 @@ public class PMapImpl extends DataTypeImpl implements PMap {
     DataType oldValueType = valueType;
     valueType = newValueType;
     if (eNotificationRequired()) {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, USchemaPackage.PMAP__VALUE_TYPE, oldValueType, newValueType);
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, USchemapPackage.PMAP__VALUE_TYPE, oldValueType, newValueType);
       if (msgs == null) msgs = notification; else msgs.add(notification);
     }
     return msgs;
@@ -149,14 +149,14 @@ public class PMapImpl extends DataTypeImpl implements PMap {
     if (newValueType != valueType) {
       NotificationChain msgs = null;
       if (valueType != null)
-        msgs = ((InternalEObject)valueType).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - USchemaPackage.PMAP__VALUE_TYPE, null, msgs);
+        msgs = ((InternalEObject)valueType).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - USchemapPackage.PMAP__VALUE_TYPE, null, msgs);
       if (newValueType != null)
-        msgs = ((InternalEObject)newValueType).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - USchemaPackage.PMAP__VALUE_TYPE, null, msgs);
+        msgs = ((InternalEObject)newValueType).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - USchemapPackage.PMAP__VALUE_TYPE, null, msgs);
       msgs = basicSetValueType(newValueType, msgs);
       if (msgs != null) msgs.dispatch();
     }
     else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.PMAP__VALUE_TYPE, newValueType, newValueType));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.PMAP__VALUE_TYPE, newValueType, newValueType));
   }
 
   /**
@@ -167,9 +167,9 @@ public class PMapImpl extends DataTypeImpl implements PMap {
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
-      case USchemaPackage.PMAP__KEY_TYPE:
+      case USchemapPackage.PMAP__KEY_TYPE:
         return basicSetKeyType(null, msgs);
-      case USchemaPackage.PMAP__VALUE_TYPE:
+      case USchemapPackage.PMAP__VALUE_TYPE:
         return basicSetValueType(null, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -183,9 +183,9 @@ public class PMapImpl extends DataTypeImpl implements PMap {
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
     switch (featureID) {
-      case USchemaPackage.PMAP__KEY_TYPE:
+      case USchemapPackage.PMAP__KEY_TYPE:
         return getKeyType();
-      case USchemaPackage.PMAP__VALUE_TYPE:
+      case USchemapPackage.PMAP__VALUE_TYPE:
         return getValueType();
     }
     return super.eGet(featureID, resolve, coreType);
@@ -199,10 +199,10 @@ public class PMapImpl extends DataTypeImpl implements PMap {
   @Override
   public void eSet(int featureID, Object newValue) {
     switch (featureID) {
-      case USchemaPackage.PMAP__KEY_TYPE:
+      case USchemapPackage.PMAP__KEY_TYPE:
         setKeyType((PrimitiveType)newValue);
         return;
-      case USchemaPackage.PMAP__VALUE_TYPE:
+      case USchemapPackage.PMAP__VALUE_TYPE:
         setValueType((DataType)newValue);
         return;
     }
@@ -217,10 +217,10 @@ public class PMapImpl extends DataTypeImpl implements PMap {
   @Override
   public void eUnset(int featureID) {
     switch (featureID) {
-      case USchemaPackage.PMAP__KEY_TYPE:
+      case USchemapPackage.PMAP__KEY_TYPE:
         setKeyType((PrimitiveType)null);
         return;
-      case USchemaPackage.PMAP__VALUE_TYPE:
+      case USchemapPackage.PMAP__VALUE_TYPE:
         setValueType((DataType)null);
         return;
     }
@@ -235,9 +235,9 @@ public class PMapImpl extends DataTypeImpl implements PMap {
   @Override
   public boolean eIsSet(int featureID) {
     switch (featureID) {
-      case USchemaPackage.PMAP__KEY_TYPE:
+      case USchemapPackage.PMAP__KEY_TYPE:
         return keyType != null;
-      case USchemaPackage.PMAP__VALUE_TYPE:
+      case USchemapPackage.PMAP__VALUE_TYPE:
         return valueType != null;
     }
     return super.eIsSet(featureID);

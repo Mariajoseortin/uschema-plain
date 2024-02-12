@@ -1,28 +1,28 @@
 /**
  */
-package es.um.uschema.USchema.impl;
+package es.um.uschemap.USchemap.impl;
 
-import es.um.uschema.USchema.Aggregate;
-import es.um.uschema.USchema.Attribute;
-import es.um.uschema.USchema.DataType;
-import es.um.uschema.USchema.EntityType;
-import es.um.uschema.USchema.Feature;
-import es.um.uschema.USchema.Key;
-import es.um.uschema.USchema.LogicalFeature;
-import es.um.uschema.USchema.Null;
-import es.um.uschema.USchema.PList;
-import es.um.uschema.USchema.PMap;
-import es.um.uschema.USchema.PSet;
-import es.um.uschema.USchema.PTuple;
-import es.um.uschema.USchema.PrimitiveType;
-import es.um.uschema.USchema.Reference;
-import es.um.uschema.USchema.RelationshipType;
-import es.um.uschema.USchema.SchemaType;
-import es.um.uschema.USchema.StructuralFeature;
-import es.um.uschema.USchema.StructuralVariation;
-import es.um.uschema.USchema.USchema;
-import es.um.uschema.USchema.USchemaFactory;
-import es.um.uschema.USchema.USchemaPackage;
+import es.um.uschemap.USchemap.Aggregate;
+import es.um.uschemap.USchemap.Attribute;
+import es.um.uschemap.USchemap.DataType;
+import es.um.uschemap.USchemap.EntityType;
+import es.um.uschemap.USchemap.Feature;
+import es.um.uschemap.USchemap.Key;
+import es.um.uschemap.USchemap.LogicalFeature;
+import es.um.uschemap.USchemap.Null;
+import es.um.uschemap.USchemap.PList;
+import es.um.uschemap.USchemap.PMap;
+import es.um.uschemap.USchemap.PSet;
+import es.um.uschemap.USchemap.PTuple;
+import es.um.uschemap.USchemap.PrimitiveType;
+import es.um.uschemap.USchemap.Reference;
+import es.um.uschemap.USchemap.RelationshipType;
+import es.um.uschemap.USchemap.SchemaType;
+import es.um.uschemap.USchemap.StructuralFeature;
+import es.um.uschemap.USchemap.StructuralVariation;
+import es.um.uschemap.USchemap.USchemap;
+import es.um.uschemap.USchemap.USchemapFactory;
+import es.um.uschemap.USchemap.USchemapPackage;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -37,7 +37,7 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
  * <!-- end-user-doc -->
  * @generated
  */
-public class USchemaPackageImpl extends EPackageImpl implements USchemaPackage {
+public class USchemapPackageImpl extends EPackageImpl implements USchemapPackage {
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -182,12 +182,12 @@ public class USchemaPackageImpl extends EPackageImpl implements USchemaPackage {
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see org.eclipse.emf.ecore.EPackage.Registry
-   * @see es.um.uschema.USchema.USchemaPackage#eNS_URI
+   * @see es.um.uschemap.USchemap.USchemapPackage#eNS_URI
    * @see #init()
    * @generated
    */
-  private USchemaPackageImpl() {
-    super(eNS_URI, USchemaFactory.eINSTANCE);
+  private USchemapPackageImpl() {
+    super(eNS_URI, USchemapFactory.eINSTANCE);
   }
   /**
    * <!-- begin-user-doc -->
@@ -199,7 +199,7 @@ public class USchemaPackageImpl extends EPackageImpl implements USchemaPackage {
   /**
    * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
    *
-   * <p>This method is used to initialize {@link USchemaPackage#eINSTANCE} when that field is accessed.
+   * <p>This method is used to initialize {@link USchemapPackage#eINSTANCE} when that field is accessed.
    * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -208,27 +208,27 @@ public class USchemaPackageImpl extends EPackageImpl implements USchemaPackage {
    * @see #initializePackageContents()
    * @generated
    */
-  public static USchemaPackage init() {
-    if (isInited) return (USchemaPackage)EPackage.Registry.INSTANCE.getEPackage(USchemaPackage.eNS_URI);
+  public static USchemapPackage init() {
+    if (isInited) return (USchemapPackage)EPackage.Registry.INSTANCE.getEPackage(USchemapPackage.eNS_URI);
 
     // Obtain or create and register package
-    Object registeredUSchemaPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
-    USchemaPackageImpl theUSchemaPackage = registeredUSchemaPackage instanceof USchemaPackageImpl ? (USchemaPackageImpl)registeredUSchemaPackage : new USchemaPackageImpl();
+    Object registeredUSchemapPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+    USchemapPackageImpl theUSchemapPackage = registeredUSchemapPackage instanceof USchemapPackageImpl ? (USchemapPackageImpl)registeredUSchemapPackage : new USchemapPackageImpl();
 
     isInited = true;
 
     // Create package meta-data objects
-    theUSchemaPackage.createPackageContents();
+    theUSchemapPackage.createPackageContents();
 
     // Initialize created meta-data
-    theUSchemaPackage.initializePackageContents();
+    theUSchemapPackage.initializePackageContents();
 
     // Mark meta-data to indicate it can't be changed
-    theUSchemaPackage.freeze();
+    theUSchemapPackage.freeze();
 
     // Update the registry and return the package
-    EPackage.Registry.INSTANCE.put(USchemaPackage.eNS_URI, theUSchemaPackage);
-    return theUSchemaPackage;
+    EPackage.Registry.INSTANCE.put(USchemapPackage.eNS_URI, theUSchemapPackage);
+    return theUSchemapPackage;
   }
 
   /**
@@ -237,7 +237,7 @@ public class USchemaPackageImpl extends EPackageImpl implements USchemaPackage {
    * @generated
    */
   @Override
-  public EClass getUSchema() {
+  public EClass getUSchemap() {
     return uSchemaEClass;
   }
 
@@ -247,7 +247,7 @@ public class USchemaPackageImpl extends EPackageImpl implements USchemaPackage {
    * @generated
    */
   @Override
-  public EAttribute getUSchema_Name() {
+  public EAttribute getUSchemap_Name() {
     return (EAttribute)uSchemaEClass.getEStructuralFeatures().get(0);
   }
 
@@ -257,7 +257,7 @@ public class USchemaPackageImpl extends EPackageImpl implements USchemaPackage {
    * @generated
    */
   @Override
-  public EReference getUSchema_Entities() {
+  public EReference getUSchemap_Entities() {
     return (EReference)uSchemaEClass.getEStructuralFeatures().get(1);
   }
 
@@ -267,7 +267,7 @@ public class USchemaPackageImpl extends EPackageImpl implements USchemaPackage {
    * @generated
    */
   @Override
-  public EReference getUSchema_Relationships() {
+  public EReference getUSchemap_Relationships() {
     return (EReference)uSchemaEClass.getEStructuralFeatures().get(2);
   }
 
@@ -787,8 +787,8 @@ public class USchemaPackageImpl extends EPackageImpl implements USchemaPackage {
    * @generated
    */
   @Override
-  public USchemaFactory getUSchemaFactory() {
-    return (USchemaFactory)getEFactoryInstance();
+  public USchemapFactory getUSchemapFactory() {
+    return (USchemapFactory)getEFactoryInstance();
   }
 
   /**
@@ -929,10 +929,10 @@ public class USchemaPackageImpl extends EPackageImpl implements USchemaPackage {
     structuralFeatureEClass.getESuperTypes().add(this.getFeature());
 
     // Initialize classes, features, and operations; add parameters
-    initEClass(uSchemaEClass, USchema.class, "USchema", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getUSchema_Name(), ecorePackage.getEString(), "name", null, 1, 1, USchema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getUSchema_Entities(), this.getEntityType(), null, "entities", null, 0, -1, USchema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getUSchema_Relationships(), this.getRelationshipType(), null, "relationships", null, 0, -1, USchema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(uSchemaEClass, USchemap.class, "USchemap", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getUSchemap_Name(), ecorePackage.getEString(), "name", null, 1, 1, USchemap.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getUSchemap_Entities(), this.getEntityType(), null, "entities", null, 0, -1, USchemap.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getUSchemap_Relationships(), this.getRelationshipType(), null, "relationships", null, 0, -1, USchemap.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(entityTypeEClass, EntityType.class, "EntityType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getEntityType_Root(), ecorePackage.getEBoolean(), "root", "false", 0, 1, EntityType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1007,4 +1007,4 @@ public class USchemaPackageImpl extends EPackageImpl implements USchemaPackage {
     createResource(eNS_URI);
   }
 
-} //USchemaPackageImpl
+} //USchemapPackageImpl

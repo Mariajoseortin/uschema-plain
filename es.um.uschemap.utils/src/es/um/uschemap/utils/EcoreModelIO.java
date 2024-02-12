@@ -1,4 +1,4 @@
-package es.um.uschema.utils;
+package es.um.uschemap.utils;
 
 import java.io.BufferedOutputStream;
 import java.io.IOException;
@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.xmi.XMIResource;
 import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 
-import es.um.uschema.USchema.USchemaPackage;
+import es.um.uschemap.USchemap.USchemapPackage;
 
 public class EcoreModelIO
 {
@@ -31,7 +31,7 @@ public class EcoreModelIO
   {
     Map<String, Object> map = reg.getExtensionToFactoryMap();
     map.put("xmi", new XMIResourceFactoryImpl());
-    map.put("uschema", new XMIResourceFactoryImpl());
+    map.put("uschemap", new XMIResourceFactoryImpl());
   }
 
   public EcoreModelIO()
@@ -41,7 +41,7 @@ public class EcoreModelIO
     resourceSet.getLoadOptions().put(XMLResource.OPTION_EXTENDED_META_DATA, extendedMetaData);
     resourceSet.getLoadOptions().put(XMLResource.OPTION_DEFER_IDREF_RESOLUTION, Boolean.TRUE);
 
-    registerPackages(USchemaPackage.eINSTANCE);
+    registerPackages(USchemapPackage.eINSTANCE);
 
     writeOptions = new HashMap<Object, Object>();
     writeOptions.put(XMIResource.OPTION_SCHEMA_LOCATION, Boolean.TRUE);

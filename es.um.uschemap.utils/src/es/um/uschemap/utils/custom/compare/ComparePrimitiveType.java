@@ -1,4 +1,4 @@
-package es.um.uschema.utils.custom.compare;
+package es.um.uschemap.utils.custom.compare;
 
 import java.util.Map;
 import java.util.Collections;
@@ -6,7 +6,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import es.um.uschema.USchema.PrimitiveType;
+import es.um.uschemap.USchemap.PrimitiveType;
 
 public class ComparePrimitiveType extends Comparator<PrimitiveType>
 {

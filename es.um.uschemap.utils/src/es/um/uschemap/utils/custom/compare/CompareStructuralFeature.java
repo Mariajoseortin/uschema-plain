@@ -1,8 +1,8 @@
-package es.um.uschema.utils.custom.compare;
+package es.um.uschemap.utils.custom.compare;
 
-import es.um.uschema.USchema.Aggregate;
-import es.um.uschema.USchema.Attribute;
-import es.um.uschema.USchema.StructuralFeature;
+import es.um.uschemap.USchemap.Aggregate;
+import es.um.uschemap.USchemap.Attribute;
+import es.um.uschemap.USchemap.StructuralFeature;
 
 public class CompareStructuralFeature extends Comparator<StructuralFeature>
 {

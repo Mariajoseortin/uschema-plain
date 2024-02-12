@@ -1,9 +1,9 @@
 /**
  */
-package es.um.uschema.USchema.impl;
+package es.um.uschemap.USchemap.impl;
 
-import es.um.uschema.USchema.DataType;
-import es.um.uschema.USchema.USchemaPackage;
+import es.um.uschemap.USchemap.DataType;
+import es.um.uschemap.USchemap.USchemapPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -33,7 +33,7 @@ public abstract class DataTypeImpl extends MinimalEObjectImpl.Container implemen
    */
   @Override
   protected EClass eStaticClass() {
-    return USchemaPackage.Literals.DATA_TYPE;
+    return USchemapPackage.Literals.DATA_TYPE;
   }
 
 } //DataTypeImpl

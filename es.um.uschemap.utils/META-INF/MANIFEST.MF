@@ -1,14 +1,14 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: USchema-utils
-Bundle-SymbolicName: es.um.uschema.utils
+Bundle-Name: USchemap-utils
+Bundle-SymbolicName: es.um.uschemap.utils
 Bundle-Version: 1.0.1
 Import-Package: org.eclipse.emf.ecore.xmi,
  org.eclipse.emf.ecore.xmi.impl
-Automatic-Module-Name: es.um.uschema.utils
+Automatic-Module-Name: es.um.uschemap.utils
 Bundle-RequiredExecutionEnvironment: JavaSE-17
-Require-Bundle: es.um.uschema;bundle-version="1.0.0",
+Require-Bundle: es.um.uschemap;bundle-version="1.0.0",
  org.junit
-Export-Package: es.um.uschema.utils,
- es.um.uschema.utils.compare,
- es.um.uschema.utils.custom.compare
+Export-Package: es.um.uschemap.utils,
+ es.um.uschemap.utils.compare,
+ es.um.uschemap.utils.custom.compare

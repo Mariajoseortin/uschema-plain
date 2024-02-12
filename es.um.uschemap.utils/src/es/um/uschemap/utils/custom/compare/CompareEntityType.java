@@ -1,6 +1,6 @@
-package es.um.uschema.utils.custom.compare;
+package es.um.uschemap.utils.custom.compare;
 
-import es.um.uschema.USchema.EntityType;
+import es.um.uschemap.USchemap.EntityType;
 
 public class CompareEntityType extends Comparator<EntityType>
 {

@@ -1,12 +1,12 @@
 /**
  */
-package es.um.uschema.USchema.impl;
+package es.um.uschemap.USchemap.impl;
 
-import es.um.uschema.USchema.Attribute;
-import es.um.uschema.USchema.EntityType;
-import es.um.uschema.USchema.Reference;
-import es.um.uschema.USchema.StructuralVariation;
-import es.um.uschema.USchema.USchemaPackage;
+import es.um.uschemap.USchemap.Attribute;
+import es.um.uschemap.USchemap.EntityType;
+import es.um.uschemap.USchemap.Reference;
+import es.um.uschemap.USchemap.StructuralVariation;
+import es.um.uschemap.USchemap.USchemapPackage;
 
 import java.util.Collection;
 
@@ -32,12 +32,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.um.uschema.USchema.impl.ReferenceImpl#getOpposite <em>Opposite</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.ReferenceImpl#getRefsTo <em>Refs To</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.ReferenceImpl#getIsFeaturedBy <em>Is Featured By</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.ReferenceImpl#getAttributes <em>Attributes</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.ReferenceImpl#getUpperBound <em>Upper Bound</em>}</li>
- *   <li>{@link es.um.uschema.USchema.impl.ReferenceImpl#getLowerBound <em>Lower Bound</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.ReferenceImpl#getOpposite <em>Opposite</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.ReferenceImpl#getRefsTo <em>Refs To</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.ReferenceImpl#getIsFeaturedBy <em>Is Featured By</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.ReferenceImpl#getAttributes <em>Attributes</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.ReferenceImpl#getUpperBound <em>Upper Bound</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.ReferenceImpl#getLowerBound <em>Lower Bound</em>}</li>
  * </ul>
  *
  * @generated
@@ -139,7 +139,7 @@ public class ReferenceImpl extends LogicalFeatureImpl implements Reference {
    */
   @Override
   protected EClass eStaticClass() {
-    return USchemaPackage.Literals.REFERENCE;
+    return USchemapPackage.Literals.REFERENCE;
   }
 
   /**
@@ -154,7 +154,7 @@ public class ReferenceImpl extends LogicalFeatureImpl implements Reference {
       opposite = (Reference)eResolveProxy(oldOpposite);
       if (opposite != oldOpposite) {
         if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, USchemaPackage.REFERENCE__OPPOSITE, oldOpposite, opposite));
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, USchemapPackage.REFERENCE__OPPOSITE, oldOpposite, opposite));
       }
     }
     return opposite;
@@ -179,7 +179,7 @@ public class ReferenceImpl extends LogicalFeatureImpl implements Reference {
     Reference oldOpposite = opposite;
     opposite = newOpposite;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.REFERENCE__OPPOSITE, oldOpposite, opposite));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.REFERENCE__OPPOSITE, oldOpposite, opposite));
   }
 
   /**
@@ -194,7 +194,7 @@ public class ReferenceImpl extends LogicalFeatureImpl implements Reference {
       refsTo = (EntityType)eResolveProxy(oldRefsTo);
       if (refsTo != oldRefsTo) {
         if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, USchemaPackage.REFERENCE__REFS_TO, oldRefsTo, refsTo));
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, USchemapPackage.REFERENCE__REFS_TO, oldRefsTo, refsTo));
       }
     }
     return refsTo;
@@ -219,7 +219,7 @@ public class ReferenceImpl extends LogicalFeatureImpl implements Reference {
     EntityType oldRefsTo = refsTo;
     refsTo = newRefsTo;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.REFERENCE__REFS_TO, oldRefsTo, refsTo));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.REFERENCE__REFS_TO, oldRefsTo, refsTo));
   }
 
   /**
@@ -230,7 +230,7 @@ public class ReferenceImpl extends LogicalFeatureImpl implements Reference {
   @Override
   public EList<StructuralVariation> getIsFeaturedBy() {
     if (isFeaturedBy == null) {
-      isFeaturedBy = new EObjectResolvingEList<StructuralVariation>(StructuralVariation.class, this, USchemaPackage.REFERENCE__IS_FEATURED_BY);
+      isFeaturedBy = new EObjectResolvingEList<StructuralVariation>(StructuralVariation.class, this, USchemapPackage.REFERENCE__IS_FEATURED_BY);
     }
     return isFeaturedBy;
   }
@@ -243,7 +243,7 @@ public class ReferenceImpl extends LogicalFeatureImpl implements Reference {
   @Override
   public EList<Attribute> getAttributes() {
     if (attributes == null) {
-      attributes = new EObjectWithInverseResolvingEList.ManyInverse<Attribute>(Attribute.class, this, USchemaPackage.REFERENCE__ATTRIBUTES, USchemaPackage.ATTRIBUTE__REFERENCES);
+      attributes = new EObjectWithInverseResolvingEList.ManyInverse<Attribute>(Attribute.class, this, USchemapPackage.REFERENCE__ATTRIBUTES, USchemapPackage.ATTRIBUTE__REFERENCES);
     }
     return attributes;
   }
@@ -268,7 +268,7 @@ public class ReferenceImpl extends LogicalFeatureImpl implements Reference {
     int oldUpperBound = upperBound;
     upperBound = newUpperBound;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.REFERENCE__UPPER_BOUND, oldUpperBound, upperBound));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.REFERENCE__UPPER_BOUND, oldUpperBound, upperBound));
   }
 
   /**
@@ -291,7 +291,7 @@ public class ReferenceImpl extends LogicalFeatureImpl implements Reference {
     int oldLowerBound = lowerBound;
     lowerBound = newLowerBound;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.REFERENCE__LOWER_BOUND, oldLowerBound, lowerBound));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.REFERENCE__LOWER_BOUND, oldLowerBound, lowerBound));
   }
 
   /**
@@ -303,7 +303,7 @@ public class ReferenceImpl extends LogicalFeatureImpl implements Reference {
   @Override
   public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
-      case USchemaPackage.REFERENCE__ATTRIBUTES:
+      case USchemapPackage.REFERENCE__ATTRIBUTES:
         return ((InternalEList<InternalEObject>)(InternalEList<?>)getAttributes()).basicAdd(otherEnd, msgs);
     }
     return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -317,7 +317,7 @@ public class ReferenceImpl extends LogicalFeatureImpl implements Reference {
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
-      case USchemaPackage.REFERENCE__ATTRIBUTES:
+      case USchemapPackage.REFERENCE__ATTRIBUTES:
         return ((InternalEList<?>)getAttributes()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -331,19 +331,19 @@ public class ReferenceImpl extends LogicalFeatureImpl implements Reference {
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
     switch (featureID) {
-      case USchemaPackage.REFERENCE__OPPOSITE:
+      case USchemapPackage.REFERENCE__OPPOSITE:
         if (resolve) return getOpposite();
         return basicGetOpposite();
-      case USchemaPackage.REFERENCE__REFS_TO:
+      case USchemapPackage.REFERENCE__REFS_TO:
         if (resolve) return getRefsTo();
         return basicGetRefsTo();
-      case USchemaPackage.REFERENCE__IS_FEATURED_BY:
+      case USchemapPackage.REFERENCE__IS_FEATURED_BY:
         return getIsFeaturedBy();
-      case USchemaPackage.REFERENCE__ATTRIBUTES:
+      case USchemapPackage.REFERENCE__ATTRIBUTES:
         return getAttributes();
-      case USchemaPackage.REFERENCE__UPPER_BOUND:
+      case USchemapPackage.REFERENCE__UPPER_BOUND:
         return getUpperBound();
-      case USchemaPackage.REFERENCE__LOWER_BOUND:
+      case USchemapPackage.REFERENCE__LOWER_BOUND:
         return getLowerBound();
     }
     return super.eGet(featureID, resolve, coreType);
@@ -358,24 +358,24 @@ public class ReferenceImpl extends LogicalFeatureImpl implements Reference {
   @Override
   public void eSet(int featureID, Object newValue) {
     switch (featureID) {
-      case USchemaPackage.REFERENCE__OPPOSITE:
+      case USchemapPackage.REFERENCE__OPPOSITE:
         setOpposite((Reference)newValue);
         return;
-      case USchemaPackage.REFERENCE__REFS_TO:
+      case USchemapPackage.REFERENCE__REFS_TO:
         setRefsTo((EntityType)newValue);
         return;
-      case USchemaPackage.REFERENCE__IS_FEATURED_BY:
+      case USchemapPackage.REFERENCE__IS_FEATURED_BY:
         getIsFeaturedBy().clear();
         getIsFeaturedBy().addAll((Collection<? extends StructuralVariation>)newValue);
         return;
-      case USchemaPackage.REFERENCE__ATTRIBUTES:
+      case USchemapPackage.REFERENCE__ATTRIBUTES:
         getAttributes().clear();
         getAttributes().addAll((Collection<? extends Attribute>)newValue);
         return;
-      case USchemaPackage.REFERENCE__UPPER_BOUND:
+      case USchemapPackage.REFERENCE__UPPER_BOUND:
         setUpperBound((Integer)newValue);
         return;
-      case USchemaPackage.REFERENCE__LOWER_BOUND:
+      case USchemapPackage.REFERENCE__LOWER_BOUND:
         setLowerBound((Integer)newValue);
         return;
     }
@@ -390,22 +390,22 @@ public class ReferenceImpl extends LogicalFeatureImpl implements Reference {
   @Override
   public void eUnset(int featureID) {
     switch (featureID) {
-      case USchemaPackage.REFERENCE__OPPOSITE:
+      case USchemapPackage.REFERENCE__OPPOSITE:
         setOpposite((Reference)null);
         return;
-      case USchemaPackage.REFERENCE__REFS_TO:
+      case USchemapPackage.REFERENCE__REFS_TO:
         setRefsTo((EntityType)null);
         return;
-      case USchemaPackage.REFERENCE__IS_FEATURED_BY:
+      case USchemapPackage.REFERENCE__IS_FEATURED_BY:
         getIsFeaturedBy().clear();
         return;
-      case USchemaPackage.REFERENCE__ATTRIBUTES:
+      case USchemapPackage.REFERENCE__ATTRIBUTES:
         getAttributes().clear();
         return;
-      case USchemaPackage.REFERENCE__UPPER_BOUND:
+      case USchemapPackage.REFERENCE__UPPER_BOUND:
         setUpperBound(UPPER_BOUND_EDEFAULT);
         return;
-      case USchemaPackage.REFERENCE__LOWER_BOUND:
+      case USchemapPackage.REFERENCE__LOWER_BOUND:
         setLowerBound(LOWER_BOUND_EDEFAULT);
         return;
     }
@@ -420,17 +420,17 @@ public class ReferenceImpl extends LogicalFeatureImpl implements Reference {
   @Override
   public boolean eIsSet(int featureID) {
     switch (featureID) {
-      case USchemaPackage.REFERENCE__OPPOSITE:
+      case USchemapPackage.REFERENCE__OPPOSITE:
         return opposite != null;
-      case USchemaPackage.REFERENCE__REFS_TO:
+      case USchemapPackage.REFERENCE__REFS_TO:
         return refsTo != null;
-      case USchemaPackage.REFERENCE__IS_FEATURED_BY:
+      case USchemapPackage.REFERENCE__IS_FEATURED_BY:
         return isFeaturedBy != null && !isFeaturedBy.isEmpty();
-      case USchemaPackage.REFERENCE__ATTRIBUTES:
+      case USchemapPackage.REFERENCE__ATTRIBUTES:
         return attributes != null && !attributes.isEmpty();
-      case USchemaPackage.REFERENCE__UPPER_BOUND:
+      case USchemapPackage.REFERENCE__UPPER_BOUND:
         return upperBound != UPPER_BOUND_EDEFAULT;
-      case USchemaPackage.REFERENCE__LOWER_BOUND:
+      case USchemapPackage.REFERENCE__LOWER_BOUND:
         return lowerBound != LOWER_BOUND_EDEFAULT;
     }
     return super.eIsSet(featureID);

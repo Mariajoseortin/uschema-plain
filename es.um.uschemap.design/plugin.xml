@@ -3,9 +3,9 @@
 <?eclipse version="3.0"?>
 <plugin>
   <extension point="org.eclipse.sirius.componentization">
-    <component class="es.um.uschema.design.Activator"
-               id="es.um.uschema.design"
-	       name="uschema">
+    <component class="es.um.uschemap.design.Activator"
+               id="es.um.uschemap.design"
+	       name="uschemap">
     </component>
   </extension>
 </plugin>

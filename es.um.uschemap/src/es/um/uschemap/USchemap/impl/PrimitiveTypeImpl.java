@@ -1,9 +1,9 @@
 /**
  */
-package es.um.uschema.USchema.impl;
+package es.um.uschemap.USchemap.impl;
 
-import es.um.uschema.USchema.PrimitiveType;
-import es.um.uschema.USchema.USchemaPackage;
+import es.um.uschemap.USchemap.PrimitiveType;
+import es.um.uschemap.USchemap.USchemapPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.um.uschema.USchema.impl.PrimitiveTypeImpl#getName <em>Name</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.PrimitiveTypeImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -61,7 +61,7 @@ public class PrimitiveTypeImpl extends DataTypeImpl implements PrimitiveType {
    */
   @Override
   protected EClass eStaticClass() {
-    return USchemaPackage.Literals.PRIMITIVE_TYPE;
+    return USchemapPackage.Literals.PRIMITIVE_TYPE;
   }
 
   /**
@@ -84,7 +84,7 @@ public class PrimitiveTypeImpl extends DataTypeImpl implements PrimitiveType {
     String oldName = name;
     name = newName;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, USchemaPackage.PRIMITIVE_TYPE__NAME, oldName, name));
+      eNotify(new ENotificationImpl(this, Notification.SET, USchemapPackage.PRIMITIVE_TYPE__NAME, oldName, name));
   }
 
   /**
@@ -95,7 +95,7 @@ public class PrimitiveTypeImpl extends DataTypeImpl implements PrimitiveType {
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
     switch (featureID) {
-      case USchemaPackage.PRIMITIVE_TYPE__NAME:
+      case USchemapPackage.PRIMITIVE_TYPE__NAME:
         return getName();
     }
     return super.eGet(featureID, resolve, coreType);
@@ -109,7 +109,7 @@ public class PrimitiveTypeImpl extends DataTypeImpl implements PrimitiveType {
   @Override
   public void eSet(int featureID, Object newValue) {
     switch (featureID) {
-      case USchemaPackage.PRIMITIVE_TYPE__NAME:
+      case USchemapPackage.PRIMITIVE_TYPE__NAME:
         setName((String)newValue);
         return;
     }
@@ -124,7 +124,7 @@ public class PrimitiveTypeImpl extends DataTypeImpl implements PrimitiveType {
   @Override
   public void eUnset(int featureID) {
     switch (featureID) {
-      case USchemaPackage.PRIMITIVE_TYPE__NAME:
+      case USchemapPackage.PRIMITIVE_TYPE__NAME:
         setName(NAME_EDEFAULT);
         return;
     }
@@ -139,7 +139,7 @@ public class PrimitiveTypeImpl extends DataTypeImpl implements PrimitiveType {
   @Override
   public boolean eIsSet(int featureID) {
     switch (featureID) {
-      case USchemaPackage.PRIMITIVE_TYPE__NAME:
+      case USchemapPackage.PRIMITIVE_TYPE__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
     }
     return super.eIsSet(featureID);

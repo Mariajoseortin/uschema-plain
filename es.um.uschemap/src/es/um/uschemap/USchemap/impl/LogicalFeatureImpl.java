@@ -1,9 +1,9 @@
 /**
  */
-package es.um.uschema.USchema.impl;
+package es.um.uschemap.USchemap.impl;
 
-import es.um.uschema.USchema.LogicalFeature;
-import es.um.uschema.USchema.USchemaPackage;
+import es.um.uschemap.USchemap.LogicalFeature;
+import es.um.uschemap.USchemap.USchemapPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -31,7 +31,7 @@ public abstract class LogicalFeatureImpl extends FeatureImpl implements LogicalF
    */
   @Override
   protected EClass eStaticClass() {
-    return USchemaPackage.Literals.LOGICAL_FEATURE;
+    return USchemapPackage.Literals.LOGICAL_FEATURE;
   }
 
 } //LogicalFeatureImpl

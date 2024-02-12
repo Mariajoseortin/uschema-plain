@@ -1,6 +1,6 @@
-package es.um.uschema.utils.custom.compare;
+package es.um.uschemap.utils.custom.compare;
 
-import es.um.uschema.USchema.RelationshipType;
+import es.um.uschemap.USchemap.RelationshipType;
 
 public class CompareRelationshipType extends Comparator<RelationshipType>
 {

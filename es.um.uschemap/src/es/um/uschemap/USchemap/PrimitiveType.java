@@ -1,6 +1,6 @@
 /**
  */
-package es.um.uschema.USchema;
+package es.um.uschemap.USchemap;
 
 
 /**
@@ -12,10 +12,10 @@ package es.um.uschema.USchema;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.um.uschema.USchema.PrimitiveType#getName <em>Name</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.PrimitiveType#getName <em>Name</em>}</li>
  * </ul>
  *
- * @see es.um.uschema.USchema.USchemaPackage#getPrimitiveType()
+ * @see es.um.uschemap.USchemap.USchemapPackage#getPrimitiveType()
  * @model
  * @generated
  */
@@ -26,14 +26,14 @@ public interface PrimitiveType extends DataType {
    * <!-- end-user-doc -->
    * @return the value of the '<em>Name</em>' attribute.
    * @see #setName(String)
-   * @see es.um.uschema.USchema.USchemaPackage#getPrimitiveType_Name()
+   * @see es.um.uschemap.USchemap.USchemapPackage#getPrimitiveType_Name()
    * @model required="true"
    * @generated
    */
   String getName();
 
   /**
-   * Sets the value of the '{@link es.um.uschema.USchema.PrimitiveType#getName <em>Name</em>}' attribute.
+   * Sets the value of the '{@link es.um.uschemap.USchemap.PrimitiveType#getName <em>Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Name</em>' attribute.

@@ -1,6 +1,6 @@
-package es.um.uschema.utils.compare;
+package es.um.uschemap.utils.compare;
 
-import es.um.uschema.USchema.PMap;
+import es.um.uschemap.USchemap.PMap;
 
 public class ComparePMap extends Comparator<PMap>
 {

@@ -1,10 +1,10 @@
 /**
  */
-package es.um.uschema.USchema.impl;
+package es.um.uschemap.USchemap.impl;
 
-import es.um.uschema.USchema.DataType;
-import es.um.uschema.USchema.PTuple;
-import es.um.uschema.USchema.USchemaPackage;
+import es.um.uschemap.USchemap.DataType;
+import es.um.uschemap.USchemap.PTuple;
+import es.um.uschemap.USchemap.USchemapPackage;
 
 import java.util.Collection;
 
@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.um.uschema.USchema.impl.PTupleImpl#getElements <em>Elements</em>}</li>
+ *   <li>{@link es.um.uschemap.USchemap.impl.PTupleImpl#getElements <em>Elements</em>}</li>
  * </ul>
  *
  * @generated
@@ -58,7 +58,7 @@ public class PTupleImpl extends DataTypeImpl implements PTuple {
    */
   @Override
   protected EClass eStaticClass() {
-    return USchemaPackage.Literals.PTUPLE;
+    return USchemapPackage.Literals.PTUPLE;
   }
 
   /**
@@ -69,7 +69,7 @@ public class PTupleImpl extends DataTypeImpl implements PTuple {
   @Override
   public EList<DataType> getElements() {
     if (elements == null) {
-      elements = new EObjectContainmentEList<DataType>(DataType.class, this, USchemaPackage.PTUPLE__ELEMENTS);
+      elements = new EObjectContainmentEList<DataType>(DataType.class, this, USchemapPackage.PTUPLE__ELEMENTS);
     }
     return elements;
   }
@@ -82,7 +82,7 @@ public class PTupleImpl extends DataTypeImpl implements PTuple {
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
-      case USchemaPackage.PTUPLE__ELEMENTS:
+      case USchemapPackage.PTUPLE__ELEMENTS:
         return ((InternalEList<?>)getElements()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -96,7 +96,7 @@ public class PTupleImpl extends DataTypeImpl implements PTuple {
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
     switch (featureID) {
-      case USchemaPackage.PTUPLE__ELEMENTS:
+      case USchemapPackage.PTUPLE__ELEMENTS:
         return getElements();
     }
     return super.eGet(featureID, resolve, coreType);
@@ -111,7 +111,7 @@ public class PTupleImpl extends DataTypeImpl implements PTuple {
   @Override
   public void eSet(int featureID, Object newValue) {
     switch (featureID) {
-      case USchemaPackage.PTUPLE__ELEMENTS:
+      case USchemapPackage.PTUPLE__ELEMENTS:
         getElements().clear();
         getElements().addAll((Collection<? extends DataType>)newValue);
         return;
@@ -127,7 +127,7 @@ public class PTupleImpl extends DataTypeImpl implements PTuple {
   @Override
   public void eUnset(int featureID) {
     switch (featureID) {
-      case USchemaPackage.PTUPLE__ELEMENTS:
+      case USchemapPackage.PTUPLE__ELEMENTS:
         getElements().clear();
         return;
     }
@@ -142,7 +142,7 @@ public class PTupleImpl extends DataTypeImpl implements PTuple {
   @Override
   public boolean eIsSet(int featureID) {
     switch (featureID) {
-      case USchemaPackage.PTUPLE__ELEMENTS:
+      case USchemapPackage.PTUPLE__ELEMENTS:
         return elements != null && !elements.isEmpty();
     }
     return super.eIsSet(featureID);
